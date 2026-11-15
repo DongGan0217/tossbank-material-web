@@ -234,7 +234,7 @@
     "failed_requests_count": 1,
     "failed_requests": [
       {
-        "url": "http://localhost:8086/images/kb-icons/svg/kb_ic-add.svg",
+        "url": "http://localhost:8086/images/tb-icons/svg/tb_ic-add.svg",
         "status": 404,
         "status_text": "File not found"
       }
@@ -245,7 +245,7 @@
     ],
     "broken_images_count": 1,
     "broken_images": [
-      "http://localhost:8086/images/kb-icons/svg/kb_ic-add.svg"
+      "http://localhost:8086/images/tb-icons/svg/tb_ic-add.svg"
     ],
     "residual_kakao_count": 2,
     "residual_kakao_samples": [

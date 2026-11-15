@@ -194,10 +194,10 @@ try {
   console.warn('Could not copy image-catalog.json:', e.message);
 }
 
-// Ensure webp symlink in site/images/kb-assets/webp
+// Ensure webp symlink in site/images/tb-assets/webp
 try {
-  const target = '../../../../../kakaobank-apk/extracted_assets';
-  const linkPath = join('site', 'images', 'kb-assets', 'webp');
+  const target = '../../../../../tossbank-apk/extracted_assets';
+  const linkPath = join('site', 'images', 'tb-assets', 'webp');
   try {
     const stat = await lstat(linkPath);
     if (stat.isSymbolicLink()) {
@@ -205,7 +205,7 @@ try {
     }
   } catch {}
   await symlink(target, linkPath);
-  console.log('Ensured webp symlink in site/images/kb-assets/webp');
+  console.log('Ensured webp symlink in site/images/tb-assets/webp');
 } catch (e) {
   console.warn('Could not ensure webp symlink:', e.message);
 }

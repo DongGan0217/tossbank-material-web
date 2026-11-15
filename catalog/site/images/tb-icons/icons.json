@@ -7,24 +7,12 @@
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
     "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "description": "이전 화면으로 돌아가기 아이콘",
     "tags": [
       "navigation",
-      "arrow-left"
-    ]
-  },
-  {
-    "name": "tb_ic-arrow-right-white",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-arrow-right-white.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "arrow-right-white"
+      "arrow",
+      "back",
+      "left"
     ]
   },
   {
@@ -35,10 +23,12 @@
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
     "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "description": "다음 화면으로 이동 아이콘",
     "tags": [
-      "arrow-right",
-      "navigation"
+      "navigation",
+      "arrow",
+      "forward",
+      "right"
     ]
   },
   {
@@ -48,25 +38,27 @@
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "위로 스크롤 및 상위 이동 아이콘",
     "tags": [
       "navigation",
-      "arrow-up"
+      "arrow",
+      "up"
     ]
   },
   {
-    "name": "tb_ic-call",
+    "name": "tb_ic-arrow-down",
     "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-call.svg",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
+    "url": "/images/tb-icons/svg/tb_ic-arrow-down.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "아래로 스크롤 및 하위 이동 아이콘",
     "tags": [
-      "call",
-      "support"
+      "navigation",
+      "arrow",
+      "down"
     ]
   },
   {
@@ -76,25 +68,12 @@
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "좌측 셰브론 네비게이션 아이콘",
     "tags": [
       "navigation",
-      "chevron-left"
-    ]
-  },
-  {
-    "name": "tb_ic-chevron-right-mo",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-chevron-right-mo.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "chevron-right-mo"
+      "chevron",
+      "left"
     ]
   },
   {
@@ -104,67 +83,42 @@
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "우측 셰브론 네비게이션 아이콘",
     "tags": [
       "navigation",
-      "chevron-right"
+      "chevron",
+      "right"
     ]
   },
   {
-    "name": "tb_ic-circle-outlink-b-sm",
+    "name": "tb_ic-chevron-up",
     "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-circle-outlink-b-sm.svg",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
-    "tags": [
-      "circle-outlink-b-sm",
-      "social"
-    ]
-  },
-  {
-    "name": "tb_ic-circle-outlink-b",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-circle-outlink-b.svg",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
-    "tags": [
-      "circle-outlink-b",
-      "social"
-    ]
-  },
-  {
-    "name": "tb_ic-circle-outlink-w",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-circle-outlink-w.svg",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
-    "tags": [
-      "circle-outlink-w",
-      "social"
-    ]
-  },
-  {
-    "name": "tb_ic-close-up",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-close-up.svg",
+    "url": "/images/tb-icons/svg/tb_ic-chevron-up.svg",
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "상단 접기 셰브론 아이콘",
     "tags": [
       "navigation",
-      "close-up"
+      "chevron",
+      "up"
+    ]
+  },
+  {
+    "name": "tb_ic-chevron-down",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-chevron-down.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "하단 펼치기 셰브론 아이콘",
+    "tags": [
+      "navigation",
+      "chevron",
+      "down"
     ]
   },
   {
@@ -174,348 +128,13 @@
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-icon-button>, <md-dialog>",
+    "description": "팝업 및 모달 닫기 아이콘",
     "tags": [
       "navigation",
-      "close"
-    ]
-  },
-  {
-    "name": "tb_ic-download-m",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-download-m.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "download-m"
-    ]
-  },
-  {
-    "name": "tb_ic-download-s",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-download-s.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "download-s"
-    ]
-  },
-  {
-    "name": "tb_ic-en",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-en.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "en"
-    ]
-  },
-  {
-    "name": "tb_ic-headphone",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-headphone.svg",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
-    "tags": [
-      "headphone",
-      "support"
-    ]
-  },
-  {
-    "name": "tb_ic-kr",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-kr.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "kr"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-check",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-check.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-check"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-copy",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-copy.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-copy"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-filter",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-filter.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-filter"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-kakaotalk",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-kakaotalk.svg",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
-    "tags": [
-      "lg-kakaotalk",
-      "support"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-list",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-list.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-list"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-outlink-white",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-outlink-white.svg",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
-    "tags": [
-      "lg-outlink-white",
-      "social"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-outlink",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-outlink.svg",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
-    "tags": [
-      "lg-outlink",
-      "social"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-pause",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-pause.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-pause"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-play",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-play.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-play"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-search",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-search.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-search"
-    ]
-  },
-  {
-    "name": "tb_ic-lg-three-dots",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-lg-three-dots.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "lg-three-dots"
-    ]
-  },
-  {
-    "name": "tb_ic-link-arrow-right-black",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-link-arrow-right-black.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "link-arrow-right-black"
-    ]
-  },
-  {
-    "name": "tb_ic-link-arrow-right-white",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-link-arrow-right-white.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "link-arrow-right-white"
-    ]
-  },
-  {
-    "name": "tb_ic-md-ban",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-md-ban.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "md-ban"
-    ]
-  },
-  {
-    "name": "tb_ic-md-check",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-md-check.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "md-check"
-    ]
-  },
-  {
-    "name": "tb_ic-md-delete",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-md-delete.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "md-delete",
-      "action"
-    ]
-  },
-  {
-    "name": "tb_ic-md-headphone",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-md-headphone.svg",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
-    "tags": [
-      "md-headphone",
-      "support"
-    ]
-  },
-  {
-    "name": "tb_ic-md-kakaotalk",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-md-kakaotalk.svg",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
-    "tags": [
-      "md-kakaotalk",
-      "support"
+      "close",
+      "cancel",
+      "dismiss"
     ]
   },
   {
@@ -525,40 +144,165 @@
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-icon-button>, Header",
+    "description": "글로벌 전체 메뉴 네비게이션 드로어 열기",
     "tags": [
+      "navigation",
       "menu",
-      "navigation"
+      "drawer",
+      "hamburger"
     ]
   },
   {
-    "name": "tb_ic-minus",
+    "name": "tb_ic-home",
     "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-minus.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "minus"
-    ]
-  },
-  {
-    "name": "tb_ic-open-down",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-open-down.svg",
+    "url": "/images/tb-icons/svg/tb_ic-home.svg",
     "category": "navigation",
     "categoryName": "네비게이션 & 제어",
     "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "suggestedComponent": "<md-navigation-bar>, <md-tabs>",
+    "description": "홈 화면 바로가기 대표 아이콘",
     "tags": [
-      "open-down",
-      "navigation"
+      "navigation",
+      "home",
+      "main"
+    ]
+  },
+  {
+    "name": "tb_ic-compass",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-compass.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "탐색 및 길찾기 나침반 아이콘",
+    "tags": [
+      "navigation",
+      "explore",
+      "compass"
+    ]
+  },
+  {
+    "name": "tb_ic-map",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-map.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-card>",
+    "description": "지도 및 위치 안내 대표 아이콘",
+    "tags": [
+      "navigation",
+      "map",
+      "location"
+    ]
+  },
+  {
+    "name": "tb_ic-location",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-location.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-list-item>",
+    "description": "현재 위치 및 지점 핀포인트 아이콘",
+    "tags": [
+      "navigation",
+      "location",
+      "pin",
+      "gps"
+    ]
+  },
+  {
+    "name": "tb_ic-refresh",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-refresh.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "화면 및 계좌 새로고침 동기화 아이콘",
+    "tags": [
+      "navigation",
+      "refresh",
+      "sync",
+      "reload"
+    ]
+  },
+  {
+    "name": "tb_ic-expand",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-expand.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "전체 화면 확장 아이콘",
+    "tags": [
+      "navigation",
+      "expand",
+      "fullscreen"
+    ]
+  },
+  {
+    "name": "tb_ic-collapse",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-collapse.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "창 축소 및 복원 아이콘",
+    "tags": [
+      "navigation",
+      "collapse",
+      "minimize"
+    ]
+  },
+  {
+    "name": "tb_ic-more-horiz",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-more-horiz.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "가로 더보기 컨텍스트 메뉴 아이콘",
+    "tags": [
+      "navigation",
+      "more",
+      "dots"
+    ]
+  },
+  {
+    "name": "tb_ic-more-vert",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-more-vert.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "세로 더보기 옵션 메뉴 아이콘",
+    "tags": [
+      "navigation",
+      "more",
+      "vertical"
+    ]
+  },
+  {
+    "name": "tb_ic-grid",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-grid.svg",
+    "category": "navigation",
+    "categoryName": "네비게이션 & 제어",
+    "intent": "navigation_container_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "격자 그리드 뷰 전환 아이콘",
+    "tags": [
+      "navigation",
+      "grid",
+      "layout"
     ]
   },
   {
@@ -568,1675 +312,1926 @@
     "category": "action",
     "categoryName": "액션 & 컨트롤",
     "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "suggestedComponent": "<md-icon-button>, <md-fab>",
+    "description": "항목 추가 및 등록 아이콘",
     "tags": [
-      "user",
+      "action",
       "plus",
-      "action"
+      "add",
+      "create"
     ]
   },
   {
-    "name": "tb_ic-scroll-down",
+    "name": "tb_ic-minus",
     "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-scroll-down.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "scroll-down"
-    ]
-  },
-  {
-    "name": "tb_ic-sm-ban",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-sm-ban.svg",
+    "url": "/images/tb-icons/svg/tb_ic-minus.svg",
     "category": "action",
     "categoryName": "액션 & 컨트롤",
     "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "항목 감소 및 제거 아이콘",
     "tags": [
-      "user",
       "action",
-      "sm-ban"
+      "minus",
+      "remove"
     ]
   },
   {
-    "name": "tb_ic-sm-chevron",
+    "name": "tb_ic-check",
     "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-sm-chevron.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "sm-chevron",
-      "navigation"
-    ]
-  },
-  {
-    "name": "tb_ic-sm-close-up",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-sm-close-up.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "sm-close-up"
-    ]
-  },
-  {
-    "name": "tb_ic-sm-open-down",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-sm-open-down.svg",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "navigation",
-      "sm-open-down"
-    ]
-  },
-  {
-    "name": "tb_ic-sm-outlink",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-sm-outlink.svg",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
-    "tags": [
-      "sm-outlink",
-      "social"
-    ]
-  },
-  {
-    "name": "tb_ic-video-pause",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-video-pause.svg",
+    "url": "/images/tb-icons/svg/tb_ic-check.svg",
     "category": "action",
     "categoryName": "액션 & 컨트롤",
     "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "suggestedComponent": "<md-button>, <md-chip>",
+    "description": "동작 완료 및 확인 승인 아이콘",
     "tags": [
-      "user",
       "action",
-      "video-pause"
+      "check",
+      "confirm",
+      "success"
     ]
   },
   {
-    "name": "tb_ic-video-play",
+    "name": "tb_ic-search",
     "type": "svg",
-    "url": "/images/tb-icons/svg/tb_ic-video-play.svg",
+    "url": "/images/tb-icons/svg/tb_ic-search.svg",
     "category": "action",
     "categoryName": "액션 & 컨트롤",
     "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "suggestedComponent": "<md-outlined-text-field>",
+    "description": "금융 상품 및 계좌 통합 검색 아이콘",
     "tags": [
-      "user",
       "action",
-      "video-play"
-    ]
-  },
-  {
-    "name": "tb_logo-gnb-m",
-    "type": "svg",
-    "url": "/images/tb-icons/svg/tb_logo-gnb-m.svg",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "action",
-      "logo-gnb-m"
-    ]
-  },
-  {
-    "name": "tb_abc_ic_commit_search_api_mtrl_alpha",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_abc_ic_commit_search_api_mtrl_alpha.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "commit",
-      "alpha",
       "search",
-      "abc",
-      "action",
-      "mtrl",
-      "api",
-      "user"
+      "find"
     ]
   },
   {
-    "name": "tb_adfit_icon_ad_info",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_adfit_icon_ad_info.png",
+    "name": "tb_ic-filter",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-filter.svg",
     "category": "action",
     "categoryName": "액션 & 컨트롤",
     "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "suggestedComponent": "<md-filter-chip>",
+    "description": "내역 필터링 및 조건 정렬 아이콘",
     "tags": [
-      "info",
-      "icon",
-      "adfit",
       "action",
-      "ad",
-      "user"
+      "filter",
+      "sort"
     ]
   },
   {
-    "name": "tb_gfp__ad__fullscreen_video_icon_loading",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__fullscreen_video_icon_loading.png",
+    "name": "tb_ic-edit",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-edit.svg",
     "category": "action",
     "categoryName": "액션 & 컨트롤",
     "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "정보 수정 및 메모 편집 아이콘",
     "tags": [
-      "",
-      "loading",
-      "gfp",
-      "icon",
       "action",
-      "ad",
-      "fullscreen",
-      "user",
-      "video"
+      "edit",
+      "pencil",
+      "write"
     ]
   },
   {
-    "name": "tb_gfp__ad__icon_arrow_landing_dark",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_arrow_landing_dark.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "name": "tb_ic-delete",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-delete.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>, <md-dialog>",
+    "description": "항목 삭제 및 계좌 숨김 아이콘",
     "tags": [
-      "",
-      "arrow",
-      "landing",
-      "gfp",
-      "icon",
-      "navigation",
-      "ad",
-      "dark"
+      "action",
+      "delete",
+      "trash",
+      "remove"
     ]
   },
   {
-    "name": "tb_gfp__ad__icon_arrow_landing_light",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_arrow_landing_light.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "name": "tb_ic-settings",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-settings.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "앱 및 계좌 환경설정 아이콘",
     "tags": [
-      "",
-      "arrow",
-      "landing",
-      "gfp",
-      "icon",
-      "navigation",
-      "light",
-      "ad"
+      "action",
+      "settings",
+      "gear",
+      "config"
     ]
   },
   {
-    "name": "tb_gfp__ad__icon_delivery_fee",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_delivery_fee.png",
+    "name": "tb_ic-tools",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-tools.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "유틸리티 도구 모음 아이콘",
+    "tags": [
+      "action",
+      "tools",
+      "wrench"
+    ]
+  },
+  {
+    "name": "tb_ic-download",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-download.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-button>",
+    "description": "거래내역 및 서류 다운로드 아이콘",
+    "tags": [
+      "action",
+      "download",
+      "save"
+    ]
+  },
+  {
+    "name": "tb_ic-upload",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-upload.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-button>",
+    "description": "신분증 및 서류 업로드 아이콘",
+    "tags": [
+      "action",
+      "upload",
+      "file"
+    ]
+  },
+  {
+    "name": "tb_ic-copy",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-copy.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "계좌번호 및 링크 클립보드 복사 아이콘",
+    "tags": [
+      "action",
+      "copy",
+      "clipboard"
+    ]
+  },
+  {
+    "name": "tb_ic-calculator",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-calculator.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-card>",
+    "description": "대출 및 적금 이자 계산기 실행 아이콘",
+    "tags": [
+      "action",
+      "calculator",
+      "abacus",
+      "math"
+    ]
+  },
+  {
+    "name": "tb_ic-calendar",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-calendar.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-outlined-text-field>",
+    "description": "이체일 및 만기일 날짜 선택 아이콘",
+    "tags": [
+      "action",
+      "calendar",
+      "date",
+      "schedule"
+    ]
+  },
+  {
+    "name": "tb_ic-time",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-time.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-chip>",
+    "description": "시간 설정 및 예약 이체 시계 아이콘",
+    "tags": [
+      "action",
+      "time",
+      "clock",
+      "timer"
+    ]
+  },
+  {
+    "name": "tb_ic-eye-show",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-eye-show.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "계좌 잔액 및 비밀번호 표시 아이콘",
+    "tags": [
+      "action",
+      "eye",
+      "visible",
+      "show"
+    ]
+  },
+  {
+    "name": "tb_ic-eye-hide",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-eye-hide.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "계좌 잔액 가리기 숨김 아이콘",
+    "tags": [
+      "action",
+      "eye-slash",
+      "invisible",
+      "hide"
+    ]
+  },
+  {
+    "name": "tb_ic-scan",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-scan.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "QR 코드 및 신분증 스캔 카메라 아이콘",
+    "tags": [
+      "action",
+      "scan",
+      "camera",
+      "ocr"
+    ]
+  },
+  {
+    "name": "tb_ic-sort",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-sort.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-chip>",
+    "description": "정렬 순서 변경 아이콘",
+    "tags": [
+      "action",
+      "sort",
+      "order"
+    ]
+  },
+  {
+    "name": "tb_ic-favorite",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-favorite.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "자주 쓰는 계좌 즐겨찾기 등록 아이콘",
+    "tags": [
+      "action",
+      "favorite",
+      "bookmark",
+      "star"
+    ]
+  },
+  {
+    "name": "tb_ic-bookmark",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-bookmark.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "혜택 및 이벤트 북마크 아이콘",
+    "tags": [
+      "action",
+      "bookmark",
+      "save"
+    ]
+  },
+  {
+    "name": "tb_ic-power",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-power.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "자동이체 및 스위치 전원 토글 아이콘",
+    "tags": [
+      "action",
+      "power",
+      "toggle",
+      "switch"
+    ]
+  },
+  {
+    "name": "tb_ic-slider",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-slider.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-slider>",
+    "description": "한도 및 금액 조절 슬라이더 아이콘",
+    "tags": [
+      "action",
+      "slider",
+      "range",
+      "control"
+    ]
+  },
+  {
+    "name": "tb_ic-undo",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-undo.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "실행 취소 아이콘",
+    "tags": [
+      "action",
+      "undo",
+      "revert"
+    ]
+  },
+  {
+    "name": "tb_ic-redo",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-redo.svg",
+    "category": "action",
+    "categoryName": "액션 & 컨트롤",
+    "intent": "user_action_control",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "다시 실행 아이콘",
+    "tags": [
+      "action",
+      "redo",
+      "forward"
+    ]
+  },
+  {
+    "name": "tb_ic-bank",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-bank.svg",
     "category": "banking",
     "categoryName": "금융 & 계좌",
     "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
+    "suggestedComponent": "<md-card>, <md-list-item>",
+    "description": "토스뱅크 및 금융 기관 대표 아이콘",
     "tags": [
-      "",
       "banking",
-      "delivery",
-      "fee",
-      "gfp",
-      "icon",
-      "ad"
+      "bank",
+      "institution",
+      "finance",
+      "tossbank"
     ]
   },
   {
-    "name": "tb_gfp__ad__icon_more_image",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_more_image.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "",
-      "gfp",
-      "icon",
-      "image",
-      "action",
-      "more",
-      "ad",
-      "user"
-    ]
-  },
-  {
-    "name": "tb_gfp__ad__icon_more_image_small",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_more_image_small.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "",
-      "small",
-      "gfp",
-      "icon",
-      "image",
-      "action",
-      "more",
-      "ad",
-      "user"
-    ]
-  },
-  {
-    "name": "tb_gfp__ad__icon_privacy_beside_text",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_privacy_beside_text.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "",
-      "text",
-      "security",
-      "privacy",
-      "gfp",
-      "icon",
-      "beside",
-      "ad"
-    ]
-  },
-  {
-    "name": "tb_gfp__ad__icon_privacy_dark",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_privacy_dark.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "",
-      "security",
-      "privacy",
-      "gfp",
-      "icon",
-      "ad",
-      "dark"
-    ]
-  },
-  {
-    "name": "tb_gfp__ad__icon_privacy_light",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_gfp__ad__icon_privacy_light.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "",
-      "security",
-      "privacy",
-      "gfp",
-      "icon",
-      "light",
-      "ad"
-    ]
-  },
-  {
-    "name": "tb_ic_account",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_account.webp",
+    "name": "tb_ic-card",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-card.svg",
     "category": "banking",
     "categoryName": "금융 & 계좌",
     "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
+    "suggestedComponent": "<md-card>, ProductCard",
+    "description": "토스뱅크 체크카드 및 신용카드 대표 아이콘",
     "tags": [
       "banking",
-      "account"
+      "card",
+      "debit",
+      "credit",
+      "payment",
+      "tossbank"
     ]
   },
   {
-    "name": "tb_ic_arrow_20",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_arrow_20.webp",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "arrow",
-      "navigation",
-      "20"
-    ]
-  },
-  {
-    "name": "tb_ic_arrow_20_thin",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_arrow_20_thin.webp",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "thin",
-      "arrow",
-      "navigation",
-      "20"
-    ]
-  },
-  {
-    "name": "tb_ic_arrow_expand_32",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_arrow_expand_32.webp",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "arrow",
-      "navigation",
-      "expand",
-      "32"
-    ]
-  },
-  {
-    "name": "tb_ic_arrow_fold_32",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_arrow_fold_32.webp",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "arrow",
-      "navigation",
-      "32",
-      "fold"
-    ]
-  },
-  {
-    "name": "tb_ic_benefit",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_benefit.webp",
+    "name": "tb_ic-moneybag",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-moneybag.svg",
     "category": "banking",
     "categoryName": "금융 & 계좌",
     "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
+    "suggestedComponent": "<md-card>",
+    "description": "자산 및 예적금 목돈 모으기 대표 아이콘",
     "tags": [
       "banking",
+      "money",
+      "savings",
+      "bag",
+      "wealth"
+    ]
+  },
+  {
+    "name": "tb_ic-cash",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-cash.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-list-item>",
+    "description": "현금 및 출금 수수료 무료 안내 아이콘",
+    "tags": [
+      "banking",
+      "cash",
+      "bill",
+      "currency"
+    ]
+  },
+  {
+    "name": "tb_ic-coin",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-coin.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-chip>, <md-badge>",
+    "description": "토스 포인트 및 캐시백 코인 아이콘",
+    "tags": [
+      "banking",
+      "coin",
+      "point",
+      "cashback"
+    ]
+  },
+  {
+    "name": "tb_ic-transfer",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-transfer.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-button>",
+    "description": "평생 무료 송금 및 이체 실행 아이콘",
+    "tags": [
+      "banking",
+      "transfer",
+      "send",
+      "remittance"
+    ]
+  },
+  {
+    "name": "tb_ic-wallet",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-wallet.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "토스페이 및 모바일 지갑 대표 아이콘",
+    "tags": [
+      "banking",
+      "wallet",
+      "pay",
+      "tosspay"
+    ]
+  },
+  {
+    "name": "tb_ic-receipt",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-receipt.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-list-item>",
+    "description": "전자 영수증 및 이체 확인증 발급 아이콘",
+    "tags": [
+      "banking",
+      "receipt",
+      "bill",
+      "history"
+    ]
+  },
+  {
+    "name": "tb_ic-chart-up",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-chart-up.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "수익률 상승 및 금리 인상 안내 차트 아이콘",
+    "tags": [
+      "banking",
+      "chart",
+      "trend",
+      "growth",
+      "interest"
+    ]
+  },
+  {
+    "name": "tb_ic-bar-chart",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-bar-chart.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "소비 분석 및 자산 통계 리포트 차트 아이콘",
+    "tags": [
+      "banking",
+      "chart",
+      "analysis",
+      "statistics",
+      "report"
+    ]
+  },
+  {
+    "name": "tb_ic-loan",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-loan.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "맞춤 대출 갈아타기 및 비상금 대출 아이콘",
+    "tags": [
+      "banking",
+      "loan",
+      "credit",
+      "borrow"
+    ]
+  },
+  {
+    "name": "tb_ic-saving",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-saving.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "키워봐요 적금 및 굴비 적금 성장 아이콘",
+    "tags": [
+      "banking",
+      "saving",
+      "grow",
+      "deposit"
+    ]
+  },
+  {
+    "name": "tb_ic-interest",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-interest.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-button>",
+    "description": "매일 지금 이자받기 즉시 지급 아이콘",
+    "tags": [
+      "banking",
+      "interest",
+      "now",
       "benefit"
     ]
   },
   {
-    "name": "tb_ic_close_btn",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_ic_close_btn.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "btn",
-      "navigation",
-      "close"
-    ]
-  },
-  {
-    "name": "tb_ic_coin",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_coin.webp",
+    "name": "tb_ic-credit-score",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-credit-score.svg",
     "category": "banking",
     "categoryName": "금융 & 계좌",
     "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
+    "suggestedComponent": "<md-card>",
+    "description": "내 신용점수 및 신용 관리 컨설팅 아이콘",
     "tags": [
       "banking",
-      "coin"
+      "credit",
+      "score",
+      "rating"
     ]
   },
   {
-    "name": "tb_ic_coupon",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_coupon.webp",
+    "name": "tb_ic-exchange",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-exchange.svg",
     "category": "banking",
     "categoryName": "금융 & 계좌",
     "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
+    "suggestedComponent": "<md-card>",
+    "description": "외화 통장 및 100% 환율 우대 환전 아이콘",
     "tags": [
       "banking",
-      "coupon"
+      "exchange",
+      "fx",
+      "currency"
     ]
   },
   {
-    "name": "tb_ic_launcher",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_launcher.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
+    "name": "tb_ic-stock",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-stock.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "토스증권 실시간 주식 투자 연동 아이콘",
     "tags": [
-      "launcher",
-      "emotion",
-      "emoji"
+      "banking",
+      "stock",
+      "invest",
+      "trading"
     ]
   },
   {
-    "name": "tb_ic_launcher_round",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_launcher_round.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
+    "name": "tb_ic-tax",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-tax.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "숨은 환급금 찾기 및 세금 납부 아이콘",
     "tags": [
-      "launcher",
-      "emotion",
-      "round",
-      "emoji"
+      "banking",
+      "tax",
+      "refund",
+      "vat"
     ]
   },
   {
-    "name": "tb_ic_more_dark",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_more_dark.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "name": "tb_ic-insurance",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-insurance.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "내 보험 진단 및 안심 보장 보험 아이콘",
     "tags": [
-      "user",
-      "more",
-      "action",
-      "dark"
+      "banking",
+      "insurance",
+      "coverage",
+      "health"
     ]
   },
   {
-    "name": "tb_ic_more_light",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_more_light.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "name": "tb_ic-realestate",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-realestate.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "부동산 시세 및 주택담보대출 안내 아이콘",
     "tags": [
-      "user",
-      "more",
-      "action",
-      "light"
+      "banking",
+      "realestate",
+      "mortgage",
+      "house"
     ]
   },
   {
-    "name": "tb_ic_reorder",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_reorder.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "name": "tb_ic-car",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-car.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "자동차 보험 및 중고차 시세 조회 아이콘",
     "tags": [
-      "user",
-      "action",
-      "reorder"
+      "banking",
+      "car",
+      "auto",
+      "vehicle"
     ]
   },
   {
-    "name": "tb_ic_result_page_fallback_critical",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_result_page_fallback_critical.webp",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
+    "name": "tb_ic-donate",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-donate.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "사회공헌 및 희망 기부하기 아이콘",
     "tags": [
-      "support",
-      "fallback",
-      "result",
-      "critical",
-      "page"
+      "banking",
+      "donate",
+      "charity",
+      "give"
     ]
   },
   {
-    "name": "tb_ic_result_page_fallback_pending",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_result_page_fallback_pending.webp",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
+    "name": "tb_ic-coupon",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-coupon.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-chip>",
+    "description": "가맹점 할인 쿠폰 및 이벤트 바우처 아이콘",
     "tags": [
-      "support",
-      "fallback",
-      "pending",
-      "result",
-      "page"
+      "banking",
+      "coupon",
+      "discount",
+      "ticket"
     ]
   },
   {
-    "name": "tb_ic_result_page_fallback_success",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_result_page_fallback_success.webp",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
+    "name": "tb_ic-shopping",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-shopping.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-card>",
+    "description": "토스 공동구매 및 브랜드 쇼핑 결제 아이콘",
     "tags": [
-      "success",
-      "support",
-      "fallback",
-      "result",
-      "page"
+      "banking",
+      "shopping",
+      "store",
+      "cart"
     ]
   },
   {
-    "name": "tb_ic_setting_dark",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_setting_dark.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "name": "tb_ic-atm",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-atm.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-list-item>",
+    "description": "전국 모든 은행/편의점 ATM 무료 출금 아이콘",
     "tags": [
-      "user",
-      "setting",
-      "action",
-      "dark"
+      "banking",
+      "atm",
+      "withdraw",
+      "teller"
     ]
   },
   {
-    "name": "tb_ic_setting_light",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_setting_light.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
+    "name": "tb_ic-diamond",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-diamond.svg",
+    "category": "banking",
+    "categoryName": "금융 & 계좌",
+    "intent": "banking_finance_service",
+    "suggestedComponent": "<md-chip>",
+    "description": "VIP 프라임 멤버십 및 프리미엄 혜택 아이콘",
     "tags": [
-      "user",
-      "setting",
-      "action",
-      "light"
+      "banking",
+      "vip",
+      "premium",
+      "diamond"
     ]
   },
   {
-    "name": "tb_ic_share_etc",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_share_etc.webp",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
+    "name": "tb_ic-shield",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-shield.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>, VerifyModal",
+    "description": "토스 안심보상제 및 금융 보안 가드 대표 아이콘",
     "tags": [
-      "etc",
-      "share",
-      "social"
+      "security",
+      "shield",
+      "protect",
+      "guard"
     ]
   },
   {
-    "name": "tb_ic_share_instagram",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_share_instagram.webp",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
+    "name": "tb_ic-lock",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-lock.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-outlined-text-field>",
+    "description": "데이터 암호화 및 잠금 보안 상태 아이콘",
     "tags": [
-      "instagram",
-      "share",
-      "social"
+      "security",
+      "lock",
+      "secure",
+      "encrypted"
     ]
   },
   {
-    "name": "tb_ic_share_kakaotalk",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_share_kakao.webp",
-    "category": "social",
-    "categoryName": "공유 & 외부연결",
-    "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
+    "name": "tb_ic-unlock",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-unlock.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-button>",
+    "description": "잠금 해제 및 본인인증 성공 아이콘",
     "tags": [
-      "kakaotalk",
-      "share",
-      "social"
+      "security",
+      "unlock",
+      "open",
+      "access"
     ]
   },
   {
-    "name": "tb_ic_solid_heart_white_border",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_solid_heart_white_border.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
+    "name": "tb_ic-key",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-key.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "인증서 비밀번호 및 마스터 보안키 아이콘",
     "tags": [
-      "border",
-      "heart",
-      "emoji",
-      "solid",
-      "emotion",
-      "white"
+      "security",
+      "key",
+      "password",
+      "passcode"
     ]
   },
   {
-    "name": "tb_ic_stamp_badge",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_stamp_badge.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
+    "name": "tb_ic-cert",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-cert.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-card>",
+    "description": "토스 공인인증서 및 공동인증 발급 안내 아이콘",
     "tags": [
+      "security",
+      "cert",
+      "certificate",
+      "id"
+    ]
+  },
+  {
+    "name": "tb_ic-face-id",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-face-id.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "FacePay 및 얼굴인식 바이오 인증 아이콘",
+    "tags": [
+      "security",
+      "face",
+      "biometric",
+      "faceid"
+    ]
+  },
+  {
+    "name": "tb_ic-fingerprint",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-fingerprint.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "지문인식 생체 보안 인증 아이콘",
+    "tags": [
+      "security",
+      "fingerprint",
+      "touchid",
+      "biometric"
+    ]
+  },
+  {
+    "name": "tb_ic-privacy",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-privacy.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "개인정보 보호 및 마이데이터 수집 동의 아이콘",
+    "tags": [
+      "security",
+      "privacy",
+      "mydata",
+      "consent"
+    ]
+  },
+  {
+    "name": "tb_ic-alert",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-alert.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-banner>",
+    "description": "보이스피싱 및 이상거래 탐지(FDS) 경고 아이콘",
+    "tags": [
+      "security",
+      "alert",
+      "warning",
+      "fraud",
+      "fds"
+    ]
+  },
+  {
+    "name": "tb_ic-warning",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-warning.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-banner>",
+    "description": "주의 및 송금 전 사기계좌 경고 안내 아이콘",
+    "tags": [
+      "security",
+      "warning",
+      "caution",
+      "danger"
+    ]
+  },
+  {
+    "name": "tb_ic-eye-cert",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-eye-cert.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "비대면 실명인증 및 신분증 진위확인 아이콘",
+    "tags": [
+      "security",
+      "verify",
+      "kyc",
+      "ocr"
+    ]
+  },
+  {
+    "name": "tb_ic-passcode",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-passcode.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "6자리 보안 비밀번호 입력 키패드 아이콘",
+    "tags": [
+      "security",
+      "passcode",
+      "pin",
+      "keypad"
+    ]
+  },
+  {
+    "name": "tb_ic-safe",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-safe.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-card>",
+    "description": "금고 및 안전한 계좌 보관함 아이콘",
+    "tags": [
+      "security",
+      "safe",
+      "vault",
+      "storage"
+    ]
+  },
+  {
+    "name": "tb_ic-stop",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-stop.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-button>",
+    "description": "거래 정지 및 분실 신고 긴급 차단 아이콘",
+    "tags": [
+      "security",
+      "block",
+      "stop",
+      "freeze"
+    ]
+  },
+  {
+    "name": "tb_ic-verified-badge",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-verified-badge.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-chip>",
+    "description": "금융결제원 공식 인증 배지 아이콘",
+    "tags": [
+      "security",
       "badge",
-      "stamp",
-      "emotion",
-      "emoji"
+      "verified",
+      "official"
     ]
   },
   {
-    "name": "tb_ic_star",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_star.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
-    "tags": [
-      "star",
-      "emotion",
-      "emoji"
-    ]
-  },
-  {
-    "name": "tb_ic_status_bar",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_ic_status_bar.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "user",
-      "status",
-      "action",
-      "bar"
-    ]
-  },
-  {
-    "name": "tb_icon_30_alarm_warning",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_30_alarm_warning.webp",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
-    "tags": [
-      "support",
-      "30",
-      "icon",
-      "alarm",
-      "warning"
-    ]
-  },
-  {
-    "name": "tb_icon_48_alarm_notice",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_48_alarm_notice.webp",
-    "category": "support",
-    "categoryName": "고객지원 & 피드백",
-    "intent": "support_feedback_notice",
-    "suggestedComponent": "<md-dialog>, <md-banner>, Snackbar",
-    "description": "고객센터 유선/챗 상담, 시스템 알림, 성공/실패/주의 상태",
-    "tags": [
-      "notice",
-      "support",
-      "icon",
-      "48",
-      "alarm"
-    ]
-  },
-  {
-    "name": "tb_icon_48_star",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_48_star.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
-    "tags": [
-      "star",
-      "icon",
-      "emoji",
-      "48",
-      "emotion"
-    ]
-  },
-  {
-    "name": "tb_icon_empty",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_empty.webp",
-    "category": "emoji",
-    "categoryName": "리액션 & 배지",
-    "intent": "emotion_reward_badge",
-    "suggestedComponent": "<md-chip>, CardBadge, Reward",
-    "description": "좋아요, 즐겨찾기, 등급 도장, 빈 화면 상태 및 감정 리액션",
-    "tags": [
-      "icon",
-      "emotion",
-      "empty",
-      "emoji"
-    ]
-  },
-  {
-    "name": "tb_icon_faceotp",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_faceotp.webp",
+    "name": "tb_ic-firewall",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-firewall.svg",
     "category": "security",
     "categoryName": "보안 & 인증",
     "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "suggestedComponent": "<md-card>",
+    "description": "실시간 네트워크 방화벽 감시 아이콘",
     "tags": [
-      "faceotp",
       "security",
-      "icon"
+      "firewall",
+      "network",
+      "guard"
     ]
   },
   {
-    "name": "tb_icon_guide_circle_01",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_guide_circle_01.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "guide",
-      "icon",
-      "01",
-      "action",
-      "user",
-      "circle"
-    ]
-  },
-  {
-    "name": "tb_icon_guide_circle_02",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_guide_circle_02.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "guide",
-      "icon",
-      "02",
-      "action",
-      "user",
-      "circle"
-    ]
-  },
-  {
-    "name": "tb_icon_guide_circle_03",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_guide_circle_03.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "guide",
-      "03",
-      "icon",
-      "action",
-      "user",
-      "circle"
-    ]
-  },
-  {
-    "name": "tb_icon_guide_circle_04",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_guide_circle_04.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "guide",
-      "icon",
-      "action",
-      "user",
-      "circle",
-      "04"
-    ]
-  },
-  {
-    "name": "tb_icon_loan",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_loan.webp",
-    "category": "banking",
-    "categoryName": "금융 & 계좌",
-    "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
-    "tags": [
-      "banking",
-      "loan",
-      "icon"
-    ]
-  },
-  {
-    "name": "tb_icon_loan_list_01",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_loan_list_01.webp",
-    "category": "banking",
-    "categoryName": "금융 & 계좌",
-    "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
-    "tags": [
-      "banking",
-      "loan",
-      "list",
-      "icon",
-      "01"
-    ]
-  },
-  {
-    "name": "tb_icon_loan_list_02",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_loan_list_02.webp",
-    "category": "banking",
-    "categoryName": "금융 & 계좌",
-    "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
-    "tags": [
-      "banking",
-      "loan",
-      "list",
-      "icon",
-      "02"
-    ]
-  },
-  {
-    "name": "tb_icon_otp",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_otp.webp",
+    "name": "tb_ic-incident",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-incident.svg",
     "category": "security",
     "categoryName": "보안 & 인증",
     "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "suggestedComponent": "<md-banner>",
+    "description": "금융사고 신고 접수 및 상담센터 연결 아이콘",
     "tags": [
+      "security",
+      "incident",
+      "report",
+      "police"
+    ]
+  },
+  {
+    "name": "tb_ic-chip-secure",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-chip-secure.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-card>",
+    "description": "IC칩 보안 및 모바일 보안토큰 아이콘",
+    "tags": [
+      "security",
+      "chip",
+      "ic",
+      "token"
+    ]
+  },
+  {
+    "name": "tb_ic-otp",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-otp.svg",
+    "category": "security",
+    "categoryName": "보안 & 인증",
+    "intent": "security_identity_verification",
+    "suggestedComponent": "<md-dialog>",
+    "description": "모바일 OTP 일회용 비밀번호 생성 아이콘",
+    "tags": [
+      "security",
       "otp",
-      "security",
-      "icon"
+      "token",
+      "auth"
     ]
   },
   {
-    "name": "tb_icon_rules_setting",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_icon_rules_setting.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "icon",
-      "rules",
-      "action",
-      "user",
-      "setting"
-    ]
-  },
-  {
-    "name": "tb_igaw_ssp_ic_checkbox_off",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_igaw_ssp_ic_checkbox_off.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "igaw",
-      "checkbox",
-      "action",
-      "ssp",
-      "user",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_igaw_ssp_ic_checkbox_on",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_igaw_ssp_ic_checkbox_on.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "igaw",
-      "checkbox",
-      "action",
-      "ssp",
-      "on",
-      "user"
-    ]
-  },
-  {
-    "name": "tb_img_mini_savings_basic_open",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_img_mini_savings_basic_open.webp",
-    "category": "banking",
-    "categoryName": "금융 & 계좌",
-    "intent": "banking_finance_service",
-    "suggestedComponent": "<md-card>, <md-list-item>, Banner",
-    "description": "통장, 계좌, 대출, 수수료, 혜택 등 금융 자산 및 상품 표현",
-    "tags": [
-      "banking",
-      "img",
-      "savings",
-      "mini",
-      "basopen"
-    ]
-  },
-  {
-    "name": "tb_img_newkbca_lv3_icon_1",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_img_newkbca_lv3_icon_1.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "lv3",
-      "img",
-      "icon",
-      "action",
-      "user",
-      "1",
-      "newkbca"
-    ]
-  },
-  {
-    "name": "tb_img_newkbca_lv3_icon_3",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_img_newkbca_lv3_icon_3.webp",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "lv3",
-      "img",
-      "icon",
-      "action",
-      "user",
-      "3",
-      "newkbca"
-    ]
-  },
-  {
-    "name": "tb_mobile_id_foreign_domestic_residence_masking_0",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_mobile_id_foreign_domestic_residence_masking_0.webp",
+    "name": "tb_ic-device",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-device.svg",
     "category": "security",
     "categoryName": "보안 & 인증",
     "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "domestresidence",
-      "masking",
-      "0",
-      "security",
-      "id",
-      "foreign",
-      "mobile"
-    ]
-  },
-  {
-    "name": "tb_mobile_id_foreign_domestic_residence_masking_1",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_mobile_id_foreign_domestic_residence_masking_1.webp",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "domestresidence",
-      "masking",
-      "security",
-      "id",
-      "foreign",
-      "1",
-      "mobile"
-    ]
-  },
-  {
-    "name": "tb_mobile_id_foreign_domestic_residence_masking_2",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_mobile_id_foreign_domestic_residence_masking_2.webp",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "2",
-      "domestresidence",
-      "masking",
-      "security",
-      "id",
-      "foreign",
-      "mobile"
-    ]
-  },
-  {
-    "name": "tb_mobile_id_foreign_domestic_residence_masking_3",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_mobile_id_foreign_domestic_residence_masking_3.webp",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "domestresidence",
-      "masking",
-      "security",
-      "id",
-      "foreign",
-      "mobile",
-      "3"
-    ]
-  },
-  {
-    "name": "tb_mobile_id_foreign_domestic_residence_masking_4",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_mobile_id_foreign_domestic_residence_masking_4.webp",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "domestresidence",
-      "masking",
-      "security",
-      "4",
-      "id",
-      "foreign",
-      "mobile"
-    ]
-  },
-  {
-    "name": "tb_mobile_id_foreign_domestic_resident_type_title",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_mobile_id_foreign_domestic_resident_type_title.webp",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "type",
-      "title",
-      "security",
-      "id",
-      "domestresident",
-      "foreign",
-      "mobile"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_draw",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_draw.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "draw",
-      "icon",
-      "action",
-      "user",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_draw_disable",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_draw_disable.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "draw",
-      "disable",
-      "icon",
-      "action",
-      "user",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_draw_off",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_draw_off.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "draw",
-      "icon",
-      "action",
-      "user",
-      "rsup",
-      "m",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_draw_off_disable",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_draw_off_disable.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "draw",
-      "disable",
-      "icon",
-      "action",
-      "user",
-      "rsup",
-      "m",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_draw_off_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_draw_off_press.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "draw",
-      "icon",
-      "press",
-      "action",
-      "user",
-      "rsup",
-      "m",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_draw_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_draw_press.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "draw",
-      "icon",
-      "press",
-      "action",
-      "user",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_eraser",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_eraser.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "eraser",
-      "icon",
-      "action",
-      "user",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_eraser_disable",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_eraser_disable.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "eraser",
-      "disable",
-      "icon",
-      "action",
-      "user",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_m_icon_eraser_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_m_icon_eraser_press.png",
-    "category": "action",
-    "categoryName": "액션 & 컨트롤",
-    "intent": "user_action_control",
-    "suggestedComponent": "<md-icon-button>, <md-button>",
-    "description": "추가/삭제, 검색, 필터, 복사, 다운로드, 재생 등 사용자 기능 조작",
-    "tags": [
-      "eraser",
-      "icon",
-      "press",
-      "action",
-      "user",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_close",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_close.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "icon",
-      "close",
-      "nftf",
-      "navigation",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_close_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_close_press.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
-    "tags": [
-      "icon",
-      "close",
-      "press",
-      "nftf",
-      "navigation",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_flash_off",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_flash_off.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "flash",
-      "security",
-      "icon",
-      "nftf",
-      "rsup",
-      "m",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_flash_off_disable",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_flash_off_disable.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "flash",
-      "security",
-      "icon",
-      "nftf",
-      "disable",
-      "rsup",
-      "m",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_flash_off_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_flash_off_press.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "flash",
-      "security",
-      "icon",
-      "press",
-      "nftf",
-      "rsup",
-      "m",
-      "off"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_flash_on",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_flash_on.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
-    "tags": [
-      "flash",
-      "security",
-      "icon",
-      "nftf",
-      "on",
-      "rsup",
-      "m"
-    ]
-  },
-  {
-    "name": "tb_rsup_nftf_m_icon_large_record",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_large_record.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "suggestedComponent": "<md-card>",
+    "description": "로그인 허용 기기 관리 및 이중인증 아이콘",
     "tags": [
       "security",
-      "icon",
-      "nftf",
-      "large",
-      "record",
-      "rsup",
-      "m"
+      "device",
+      "session",
+      "2fa"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_large_record_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_large_record_press.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "name": "tb_ic-call",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-call.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>, <md-list-item>",
+    "description": "토스뱅크 24시간 고객센터 전화상담 아이콘",
     "tags": [
-      "security",
-      "icon",
-      "press",
-      "nftf",
-      "large",
-      "record",
-      "rsup",
-      "m"
+      "support",
+      "call",
+      "phone",
+      "counsel",
+      "customer",
+      "tossbank"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_large_stop",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_large_stop.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "name": "tb_ic-chat",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-chat.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "실시간 1:1 챗봇 상담 및 문의하기 아이콘",
     "tags": [
-      "stop",
-      "security",
-      "icon",
-      "nftf",
-      "large",
-      "rsup",
-      "m"
+      "support",
+      "chat",
+      "message",
+      "bot",
+      "consultation"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_large_stop_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_large_stop_press.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "name": "tb_ic-help",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-help.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "자주 묻는 질문 FAQ 및 도움말 안내 아이콘",
     "tags": [
-      "stop",
-      "security",
-      "icon",
-      "press",
-      "nftf",
-      "large",
-      "rsup",
-      "m"
+      "support",
+      "help",
+      "question",
+      "faq",
+      "info"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_recording",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_recording.png",
-    "category": "security",
-    "categoryName": "보안 & 인증",
-    "intent": "security_identity_verification",
-    "suggestedComponent": "<md-dialog>, <md-list-item>, Form",
-    "description": "생체인증, OTP, 비대면 신분증 확인 및 개인정보 보안",
+    "name": "tb_ic-notice",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-notice.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-banner>",
+    "description": "토스뱅크 공식 공지사항 및 업데이트 안내 아이콘",
     "tags": [
-      "recording",
-      "security",
-      "icon",
-      "nftf",
-      "rsup",
-      "m"
+      "support",
+      "notice",
+      "announcement",
+      "news"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_turn",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_turn.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "name": "tb_ic-bell",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-bell.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "실시간 입출금 및 금융 혜택 푸시 알림 아이콘",
     "tags": [
-      "icon",
-      "nftf",
-      "navigation",
-      "rsup",
-      "turn",
-      "m"
+      "support",
+      "bell",
+      "notification",
+      "alarm",
+      "push"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_turn_dis",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_turn_dis.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "name": "tb_ic-bell-off",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-bell-off.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "야간 알림 수신 거부 및 방해금지 아이콘",
     "tags": [
-      "dis",
-      "icon",
-      "nftf",
-      "navigation",
-      "rsup",
-      "turn",
-      "m"
+      "support",
+      "mute",
+      "silent",
+      "bell-off"
     ]
   },
   {
-    "name": "tb_rsup_nftf_m_icon_turn_press",
-    "type": "png",
-    "url": "/images/tb-icons/png/tb_rsup_nftf_m_icon_turn_press.png",
-    "category": "navigation",
-    "categoryName": "네비게이션 & 제어",
-    "intent": "navigation_container_control",
-    "suggestedComponent": "<md-icon-button>, <md-tabs>",
-    "description": "화면 이동, 메뉴 열기/닫기, 페이지 전환 및 폴딩 제어",
+    "name": "tb_ic-feedback",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-feedback.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-button>",
+    "description": "고객 의견 제안 및 서비스 피드백 작성 아이콘",
     "tags": [
-      "icon",
-      "press",
-      "nftf",
-      "navigation",
-      "rsup",
-      "turn",
-      "m"
+      "support",
+      "feedback",
+      "review",
+      "suggest"
     ]
   },
   {
-    "name": "tb_stalk_icon_default",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_stalk_icon_default.webp",
+    "name": "tb_ic-terms",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-terms.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-list-item>",
+    "description": "금융 거래 이용약관 및 필수 규정 확인 아이콘",
+    "tags": [
+      "support",
+      "terms",
+      "policy",
+      "agreement"
+    ]
+  },
+  {
+    "name": "tb_ic-guide",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-guide.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-card>",
+    "description": "처음 쓰는 사용자를 위한 금융 가이드북 아이콘",
+    "tags": [
+      "support",
+      "guide",
+      "book",
+      "tutorial"
+    ]
+  },
+  {
+    "name": "tb_ic-mail",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-mail.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "이메일 문의 및 서류 발송 아이콘",
+    "tags": [
+      "support",
+      "mail",
+      "email",
+      "inbox"
+    ]
+  },
+  {
+    "name": "tb_ic-inquiry",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-inquiry.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-list-item>",
+    "description": "1:1 이메일 맞춤 문의 내역 확인 아이콘",
+    "tags": [
+      "support",
+      "inquiry",
+      "ticket",
+      "qna"
+    ]
+  },
+  {
+    "name": "tb_ic-survey",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-survey.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-card>",
+    "description": "고객 만족도 설문조사 참여 아이콘",
+    "tags": [
+      "support",
+      "survey",
+      "poll",
+      "satisfaction"
+    ]
+  },
+  {
+    "name": "tb_ic-branch",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-branch.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-card>",
+    "description": "제휴 금융기관 영업점 찾기 아이콘",
+    "tags": [
+      "support",
+      "branch",
+      "office",
+      "center"
+    ]
+  },
+  {
+    "name": "tb_ic-accessibility",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-accessibility.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-chip>",
+    "description": "시각장애인 큰글씨 및 웹 접근성 모드 아이콘",
+    "tags": [
+      "support",
+      "accessibility",
+      "a11y",
+      "large-text"
+    ]
+  },
+  {
+    "name": "tb_ic-hearing",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-hearing.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-chip>",
+    "description": "청각장애인 수어 상담 연결 아이콘",
+    "tags": [
+      "support",
+      "hearing",
+      "sign-language",
+      "deaf"
+    ]
+  },
+  {
+    "name": "tb_ic-document",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-document.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-list-item>",
+    "description": "금융 거래 확인서류 원본 보기 아이콘",
+    "tags": [
+      "support",
+      "document",
+      "pdf",
+      "paper"
+    ]
+  },
+  {
+    "name": "tb_ic-headphone",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-headphone.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "원격 금융 상담 오디오 연결 아이콘",
+    "tags": [
+      "support",
+      "headphone",
+      "audio",
+      "call"
+    ]
+  },
+  {
+    "name": "tb_ic-speaker",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-speaker.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "음성 안내 보이스 뱅킹 지원 아이콘",
+    "tags": [
+      "support",
+      "speaker",
+      "voice",
+      "sound"
+    ]
+  },
+  {
+    "name": "tb_ic-info-circle",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-info-circle.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "상세 정보 툴팁 안내 아이콘",
+    "tags": [
+      "support",
+      "info",
+      "tooltip",
+      "detail"
+    ]
+  },
+  {
+    "name": "tb_ic-question-circle",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-question-circle.svg",
+    "category": "support",
+    "categoryName": "고객지원 & 피드백",
+    "intent": "support_feedback_notice",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "궁금한 점 물어보기 도움말 아이콘",
+    "tags": [
+      "support",
+      "question",
+      "help",
+      "circle"
+    ]
+  },
+  {
+    "name": "tb_ic-share",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-share.svg",
     "category": "social",
     "categoryName": "공유 & 외부연결",
     "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "계좌번호 및 이벤트 혜택 SNS 공유 아이콘",
     "tags": [
-      "default",
-      "stalk",
-      "icon",
-      "social"
+      "social",
+      "share",
+      "sns",
+      "export"
     ]
   },
   {
-    "name": "tb_stalk_icon_default_dark",
-    "type": "webp",
-    "url": "/images/tb-icons/png/tb_stalk_icon_default_dark.webp",
+    "name": "tb_ic-link",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-link.svg",
     "category": "social",
     "categoryName": "공유 & 외부연결",
     "intent": "social_share_external",
-    "suggestedComponent": "<md-icon-button>, <md-chip>",
-    "description": "SNS 공유, 메시지 공유, 외부 공식 웹페이지 링크 연결",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "송금 링크 생성 및 외부 웹링크 연결 아이콘",
     "tags": [
-      "stalk",
-      "default",
-      "icon",
-      "dark",
-      "social"
+      "social",
+      "link",
+      "url",
+      "web"
+    ]
+  },
+  {
+    "name": "tb_ic-outlink",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-outlink.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "외부 웹사이트 새창 열기 아이콘",
+    "tags": [
+      "social",
+      "external",
+      "outlink",
+      "new-tab"
+    ]
+  },
+  {
+    "name": "tb_ic-qr",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-qr.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-card>",
+    "description": "토스페이 및 오프라인 QR 결제 아이콘",
+    "tags": [
+      "social",
+      "qr",
+      "barcode",
+      "scan"
+    ]
+  },
+  {
+    "name": "tb_ic-message",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-message.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-button>",
+    "description": "송금 완료 축하 메시지 카드 발송 아이콘",
+    "tags": [
+      "social",
+      "message",
+      "letter",
+      "envelope"
+    ]
+  },
+  {
+    "name": "tb_ic-group",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-group.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-card>",
+    "description": "토스뱅크 모임통장 모임원 관리 대표 아이콘",
+    "tags": [
+      "social",
+      "group",
+      "members",
+      "community",
+      "moim",
+      "tossbank"
+    ]
+  },
+  {
+    "name": "tb_ic-user",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-user.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "내 프로필 및 본인 회원정보 관리 아이콘",
+    "tags": [
+      "social",
+      "user",
+      "profile",
+      "my"
+    ]
+  },
+  {
+    "name": "tb_ic-contact",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-contact.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-list-item>",
+    "description": "휴대폰 연락처 동기화 및 연락처 송금 아이콘",
+    "tags": [
+      "social",
+      "contact",
+      "addressbook",
+      "friends"
+    ]
+  },
+  {
+    "name": "tb_ic-invite",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-invite.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-button>",
+    "description": "친구 초대하고 함께 혜택받기 아이콘",
+    "tags": [
+      "social",
+      "invite",
+      "referral",
+      "friend"
+    ]
+  },
+  {
+    "name": "tb_ic-toss-brand",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-toss-brand.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "토스 공식 브랜드 심볼 연동 아이콘",
+    "tags": [
+      "social",
+      "toss",
+      "brand",
+      "symbol"
+    ]
+  },
+  {
+    "name": "tb_ic-instagram",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-instagram.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "토스 공식 인스타그램 채널 바로가기",
+    "tags": [
+      "social",
+      "instagram",
+      "sns",
+      "channel"
+    ]
+  },
+  {
+    "name": "tb_ic-youtube",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-youtube.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "토스 머니그라피 및 공식 유튜브 채널",
+    "tags": [
+      "social",
+      "youtube",
+      "video",
+      "channel"
+    ]
+  },
+  {
+    "name": "tb_ic-blog",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-blog.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "토스 피드 및 아티클 블로그 바로가기",
+    "tags": [
+      "social",
+      "blog",
+      "article",
+      "feed"
+    ]
+  },
+  {
+    "name": "tb_ic-send",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-send.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-button>",
+    "description": "다이렉트 메시지 전송 아이콘",
+    "tags": [
+      "social",
+      "send",
+      "dm",
+      "paper-plane"
+    ]
+  },
+  {
+    "name": "tb_ic-connection",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-connection.svg",
+    "category": "social",
+    "categoryName": "공유 & 외부연결",
+    "intent": "social_share_external",
+    "suggestedComponent": "<md-chip>",
+    "description": "오픈뱅킹 금융망 연동 상태 아이콘",
+    "tags": [
+      "social",
+      "connection",
+      "openbanking",
+      "network"
+    ]
+  },
+  {
+    "name": "tb_ic-heart",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-heart.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-icon-button>, <md-chip>",
+    "description": "좋아요 및 응원하기 하트 리액션 아이콘",
+    "tags": [
+      "emoji",
+      "heart",
+      "like",
+      "love",
+      "reaction"
+    ]
+  },
+  {
+    "name": "tb_ic-star",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-star.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-badge>",
+    "description": "별점 평가 및 즐겨찾기 대표 별 아이콘",
+    "tags": [
+      "emoji",
+      "star",
+      "rating",
+      "favorite"
+    ]
+  },
+  {
+    "name": "tb_ic-party",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-party.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-card>",
+    "description": "송금 완료 및 미션 성공 축하 파티 폭죽 아이콘",
+    "tags": [
+      "emoji",
+      "party",
+      "celebrate",
+      "congrats",
+      "confetti"
+    ]
+  },
+  {
+    "name": "tb_ic-trophy",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-trophy.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-card>",
+    "description": "금융 챌린지 1등 달성 및 우승 트로피 아이콘",
+    "tags": [
+      "emoji",
+      "trophy",
+      "winner",
+      "achievement",
+      "first"
+    ]
+  },
+  {
+    "name": "tb_ic-fire",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-fire.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-badge>",
+    "description": "실시간 가장 인기 있는 금융 상품 불꽃 배지",
+    "tags": [
+      "emoji",
+      "fire",
+      "hot",
+      "popular",
+      "trending"
+    ]
+  },
+  {
+    "name": "tb_ic-sparkles",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-sparkles.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-chip>",
+    "description": "새로운 기능 신규 출시 및 반짝이는 혜택 배지",
+    "tags": [
+      "emoji",
+      "sparkles",
+      "new",
+      "shine",
+      "special"
+    ]
+  },
+  {
+    "name": "tb_ic-thumbs-up",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-thumbs-up.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "최고예요 및 추천하기 따봉 리액션 아이콘",
+    "tags": [
+      "emoji",
+      "thumbs-up",
+      "good",
+      "recommend"
+    ]
+  },
+  {
+    "name": "tb_ic-clap",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-clap.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "목표 달성 박수갈채 리액션 아이콘",
+    "tags": [
+      "emoji",
+      "clap",
+      "applause",
+      "cheer"
+    ]
+  },
+  {
+    "name": "tb_ic-gift",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-gift.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-card>",
+    "description": "친구 추천 선물상자 및 랜덤 캐시백 선물 아이콘",
+    "tags": [
+      "emoji",
+      "gift",
+      "present",
+      "reward",
+      "box"
+    ]
+  },
+  {
+    "name": "tb_ic-medal",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-medal.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-badge>",
+    "description": "신용점수 올리기 성공 메달 배지 아이콘",
+    "tags": [
+      "emoji",
+      "medal",
+      "award",
+      "honor"
+    ]
+  },
+  {
+    "name": "tb_ic-crown",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-crown.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-badge>",
+    "description": "최고 등급 마스터 회원 왕관 배지 아이콘",
+    "tags": [
+      "emoji",
+      "crown",
+      "king",
+      "vip"
+    ]
+  },
+  {
+    "name": "tb_ic-target",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-target.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-card>",
+    "description": "모으기 목표 100% 명중 달성 과녁 아이콘",
+    "tags": [
+      "emoji",
+      "target",
+      "goal",
+      "bullseye"
+    ]
+  },
+  {
+    "name": "tb_ic-smile",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-smile.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-icon-button>",
+    "description": "기분 좋은 하루 미소 짓는 스마일 이모지",
+    "tags": [
+      "emoji",
+      "smile",
+      "happy",
+      "face"
+    ]
+  },
+  {
+    "name": "tb_ic-hundred",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-hundred.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-badge>",
+    "description": "완벽한 100점 달성 인증 배지 아이콘",
+    "tags": [
+      "emoji",
+      "hundred",
+      "perfect",
+      "score"
+    ]
+  },
+  {
+    "name": "tb_ic-rainbow",
+    "type": "svg",
+    "url": "/images/tb-icons/svg/tb_ic-rainbow.svg",
+    "category": "emoji",
+    "categoryName": "리액션 & 배지",
+    "intent": "emotion_reward_badge",
+    "suggestedComponent": "<md-chip>",
+    "description": "희망찬 내일 무지개 스페셜 리액션 아이콘",
+    "tags": [
+      "emoji",
+      "rainbow",
+      "hope",
+      "colorful"
     ]
   }
 ]

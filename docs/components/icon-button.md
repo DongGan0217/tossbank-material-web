@@ -57,11 +57,11 @@ people take supplementary actions with a single tap.
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-ib-icon">아이콘 선택 (Icon):</label>
         <select id="kb-ib-icon" class="kb-control-select" onchange="updateIbDemo()">
-          <option value="kb_ic-arrow-left" selected>arrow-left (뒤로가기)</option>
-          <option value="kb_ic-close">close (닫기)</option>
-          <option value="kb_ic-call">call (고객센터 통화)</option>
-          <option value="kb_ic-add">add (추가하기)</option>
-          <option value="kb_ic-chevron-right">chevron-right (다음)</option>
+          <option value="tb_ic-arrow-left" selected>arrow-left (뒤로가기)</option>
+          <option value="tb_ic-close">close (닫기)</option>
+          <option value="tb_ic-call">call (고객센터 통화)</option>
+          <option value="tb_ic-add">add (추가하기)</option>
+          <option value="tb_ic-chevron-right">chevron-right (다음)</option>
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
@@ -77,13 +77,13 @@ people take supplementary actions with a single tap.
     </div>
     <div class="kb-playground-canvas" id="kb-ib-canvas" style="min-height: 140px; display: flex; align-items: center; justify-content: center;">
       <button id="kb-ib-render" type="button" style="width: 48px; height: 48px; border-radius: 50%; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease;">
-        <img id="kb-ib-render-img" src="/../images/kb-icons/svg/kb_ic-arrow-left.svg" width="24" height="24" alt="icon" />
+        <img id="kb-ib-render-img" src="/../images/tb-icons/svg/tb_ic-arrow-left.svg" width="24" height="24" alt="icon" />
       </button>
     </div>
   </div>
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-ib-code">&lt;md-icon-button&gt;
-  &lt;md-icon&gt;&lt;img src="/../images/kb-icons/svg/kb_ic-arrow-left.svg" /&gt;&lt;/md-icon&gt;
+  &lt;md-icon&gt;&lt;img src="/../images/tb-icons/svg/tb_ic-arrow-left.svg" /&gt;&lt;/md-icon&gt;
 &lt;/md-icon-button&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-ib-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
@@ -99,7 +99,7 @@ people take supplementary actions with a single tap.
     const img = document.getElementById('kb-ib-render-img');
     const code = document.getElementById('kb-ib-code');
 
-    img.src = '/../images/kb-icons/svg/' + iconName + '.svg';
+    img.src = '/../images/tb-icons/svg/' + iconName + '.svg';
     btn.disabled = disabled;
     btn.style.opacity = disabled ? '0.38' : '1';
     btn.style.cursor = disabled ? 'not-allowed' : 'pointer';
@@ -123,7 +123,7 @@ people take supplementary actions with a single tap.
       tag = 'md-outlined-icon-button';
     }
 
-    code.innerText = `<${tag} ${isToggle ? 'toggle selected' : ''} ${disabled ? 'disabled' : ''}>\n  <md-icon><img src="/../images/kb-icons/svg/${iconName}.svg" /></md-icon>\n</${tag}>`;
+    code.innerText = `<${tag} ${isToggle ? 'toggle selected' : ''} ${disabled ? 'disabled' : ''}>\n  <md-icon><img src="/../images/tb-icons/svg/${iconName}.svg" /></md-icon>\n</${tag}>`;
   }
 </script>
 

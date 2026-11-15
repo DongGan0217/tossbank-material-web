@@ -4,6 +4,29 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+/* Toss Product Sans Fonts (Extracted from Toss APK) */
+@font-face {
+  font-family: 'Toss Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/toss_product_sans_rg.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Toss Product Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/toss_product_sans_md.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Toss Product Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/toss_product_sans_bd.otf') format('opentype');
+}
+
 /* latin */
 @font-face {
   font-family: 'Google Sans';
@@ -170,10 +193,10 @@ html[data-theme="dark"] {
 }
 
 :root {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-  --md-ref-typeface-plain: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-  --md-ref-typeface-brand: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-  letter-spacing: -0.03em;
+  font-family: 'Toss Product Sans', 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --md-ref-typeface-plain: 'Toss Product Sans', 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --md-ref-typeface-brand: 'Toss Product Sans', 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  letter-spacing: -0.02em;
   background-color: var(--md-sys-color-background, #ffffff);
   color: var(--md-sys-color-on-surface, #191f28);
   transition: background-color 0.2s ease, color 0.2s ease;

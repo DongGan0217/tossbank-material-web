@@ -73,7 +73,7 @@ tags: [asset]
     </div>
     <div class="kb-lightbox-details">
       <div class="kb-lightbox-title" id="kb-lightbox-title">Asset Title</div>
-      <div class="kb-lightbox-path" id="kb-lightbox-path">/../images/kb-assets/...</div>
+      <div class="kb-lightbox-path" id="kb-lightbox-path">/../images/tb-assets/...</div>
       <div id="kb-lightbox-ai-info" style="margin-block: 10px; font-size: 13px; color: #4e5968; background: var(--md-sys-color-surface-container, #f2f4f6); padding: 10px 14px; border-radius: 10px; text-align: left; line-height: 1.6;">
         <div><strong>🤖 AI 추천 의도(Intent):</strong> <span id="kb-lightbox-intent" style="color: #2563eb; font-weight: 600;">-</span></div>
         <div><strong>🧩 권장 컴포넌트:</strong> <code id="kb-lightbox-comp" style="background: rgba(0,0,0,0.06); padding: 2px 6px; border-radius: 4px;">-</code></div>
@@ -108,11 +108,11 @@ tags: [asset]
     } catch (e) {
       console.warn('Could not fetch JSON catalog, using fallback heroes', e);
       allAssets = [
-        { id: 'hero-button', name: 'Button Hero Banner', filename: 'hero_button.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/kb-assets/heroes/hero_button.svg', tags: ['hero', 'button'] },
-        { id: 'hero-dialog', name: 'Dialog Hero Banner', filename: 'hero_dialog.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/kb-assets/heroes/hero_dialog.svg', tags: ['hero', 'dialog'] },
-        { id: 'hero-fab', name: 'FAB Hero Banner', filename: 'hero_fab.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/kb-assets/heroes/hero_fab.svg', tags: ['hero', 'fab'] },
-        { id: 'hero-slider', name: 'Slider Hero Banner', filename: 'hero_slider.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/kb-assets/heroes/hero_slider.svg', tags: ['hero', 'slider'] },
-        { id: 'hero-tabs', name: 'Tabs Hero Banner', filename: 'hero_tabs.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/kb-assets/heroes/hero_tabs.svg', tags: ['hero', 'tabs'] },
+        { id: 'hero-button', name: 'Button Hero Banner', filename: 'hero_button.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/tb-assets/heroes/hero_button.svg', tags: ['hero', 'button'] },
+        { id: 'hero-dialog', name: 'Dialog Hero Banner', filename: 'hero_dialog.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/tb-assets/heroes/hero_dialog.svg', tags: ['hero', 'dialog'] },
+        { id: 'hero-fab', name: 'FAB Hero Banner', filename: 'hero_fab.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/tb-assets/heroes/hero_fab.svg', tags: ['hero', 'fab'] },
+        { id: 'hero-slider', name: 'Slider Hero Banner', filename: 'hero_slider.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/tb-assets/heroes/hero_slider.svg', tags: ['hero', 'slider'] },
+        { id: 'hero-tabs', name: 'Tabs Hero Banner', filename: 'hero_tabs.svg', category: 'hero', categoryName: '히어로 배너', format: 'SVG', url: '/../images/tb-assets/heroes/hero_tabs.svg', tags: ['hero', 'tabs'] },
       ];
     }
     

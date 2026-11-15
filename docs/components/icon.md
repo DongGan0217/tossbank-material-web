@@ -50,7 +50,7 @@ order: 10
     })
     .catch(err => {
       console.warn('Fallback to kb-icons:', err);
-      fetch('/images/kb-icons/icons.json')
+      fetch('/images/tb-icons/icons.json')
         .then(res => res.json())
         .then(data => {
           allIcons = data;

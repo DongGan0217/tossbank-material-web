@@ -16,7 +16,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 1. Button -->
     <a href="/components/button/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_button.svg" alt="Button Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_button.svg" alt="Button Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Button <span class="tb-overview-badge kb-overview-badge">버튼</span></div>
@@ -26,7 +26,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 2. Checkbox -->
     <a href="/components/checkbox/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_checkbox.svg" alt="Checkbox Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_checkbox.svg" alt="Checkbox Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Checkbox <span class="tb-overview-badge kb-overview-badge">체크박스</span></div>
@@ -36,7 +36,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 3. Chips -->
     <a href="/components/chips/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_chips.svg" alt="Chips Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_chips.svg" alt="Chips Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Chips <span class="tb-overview-badge kb-overview-badge">칩</span></div>
@@ -46,7 +46,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 4. Dialog -->
     <a href="/components/dialog/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_dialog.svg" alt="Dialog Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_dialog.svg" alt="Dialog Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Dialog <span class="tb-overview-badge kb-overview-badge">다이얼로그</span></div>
@@ -56,7 +56,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 5. Divider -->
     <a href="/components/divider/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_divider.svg" alt="Divider Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_divider.svg" alt="Divider Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Divider <span class="tb-overview-badge kb-overview-badge">구분선</span></div>
@@ -66,7 +66,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 6. Elevation -->
     <a href="/components/elevation/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_elevation.svg" alt="Elevation Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_elevation.svg" alt="Elevation Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Elevation <span class="tb-overview-badge kb-overview-badge">엘리베이션</span></div>
@@ -76,7 +76,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 7. FAB -->
     <a href="/components/fab/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_fab.svg" alt="FAB Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_fab.svg" alt="FAB Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">FAB <span class="tb-overview-badge kb-overview-badge">플로팅 버튼</span></div>
@@ -86,7 +86,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 8. Focus Ring -->
     <a href="/components/focus-ring/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_focus.svg" alt="Focus Ring Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_focus.svg" alt="Focus Ring Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Focus Ring <span class="tb-overview-badge kb-overview-badge">포커스 링</span></div>
@@ -96,7 +96,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 9. Icon -->
     <a href="/components/icon/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_icon.svg" alt="Icon Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_icon.svg" alt="Icon Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Icon <span class="tb-overview-badge kb-overview-badge">아이콘</span></div>
@@ -106,7 +106,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 10. Icon Button -->
     <a href="/components/icon-button/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_iconbutton.svg" alt="Icon Button Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_iconbutton.svg" alt="Icon Button Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Icon Button <span class="tb-overview-badge kb-overview-badge">아이콘 버튼</span></div>
@@ -116,7 +116,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 11. List -->
     <a href="/components/list/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_list.svg" alt="List Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_list.svg" alt="List Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">List <span class="tb-overview-badge kb-overview-badge">리스트</span></div>
@@ -126,7 +126,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 12. Menu -->
     <a href="/components/menu/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_menu.svg" alt="Menu Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_menu.svg" alt="Menu Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Menu <span class="tb-overview-badge kb-overview-badge">메뉴</span></div>
@@ -136,7 +136,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 13. Progress -->
     <a href="/components/progress/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_progress.svg" alt="Progress Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_progress.svg" alt="Progress Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Progress <span class="tb-overview-badge kb-overview-badge">인디케이터</span></div>
@@ -146,7 +146,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 14. Radio -->
     <a href="/components/radio/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_radio.svg" alt="Radio Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_radio.svg" alt="Radio Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Radio <span class="tb-overview-badge kb-overview-badge">라디오</span></div>
@@ -156,7 +156,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 15. Ripple -->
     <a href="/components/ripple/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_ripple.svg" alt="Ripple Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_ripple.svg" alt="Ripple Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Ripple <span class="tb-overview-badge kb-overview-badge">리플</span></div>
@@ -166,7 +166,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 16. Select -->
     <a href="/components/select/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_select.svg" alt="Select Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_select.svg" alt="Select Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Select <span class="tb-overview-badge kb-overview-badge">셀렉트</span></div>
@@ -176,7 +176,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 17. Slider -->
     <a href="/components/slider/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_slider.svg" alt="Slider Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_slider.svg" alt="Slider Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Slider <span class="tb-overview-badge kb-overview-badge">슬라이더</span></div>
@@ -186,7 +186,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 18. Switch -->
     <a href="/components/switch/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_switch.svg" alt="Switch Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_switch.svg" alt="Switch Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Switch <span class="tb-overview-badge kb-overview-badge">스위치</span></div>
@@ -196,7 +196,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 19. Tabs -->
     <a href="/components/tabs/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_tabs.svg" alt="Tabs Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_tabs.svg" alt="Tabs Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Tabs <span class="tb-overview-badge kb-overview-badge">탭</span></div>
@@ -206,7 +206,7 @@ Google Material Design 3 (M3) 공식 리포지토리 원본을 하드포크하�
     <!-- 20. Text Field -->
     <a href="/components/text-field/" class="tb-overview-card kb-overview-card">
       <div class="tb-overview-hero-wrap kb-overview-hero-wrap">
-        <img src="/images/kb-assets/heroes/hero_textfield.svg" alt="Text Field Hero" loading="lazy" />
+        <img src="/images/tb-assets/heroes/hero_textfield.svg" alt="Text Field Hero" loading="lazy" />
       </div>
       <div class="tb-overview-body kb-overview-body">
         <div class="tb-overview-title kb-overview-title">Text Field <span class="tb-overview-badge kb-overview-badge">텍스트 필드</span></div>

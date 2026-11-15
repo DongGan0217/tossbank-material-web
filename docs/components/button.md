@@ -91,14 +91,14 @@ payment'"
     <div class="kb-playground-canvas" id="kb-btn-canvas">
       <!-- Live Render Target -->
       <button id="kb-btn-render" type="button" style="height: 52px; background: #FFE100; border: none; border-radius: 16px; padding: 0 24px; font-weight: 700; font-size: 16px; color: #191F28; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.2s ease;">
-        <img id="kb-btn-render-icon" src="/images/kb-icons/svg/kb_ic-arrow-right.svg" width="18" height="18" alt="icon" />
+        <img id="kb-btn-render-icon" src="/images/tb-icons/svg/tb_ic-arrow-right.svg" width="18" height="18" alt="icon" />
         <span id="kb-btn-render-text">토스뱅크 이체하기</span>
       </button>
     </div>
   </div>
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-btn-code">&lt;md-filled-button style="--md-filled-button-container-height: 52px; --md-filled-button-container-shape: 16px;"&gt;
-  &lt;md-icon slot="icon"&gt;&lt;img src="/images/kb-icons/svg/kb_ic-arrow-right.svg" /&gt;&lt;/md-icon&gt;
+  &lt;md-icon slot="icon"&gt;&lt;img src="/images/tb-icons/svg/tb_ic-arrow-right.svg" /&gt;&lt;/md-icon&gt;
   토스뱅크 이체하기
 &lt;/md-filled-button&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-btn-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
@@ -166,7 +166,7 @@ payment'"
       btn.style.boxShadow = 'none';
     }
 
-    const iconSnippet = hasIcon ? '\n  <md-icon slot="icon"><img src="/images/kb-icons/svg/kb_ic-arrow-right.svg" /></md-icon>' : '';
+    const iconSnippet = hasIcon ? '\n  <md-icon slot="icon"><img src="/images/tb-icons/svg/tb_ic-arrow-right.svg" /></md-icon>' : '';
     const disSnippet = disabled ? ' disabled' : '';
     const codeStr = `<${tagName} style="--md-${variant}-button-container-height: ${size}px; --md-${variant}-button-container-shape: ${size==='52'?'16px':'20px'};"${disSnippet}>${iconSnippet}\n  ${label}\n</${tagName}>`;
     code.innerText = codeStr;
