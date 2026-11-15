@@ -11,5 +11,5 @@
   <circle cx="200" cy="80" r="32" fill="#0064FF" filter="drop-shadow(0 6px 16px rgba(0,100,255,0.28))"/>
   <rect x="188" y="70" width="24" height="20" rx="4" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
   <circle cx="300" cy="80" r="32" fill="#FFFFFF" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.06))"/>
-  <path d="M292 76 L300 84 L310 74" stroke="#FFE100" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M292 76 L300 84 L310 74" stroke="#3182F6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
 </svg>

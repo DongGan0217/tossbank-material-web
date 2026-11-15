@@ -38,80 +38,80 @@ selected menu item above the menu.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Select (드롭다운 셀렉트) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">출금 계좌 및 금융 상품 선택 드롭다운을 실시간 조작해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-sel-variant">셀렉트 형태 (Variant):</label>
-        <select id="kb-sel-variant" class="kb-control-select" onchange="updateSelectDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-sel-variant">셀렉트 형태 (Variant):</label>
+        <select id="tb-sel-variant" class="tb-control-select" onchange="updateSelectDemo()">
           <option value="outlined" selected>Outlined (테두리 아웃라인형)</option>
           <option value="filled">Filled (서피스 배경형)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-sel-item">기본 선택 상품 (Product):</label>
-        <select id="kb-sel-item" class="kb-control-select" onchange="updateSelectDemo()">
-          <option value="입출금통장 (3333-01-1234567)" selected>입출금통장 (3333-01-1234567)</option>
-          <option value="토스뱅크 26주적금">토스뱅크 26주적금</option>
-          <option value="비상금대출">비상금대출</option>
-          <option value="모임통장 (3333-02-9876543)">모임통장 (3333-02-9876543)</option>
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-sel-item">기본 선택 상품 (Product):</label>
+        <select id="tb-sel-item" class="tb-control-select" onchange="updateSelectDemo()">
+          <option value="토스뱅크 통장 (1000-01-123456)" selected>토스뱅크 통장 (1000-01-123456)</option>
+          <option value="토스뱅크 굴비 적금">토스뱅크 굴비 적금</option>
+          <option value="토스뱅크 비상금대출">토스뱅크 비상금대출</option>
+          <option value="토스뱅크 모임통장 (1000-02-987654)">토스뱅크 모임통장 (1000-02-987654)</option>
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-sel-disabled" type="checkbox" onchange="updateSelectDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-sel-disabled" type="checkbox" onchange="updateSelectDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-sel-canvas" style="min-height: 160px; display: flex; justify-content: center; align-items: center; padding: 24px;">
-      <div id="kb-sel-render-box" style="width: 100%; max-width: 360px; border: 1.5px solid #D1D6DB; border-radius: 14px; background: #FFFFFF; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
+    <div class="tb-playground-canvas" id="tb-sel-canvas" style="min-height: 160px; display: flex; justify-content: center; align-items: center; padding: 24px;">
+      <div id="tb-sel-render-box" style="width: 100%; max-width: 360px; border: 1.5px solid #0064FF; border-radius: 14px; background: #FFFFFF; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s ease;">
         <div>
           <div style="font-size: 11px; font-weight: 600; color: #8B95A1;">출금 계좌 선택</div>
-          <div id="kb-sel-render-text" style="font-size: 14px; font-weight: 700; color: #191F28; margin-top: 2px;">입출금통장 (3333-01-1234567)</div>
+          <div id="tb-sel-render-text" style="font-size: 14px; font-weight: 700; color: #191F28; margin-top: 2px;">토스뱅크 통장 (1000-01-123456)</div>
         </div>
-        <span style="font-size: 12px; color: #8B95A1;">▼</span>
+        <span style="font-size: 12px; color: #0064FF;">▼</span>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-sel-code">&lt;md-outlined-select label="출금 계좌 선택"&gt;
-  &lt;md-select-option value="1" selected&gt;입출금통장 (3333-01-1234567)&lt;/md-select-option&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-sel-code">&lt;md-outlined-select label="출금 계좌 선택" style="--md-outlined-select-outline-color: #0064FF;"&gt;
+  &lt;md-select-option value="1" selected&gt;토스뱅크 통장 (1000-01-123456)&lt;/md-select-option&gt;
 &lt;/md-outlined-select&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-sel-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-sel-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateSelectDemo() {
-    const variant = document.getElementById('kb-sel-variant').value;
-    const item = document.getElementById('kb-sel-item').value;
-    const disabled = document.getElementById('kb-sel-disabled').checked;
+    const variant = document.getElementById('tb-sel-variant').value;
+    const item = document.getElementById('tb-sel-item').value;
+    const disabled = document.getElementById('tb-sel-disabled').checked;
 
-    const box = document.getElementById('kb-sel-render-box');
-    const text = document.getElementById('kb-sel-render-text');
-    const code = document.getElementById('kb-sel-code');
+    const box = document.getElementById('tb-sel-render-box');
+    const text = document.getElementById('tb-sel-render-text');
+    const code = document.getElementById('tb-sel-code');
 
     text.innerText = item;
-    box.style.opacity = disabled ? '0.4' : '1';
+    box.style.opacity = disabled ? '0.38' : '1';
     box.style.cursor = disabled ? 'not-allowed' : 'pointer';
 
     const tag = variant === 'filled' ? 'md-filled-select' : 'md-outlined-select';
     if (variant === 'filled') {
-      box.style.background = '#F9FAFB';
+      box.style.background = '#F2F4F6';
       box.style.border = '1px solid #E5E8EB';
     } else {
       box.style.background = '#FFFFFF';
-      box.style.border = '1.5px solid #191F28';
+      box.style.border = '1.5px solid #0064FF';
     }
 
-    code.innerText = `<${tag} label="출금 계좌 선택" ${disabled ? 'disabled' : ''}>\n  <md-select-option value="prod" selected>${item}</md-select-option>\n  <md-select-option value="26week">토스뱅크 26주적금</md-select-option>\n</${tag}>`;
+    code.innerText = `<${tag} label="출금 계좌 선택" ${disabled ? 'disabled' : ''} style="--md-outlined-select-outline-color: #0064FF;">\n  <md-select-option value="prod" selected>${item}</md-select-option>\n  <md-select-option value="gulbi">토스뱅크 굴비 적금</md-select-option>\n</${tag}>`;
   }
 </script>
 

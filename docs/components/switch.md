@@ -41,60 +41,60 @@ of an item on or off.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Switch 옵션 실시간 미리보기 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">옵션을 변경하거나 직접 스위치를 클릭해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
       <div style="display: flex; flex-direction: column; gap: 12px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-switch-selected" type="checkbox" checked onchange="updateSwitchDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-switch-selected" type="checkbox" checked onchange="updateSwitchDemo()" />
           <span>선택됨 (Selected / On)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-switch-icons" type="checkbox" checked onchange="updateSwitchDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-switch-icons" type="checkbox" checked onchange="updateSwitchDemo()" />
           <span>아이콘 표시 (Icons on thumb)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-switch-disabled" type="checkbox" onchange="updateSwitchDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-switch-disabled" type="checkbox" onchange="updateSwitchDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-switch-canvas">
+    <div class="tb-playground-canvas" id="tb-switch-canvas">
       <!-- Live Render Target -->
-      <div id="kb-switch-render" style="display: flex; align-items: center; gap: 14px; cursor: pointer;" onclick="document.getElementById('kb-switch-selected').click()">
-        <div id="kb-switch-track" style="width: 56px; height: 32px; background: #FFE100; border-radius: 9999px; position: relative; transition: all 0.2s ease;">
-          <div id="kb-switch-thumb" style="width: 24px; height: 24px; background: #191F28; border-radius: 50%; position: absolute; top: 4px; left: 28px; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; color: #FFE100; font-size: 12px; font-weight: 700;">
+      <div id="tb-switch-render" style="display: flex; align-items: center; gap: 14px; cursor: pointer;" onclick="document.getElementById('tb-switch-selected').click()">
+        <div id="tb-switch-track" style="width: 56px; height: 32px; background: #0064FF; border-radius: 9999px; position: relative; transition: all 0.2s ease;">
+          <div id="tb-switch-thumb" style="width: 24px; height: 24px; background: #FFFFFF; border-radius: 50%; position: absolute; top: 4px; left: 28px; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; color: #0064FF; font-size: 12px; font-weight: 700; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
             ✓
           </div>
         </div>
-        <span id="kb-switch-state-text" style="font-weight: 700; font-size: 15px; color: #191F28;">활성화됨 (On)</span>
+        <span id="tb-switch-state-text" style="font-weight: 700; font-size: 15px; color: #191F28;">활성화됨 (On)</span>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-switch-code">&lt;md-switch selected icons aria-label="토스뱅크 서비스 설정"&gt;&lt;/md-switch&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-switch-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-switch-code">&lt;md-switch selected icons aria-label="토스뱅크 서비스 설정" style="--md-switch-selected-track-color: #0064FF;"&gt;&lt;/md-switch&gt;</pre>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-switch-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 
 <script>
   function updateSwitchDemo() {
-    const selected = document.getElementById('kb-switch-selected').checked;
-    const hasIcons = document.getElementById('kb-switch-icons').checked;
-    const disabled = document.getElementById('kb-switch-disabled').checked;
+    const selected = document.getElementById('tb-switch-selected').checked;
+    const hasIcons = document.getElementById('tb-switch-icons').checked;
+    const disabled = document.getElementById('tb-switch-disabled').checked;
 
-    const track = document.getElementById('kb-switch-track');
-    const thumb = document.getElementById('kb-switch-thumb');
-    const text = document.getElementById('kb-switch-state-text');
-    const wrap = document.getElementById('kb-switch-render');
-    const code = document.getElementById('kb-switch-code');
+    const track = document.getElementById('tb-switch-track');
+    const thumb = document.getElementById('tb-switch-thumb');
+    const text = document.getElementById('tb-switch-state-text');
+    const wrap = document.getElementById('tb-switch-render');
+    const code = document.getElementById('tb-switch-code');
 
     if (disabled) {
       wrap.style.opacity = '0.38';
@@ -105,25 +105,25 @@ of an item on or off.
     }
 
     if (selected) {
-      track.style.background = '#FFE100';
+      track.style.background = '#0064FF';
       thumb.style.left = '28px';
-      thumb.style.background = '#191F28';
+      thumb.style.background = '#FFFFFF';
       thumb.innerText = hasIcons ? '✓' : '';
-      thumb.style.color = '#FFE100';
+      thumb.style.color = '#0064FF';
       text.innerText = '활성화됨 (On)';
     } else {
       track.style.background = '#E5E8EB';
       thumb.style.left = '4px';
-      thumb.style.background = '#76808E';
+      thumb.style.background = '#FFFFFF';
       thumb.innerText = hasIcons ? '✕' : '';
-      thumb.style.color = '#FFFFFF';
+      thumb.style.color = '#8B95A1';
       text.innerText = '꺼짐 (Off)';
     }
 
     const selSnippet = selected ? ' selected' : '';
     const iconSnippet = hasIcons ? ' icons' : '';
     const disSnippet = disabled ? ' disabled' : '';
-    code.innerText = `<md-switch${selSnippet}${iconSnippet}${disSnippet} aria-label="토스뱅크 설정">\n</md-switch>`;
+    code.innerText = `<md-switch${selSnippet}${iconSnippet}${disSnippet} aria-label="토스뱅크 설정" style="--md-switch-selected-track-color: #0064FF;">\n</md-switch>`;
   }
 </script>
 

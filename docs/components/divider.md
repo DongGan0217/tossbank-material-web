@@ -19,62 +19,63 @@ define tappable regions in an accordion.
 ![Screenshot of five stacked dividers](images/divider/hero.svg "Dividers separating items in a list.")
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Divider (구분선) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">구분선 인셋 형태와 두께, 색상을 실시간으로 변경해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-div-inset">인셋 형태 (Inset):</label>
-        <select id="kb-div-inset" class="kb-control-select" onchange="updateDividerDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-div-inset">인셋 형태 (Inset):</label>
+        <select id="tb-div-inset" class="tb-control-select" onchange="updateDividerDemo()">
           <option value="none" selected>Full Width (전체 너비 100%)</option>
           <option value="inset">Inset (시작 지점 16px 인셋)</option>
           <option value="middle">Middle Inset (좌우 24px 여백)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-div-thickness">구분선 두께 (Thickness):</label>
-        <select id="kb-div-thickness" class="kb-control-select" onchange="updateDividerDemo()">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-div-thickness">구분선 두께 (Thickness):</label>
+        <select id="tb-div-thickness" class="tb-control-select" onchange="updateDividerDemo()">
           <option value="1" selected>1px (기본 세퍼레이터)</option>
           <option value="2">2px (강조 디바이더)</option>
           <option value="8">8px (섹션 분리 블록)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-div-color">구분선 색상 (Color):</label>
-        <select id="kb-div-color" class="kb-control-select" onchange="updateDividerDemo()">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-div-color">구분선 색상 (Color):</label>
+        <select id="tb-div-color" class="tb-control-select" onchange="updateDividerDemo()">
           <option value="#E5E8EB" selected>연한 그레이 (#E5E8EB)</option>
-          <option value="#FFE100">토스 딥블루 (#FFE100)</option>
+          <option value="#0064FF">토스 딥블루 (#0064FF)</option>
+          <option value="#3182F6">토스 블루 (#3182F6)</option>
           <option value="#191F28">다크 차콜 (#191F28)</option>
         </select>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-div-canvas" style="min-height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;">
+    <div class="tb-playground-canvas" id="tb-div-canvas" style="min-height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;">
       <div style="width: 100%; max-width: 400px; background: #FFFFFF; border: 1px solid #E5E8EB; border-radius: 14px; padding: 16px 0;">
         <div style="padding: 0 16px 12px; font-size: 14px; font-weight: 700; color: #191F28;">상단 계좌 정보 섹션</div>
-        <div id="kb-div-render" style="width: 100%; height: 1px; background: #E5E8EB; transition: all 0.2s ease;"></div>
+        <div id="tb-div-render" style="width: 100%; height: 1px; background: #E5E8EB; transition: all 0.2s ease;"></div>
         <div style="padding: 12px 16px 0; font-size: 14px; color: #4E5968;">하단 거래 내역 섹션</div>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-div-code">&lt;md-divider&gt;&lt;/md-divider&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-div-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-div-code">&lt;md-divider style="--md-divider-thickness: 1px; --md-divider-color: #E5E8EB;"&gt;&lt;/md-divider&gt;</pre>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-div-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateDividerDemo() {
-    const inset = document.getElementById('kb-div-inset').value;
-    const thickness = document.getElementById('kb-div-thickness').value;
-    const color = document.getElementById('kb-div-color').value;
+    const inset = document.getElementById('tb-div-inset').value;
+    const thickness = document.getElementById('tb-div-thickness').value;
+    const color = document.getElementById('tb-div-color').value;
 
-    const div = document.getElementById('kb-div-render');
-    const code = document.getElementById('kb-div-code');
+    const div = document.getElementById('tb-div-render');
+    const code = document.getElementById('tb-div-code');
 
     div.style.height = thickness + 'px';
     div.style.background = color;

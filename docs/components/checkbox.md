@@ -47,69 +47,69 @@ user needs to select one or more options from a list.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Checkbox 옵션 실시간 미리보기 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">상태를 변경하면 컴포넌트와 코드가 실시간 갱신됩니다.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-check-state">체크 상태 (State):</label>
-        <select id="kb-check-state" class="kb-control-select" onchange="updateCheckDemo()">
-          <option value="checked" selected>Checked (선택됨)</option>
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-check-state">체크 상태 (State):</label>
+        <select id="tb-check-state" class="tb-control-select" onchange="updateCheckDemo()">
+          <option value="checked" selected>Checked (선택됨 - 토스 블루)</option>
           <option value="indeterminate">Indeterminate (일부 선택)</option>
           <option value="unchecked">Unchecked (선택 안 됨)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-check-label">라벨 문구 (Label):</label>
-        <input id="kb-check-label" class="kb-control-input" type="text" value="토스뱅크 필수 금융거래 약관 동의" oninput="updateCheckDemo()" />
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-check-label">라벨 문구 (Label):</label>
+        <input id="tb-check-label" class="tb-control-input" type="text" value="토스뱅크 필수 금융거래 약관 동의" oninput="updateCheckDemo()" />
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-check-disabled" type="checkbox" onchange="updateCheckDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-check-disabled" type="checkbox" onchange="updateCheckDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-check-error" type="checkbox" onchange="updateCheckDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-check-error" type="checkbox" onchange="updateCheckDemo()" />
           <span>오류 상태 (Error)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-check-canvas">
+    <div class="tb-playground-canvas" id="tb-check-canvas">
       <!-- Live Render Target -->
-      <label id="kb-check-wrapper" style="display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 12px 18px; border-radius: 12px; border: 1px solid #E5E8EB; background: #FFFFFF; transition: all 0.2s;">
-        <div id="kb-check-box" style="width: 22px; height: 22px; border-radius: 6px; background: #FFE100; border: 1.5px solid #191F28; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; color: #191F28; transition: all 0.15s;">
+      <label id="tb-check-wrapper" style="display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 12px 18px; border-radius: 12px; border: 1px solid #E5E8EB; background: #FFFFFF; transition: all 0.2s;">
+        <div id="tb-check-box" style="width: 22px; height: 22px; border-radius: 6px; background: #3182F6; border: 1.5px solid #3182F6; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; color: #FFFFFF; transition: all 0.15s;">
           ✓
         </div>
-        <span id="kb-check-render-text" style="font-size: 15px; font-weight: 600; color: #191F28;">토스뱅크 필수 금융거래 약관 동의</span>
+        <span id="tb-check-render-text" style="font-size: 15px; font-weight: 600; color: #191F28;">토스뱅크 필수 금융거래 약관 동의</span>
       </label>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-check-code">&lt;label&gt;
-  &lt;md-checkbox checked&gt;&lt;/md-checkbox&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-check-code">&lt;label&gt;
+  &lt;md-checkbox checked style="--md-checkbox-selected-container-color: #3182F6;"&gt;&lt;/md-checkbox&gt;
   토스뱅크 필수 금융거래 약관 동의
 &lt;/label&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-check-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-check-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 
 <script>
   function updateCheckDemo() {
-    const state = document.getElementById('kb-check-state').value;
-    const label = document.getElementById('kb-check-label').value || '약관 동의';
-    const disabled = document.getElementById('kb-check-disabled').checked;
-    const isError = document.getElementById('kb-check-error').checked;
+    const state = document.getElementById('tb-check-state').value;
+    const label = document.getElementById('tb-check-label').value || '약관 동의';
+    const disabled = document.getElementById('tb-check-disabled').checked;
+    const isError = document.getElementById('tb-check-error').checked;
 
-    const box = document.getElementById('kb-check-box');
-    const text = document.getElementById('kb-check-render-text');
-    const wrap = document.getElementById('kb-check-wrapper');
-    const code = document.getElementById('kb-check-code');
+    const box = document.getElementById('tb-check-box');
+    const text = document.getElementById('tb-check-render-text');
+    const wrap = document.getElementById('tb-check-wrapper');
+    const code = document.getElementById('tb-check-code');
 
     text.innerText = label;
 
@@ -125,17 +125,17 @@ user needs to select one or more options from a list.
       box.style.borderColor = '#F04452';
       text.style.color = '#F04452';
     } else {
-      box.style.borderColor = '#191F28';
+      box.style.borderColor = state === 'unchecked' ? '#D1D6DB' : '#3182F6';
       text.style.color = '#191F28';
     }
 
     if (state === 'checked') {
-      box.style.background = isError ? '#F04452' : '#FFE100';
-      box.style.color = isError ? '#FFFFFF' : '#191F28';
+      box.style.background = isError ? '#F04452' : '#3182F6';
+      box.style.color = '#FFFFFF';
       box.innerText = '✓';
     } else if (state === 'indeterminate') {
-      box.style.background = isError ? '#F04452' : '#FFE100';
-      box.style.color = isError ? '#FFFFFF' : '#191F28';
+      box.style.background = isError ? '#F04452' : '#3182F6';
+      box.style.color = '#FFFFFF';
       box.innerText = '—';
     } else {
       box.style.background = '#FFFFFF';
@@ -145,7 +145,7 @@ user needs to select one or more options from a list.
     const stateAttr = state === 'checked' ? ' checked' : (state === 'indeterminate' ? ' indeterminate' : '');
     const disAttr = disabled ? ' disabled' : '';
     const errAttr = isError ? ' error' : '';
-    code.innerText = `<label>\n  <md-checkbox${stateAttr}${disAttr}${errAttr}></md-checkbox>\n  ${label}\n</label>`;
+    code.innerText = `<label>\n  <md-checkbox${stateAttr}${disAttr}${errAttr} style="--md-checkbox-selected-container-color: #3182F6;"></md-checkbox>\n  ${label}\n</label>`;
   }
 </script>
 

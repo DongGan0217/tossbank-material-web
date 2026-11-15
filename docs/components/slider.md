@@ -43,62 +43,62 @@ Sliders can use icons or labels to represent a numeric or relative scale.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Slider (슬라이더) 실시간 대출/적금 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">슬라이더를 드래그하여 기간과 대출 한도를 실시간 조절해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-slider-type">슬라이더 유형 (Type):</label>
-        <select id="kb-slider-type" class="kb-control-select" onchange="updateSliderDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-slider-type">슬라이더 유형 (Type):</label>
+        <select id="tb-slider-type" class="tb-control-select" onchange="updateSliderDemo()">
           <option value="period" selected>대출 기간 조절 (12~60개월)</option>
           <option value="amount">대출 금액 조절 (100만~5,000만원)</option>
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-slider-labeled" type="checkbox" checked onchange="updateSliderDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-slider-labeled" type="checkbox" checked onchange="updateSliderDemo()" />
           <span>값 레이블 풍선 표시 (Labeled)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-slider-disabled" type="checkbox" onchange="updateSliderDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-slider-disabled" type="checkbox" onchange="updateSliderDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-slider-canvas" style="min-height: 160px; display: flex; flex-direction: column; justify-content: center; padding: 24px; box-sizing: border-box;">
+    <div class="tb-playground-canvas" id="tb-slider-canvas" style="min-height: 160px; display: flex; flex-direction: column; justify-content: center; padding: 24px; box-sizing: border-box;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
-        <span id="kb-slider-title" style="font-size: 14px; font-weight: 600; color: #4E5968;">대출 기간</span>
-        <span id="kb-slider-val-display" style="font-size: 22px; font-weight: 800; color: #3182F6;">24개월</span>
+        <span id="tb-slider-title" style="font-size: 14px; font-weight: 600; color: #4E5968;">대출 기간</span>
+        <span id="tb-slider-val-display" class="tnum" style="font-size: 22px; font-weight: 800; color: #0064FF; font-variant-numeric: tabular-nums;">24개월</span>
       </div>
-      <input id="kb-slider-input" type="range" min="12" max="60" step="6" value="24" oninput="updateSliderDemo()" style="width: 100%; height: 8px; accent-color: #FFE100; cursor: pointer;" />
+      <input id="tb-slider-input" type="range" min="12" max="60" step="6" value="24" oninput="updateSliderDemo()" style="width: 100%; height: 8px; accent-color: #0064FF; cursor: pointer;" />
       <div style="display: flex; justify-content: space-between; font-size: 11px; color: #8B95A1; margin-top: 6px;">
-        <span id="kb-slider-min">12개월</span>
-        <span id="kb-slider-max">60개월</span>
+        <span id="tb-slider-min">12개월</span>
+        <span id="tb-slider-max">60개월</span>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-slider-code">&lt;md-slider min="12" max="60" step="6" value="24" labeled&gt;&lt;/md-slider&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-slider-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-slider-code">&lt;md-slider min="12" max="60" step="6" value="24" labeled style="--md-slider-active-track-color: #0064FF; --md-slider-handle-color: #0064FF;"&gt;&lt;/md-slider&gt;</pre>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-slider-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateSliderDemo() {
-    const type = document.getElementById('kb-slider-type').value;
-    const labeled = document.getElementById('kb-slider-labeled').checked;
-    const disabled = document.getElementById('kb-slider-disabled').checked;
-    const input = document.getElementById('kb-slider-input');
-    const title = document.getElementById('kb-slider-title');
-    const valDisplay = document.getElementById('kb-slider-val-display');
-    const minSpan = document.getElementById('kb-slider-min');
-    const maxSpan = document.getElementById('kb-slider-max');
-    const code = document.getElementById('kb-slider-code');
+    const type = document.getElementById('tb-slider-type').value;
+    const labeled = document.getElementById('tb-slider-labeled').checked;
+    const disabled = document.getElementById('tb-slider-disabled').checked;
+    const input = document.getElementById('tb-slider-input');
+    const title = document.getElementById('tb-slider-title');
+    const valDisplay = document.getElementById('tb-slider-val-display');
+    const minSpan = document.getElementById('tb-slider-min');
+    const maxSpan = document.getElementById('tb-slider-max');
+    const code = document.getElementById('tb-slider-code');
 
     input.disabled = disabled;
 
@@ -110,7 +110,7 @@ Sliders can use icons or labels to represent a numeric or relative scale.
       input.max = '60';
       input.step = '6';
       valDisplay.innerText = input.value + '개월';
-      code.innerText = `<md-slider min="12" max="60" step="6" value="${input.value}" ${labeled ? 'labeled' : ''} ${disabled ? 'disabled' : ''} style="--md-slider-active-track-color: #FFE100; --md-slider-handle-color: #191F28;"></md-slider>`;
+      code.innerText = `<md-slider min="12" max="60" step="6" value="${input.value}" ${labeled ? 'labeled' : ''} ${disabled ? 'disabled' : ''} style="--md-slider-active-track-color: #0064FF; --md-slider-handle-color: #0064FF;"></md-slider>`;
     } else {
       title.innerText = '대출 희망 금액';
       minSpan.innerText = '100만원';
@@ -119,7 +119,7 @@ Sliders can use icons or labels to represent a numeric or relative scale.
       input.max = '5000';
       input.step = '100';
       valDisplay.innerText = Number(input.value).toLocaleString() + '만원';
-      code.innerText = `<md-slider min="100" max="5000" step="100" value="${input.value}" ${labeled ? 'labeled' : ''} ${disabled ? 'disabled' : ''} style="--md-slider-active-track-color: #FFE100; --md-slider-handle-color: #191F28;"></md-slider>`;
+      code.innerText = `<md-slider min="100" max="5000" step="100" value="${input.value}" ${labeled ? 'labeled' : ''} ${disabled ? 'disabled' : ''} style="--md-slider-active-track-color: #0064FF; --md-slider-handle-color: #0064FF;"></md-slider>`;
     }
   }
 </script>

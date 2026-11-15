@@ -45,24 +45,24 @@ function playgroundExample(eleventyConfig) {
       : 'height: 500px;';
 
     return `
-      <div class="kb-playground-accordion-wrap">
-        <details class="kb-playground-details">
-          <summary class="kb-playground-summary">
-            <div class="kb-summary-left">
-              <md-outlined-icon-button toggle tabindex="-1" aria-hidden="true" class="kb-summary-toggle">
+      <div class="tb-playground-accordion-wrap">
+        <details class="tb-playground-details">
+          <summary class="tb-playground-summary">
+            <div class="tb-summary-left">
+              <md-outlined-icon-button toggle tabindex="-1" aria-hidden="true" class="tb-summary-toggle">
                 <md-icon aria-hidden="true">expand_more</md-icon>
                 <md-icon aria-hidden="true" slot="selected">expand_less</md-icon>
               </md-outlined-icon-button>
-              <div class="tb-summary-text-wrap kb-summary-text-wrap">
-                <div class="tb-summary-title kb-summary-title">
+              <div class="tb-summary-text-wrap">
+                <div class="tb-summary-title">
                   <span>토스뱅크 실시간 인터랙티브 데모</span>
-                  <span class="tb-playground-badge kb-playground-badge" style="background: #0064FF; color: #FFFFFF;">TB Playground</span>
+                  <span class="tb-playground-badge" style="background: #0064FF; color: #FFFFFF;">TB Playground</span>
                 </div>
-                <span class="tb-summary-desc kb-summary-desc">다양한 옵션 조합과 코드를 실시간으로 테스트하고 편집해볼 수 있습니다.</span>
+                <span class="tb-summary-desc">다양한 옵션 조합과 코드를 실시간으로 테스트하고 편집해볼 수 있습니다.</span>
               </div>
             </div>
           </summary>
-          <div class="kb-playground-inner">
+          <div class="tb-playground-inner">
             <lit-island on:visible import="/js/hydration-entrypoints/playground-elements.js" class="example" aria-hidden="true">
               <playground-project
                   id="${id}" project-src="/assets/stories/${dirname}/project.json">
@@ -80,8 +80,8 @@ function playgroundExample(eleventyConfig) {
             </lit-island>
           </div>
         </details>
-        <div class="kb-playground-footer">
-          <a href="./stories/" target="_blank" class="kb-newtab-link">
+        <div class="tb-playground-footer">
+          <a href="./stories/" target="_blank" class="tb-newtab-link">
             새 탭에서 인터랙티브 데모 전체화면으로 열기 ↗
           </a>
         </div>

@@ -19,63 +19,63 @@ to determine when they are visible.
 ![Three elements with a focus ring that moves between them.](images/focus/hero.svg "A focus ring moving across elements.")
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Focus Ring (웹 접근성 포커스 링) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">키보드 내비게이션 시 표시되는 고대비 포커스 링 옵션을 실시간 조작해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-ring-color">포커스 링 색상 (Color):</label>
-        <select id="kb-ring-color" class="kb-control-select" onchange="updateRingDemo()">
-          <option value="#FFE100" selected>토스 딥블루 (#FFE100 / 고대비)</option>
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-ring-color">포커스 링 색상 (Color):</label>
+        <select id="tb-ring-color" class="tb-control-select" onchange="updateRingDemo()">
+          <option value="#3182F6" selected>토스 블루 (#3182F6 / 표준 접근성)</option>
+          <option value="#0064FF">토스 딥블루 (#0064FF)</option>
           <option value="#191F28">다크 차콜 (#191F28)</option>
-          <option value="#3182F6">포인트 블루 (#3182F6)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-ring-width">링 두께 (Width):</label>
-        <select id="kb-ring-width" class="kb-control-select" onchange="updateRingDemo()">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-ring-width">링 두께 (Width):</label>
+        <select id="tb-ring-width" class="tb-control-select" onchange="updateRingDemo()">
           <option value="3" selected>3px (토스뱅크 권장)</option>
           <option value="2">2px (슬림)</option>
           <option value="4">4px (초고대비)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-ring-offset">링 오프셋 간격 (Offset):</label>
-        <select id="kb-ring-offset" class="kb-control-select" onchange="updateRingDemo()">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-ring-offset">링 오프셋 간격 (Offset):</label>
+        <select id="tb-ring-offset" class="tb-control-select" onchange="updateRingDemo()">
           <option value="2" selected>2px (표준 여백)</option>
           <option value="0">0px (밀착)</option>
           <option value="4">4px (넓은 여백)</option>
         </select>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-ring-canvas" style="min-height: 180px; display: flex; justify-content: center; align-items: center; padding: 24px;">
-      <button id="kb-ring-render" type="button" style="height: 52px; padding: 0 24px; border-radius: 16px; border: none; background: #191F28; color: #FFFFFF; font-size: 16px; font-weight: 700; cursor: pointer; outline: 3px solid #FFE100; outline-offset: 2px; transition: all 0.2s ease;">
+    <div class="tb-playground-canvas" id="tb-ring-canvas" style="min-height: 180px; display: flex; justify-content: center; align-items: center; padding: 24px;">
+      <button id="tb-ring-render" type="button" style="height: 52px; padding: 0 24px; border-radius: 16px; border: none; background: #191F28; color: #FFFFFF; font-size: 16px; font-weight: 700; cursor: pointer; outline: 3px solid #3182F6; outline-offset: 2px; transition: all 0.2s ease;">
         포커스 활성 버튼 (Tab Focus)
       </button>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-ring-code">&lt;button style="position: relative;"&gt;
-  &lt;md-focus-ring style="--md-focus-ring-color: #FFE100; --md-focus-ring-width: 3px; --md-focus-ring-offset: 2px;"&gt;&lt;/md-focus-ring&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-ring-code">&lt;button style="position: relative;"&gt;
+  &lt;md-focus-ring style="--md-focus-ring-color: #3182F6; --md-focus-ring-width: 3px; --md-focus-ring-offset: 2px;"&gt;&lt;/md-focus-ring&gt;
   토스뱅크 버튼
 &lt;/button&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-ring-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-ring-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateRingDemo() {
-    const color = document.getElementById('kb-ring-color').value;
-    const width = document.getElementById('kb-ring-width').value;
-    const offset = document.getElementById('kb-ring-offset').value;
+    const color = document.getElementById('tb-ring-color').value;
+    const width = document.getElementById('tb-ring-width').value;
+    const offset = document.getElementById('tb-ring-offset').value;
 
-    const btn = document.getElementById('kb-ring-render');
-    const code = document.getElementById('kb-ring-code');
+    const btn = document.getElementById('tb-ring-render');
+    const code = document.getElementById('tb-ring-code');
 
     btn.style.outline = `${width}px solid ${color}`;
     btn.style.outlineOffset = `${offset}px`;

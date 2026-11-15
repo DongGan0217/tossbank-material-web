@@ -46,77 +46,77 @@ payment'"
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Button 옵션 실시간 미리보기 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">옵션을 변경하면 컴포넌트가 즉시 실시간 반영됩니다.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-btn-variant">버튼 형태 (Variant):</label>
-        <select id="kb-btn-variant" class="kb-control-select" onchange="updateBtnDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-btn-variant">버튼 형태 (Variant):</label>
+        <select id="tb-btn-variant" class="tb-control-select" onchange="updateBtnDemo()">
           <option value="filled" selected>Filled (토스 딥블루 시그니처)</option>
-          <option value="outlined">Outlined (테두리 아웃라인)</option>
+          <option value="tonal">Filled Tonal (소프트 블루 컨테이너)</option>
+          <option value="outlined">Outlined (블루 테두리 아웃라인)</option>
           <option value="elevated">Elevated (부유 그림자)</option>
-          <option value="tonal">Filled Tonal (톤앤톤)</option>
           <option value="text">Text (텍스트 링크형)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-btn-label">버튼 문구 (Label):</label>
-        <input id="kb-btn-label" class="kb-control-input" type="text" value="토스뱅크 이체하기" oninput="updateBtnDemo()" />
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-btn-label">버튼 문구 (Label):</label>
+        <input id="tb-btn-label" class="tb-control-input" type="text" value="토스뱅크 송금하기" oninput="updateBtnDemo()" />
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-btn-size">터치 타깃 규격 (Size):</label>
-        <select id="kb-btn-size" class="kb-control-select" onchange="updateBtnDemo()">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-btn-size">터치 타깃 규격 (Size):</label>
+        <select id="tb-btn-size" class="tb-control-select" onchange="updateBtnDemo()">
           <option value="52" selected>52px (토스뱅크 모바일/웹 표준)</option>
           <option value="40">40px (구글 기본 M3)</option>
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-btn-icon" type="checkbox" checked onchange="updateBtnDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-btn-icon" type="checkbox" checked onchange="updateBtnDemo()" />
           <span>아이콘 포함 (with Icon)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-btn-disabled" type="checkbox" onchange="updateBtnDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-btn-disabled" type="checkbox" onchange="updateBtnDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-btn-canvas">
+    <div class="tb-playground-canvas" id="tb-btn-canvas">
       <!-- Live Render Target -->
-      <button id="kb-btn-render" type="button" style="height: 52px; background: #FFE100; border: none; border-radius: 16px; padding: 0 24px; font-weight: 700; font-size: 16px; color: #191F28; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.2s ease;">
-        <img id="kb-btn-render-icon" src="/images/tb-icons/svg/tb_ic-arrow-right.svg" width="18" height="18" alt="icon" />
-        <span id="kb-btn-render-text">토스뱅크 이체하기</span>
+      <button id="tb-btn-render" type="button" style="height: 52px; background: #0064FF; border: none; border-radius: 16px; padding: 0 24px; font-weight: 700; font-size: 16px; color: #FFFFFF; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(0, 100, 255, 0.25); transition: all 0.2s ease;">
+        <img id="tb-btn-render-icon" src="/images/tb-icons/svg/tb_ic-arrow-right.svg" width="18" height="18" alt="icon" style="filter: brightness(0) invert(1);" />
+        <span id="tb-btn-render-text">토스뱅크 송금하기</span>
       </button>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-btn-code">&lt;md-filled-button style="--md-filled-button-container-height: 52px; --md-filled-button-container-shape: 16px;"&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-btn-code">&lt;md-filled-button style="--md-filled-button-container-color: #0064FF; --md-filled-button-label-text-color: #FFFFFF; --md-filled-button-container-height: 52px; --md-filled-button-container-shape: 16px;"&gt;
   &lt;md-icon slot="icon"&gt;&lt;img src="/images/tb-icons/svg/tb_ic-arrow-right.svg" /&gt;&lt;/md-icon&gt;
-  토스뱅크 이체하기
+  토스뱅크 송금하기
 &lt;/md-filled-button&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-btn-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-btn-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 
 <script>
   function updateBtnDemo() {
-    const variant = document.getElementById('kb-btn-variant').value;
-    const label = document.getElementById('kb-btn-label').value || '이체하기';
-    const size = document.getElementById('kb-btn-size').value;
-    const hasIcon = document.getElementById('kb-btn-icon').checked;
-    const disabled = document.getElementById('kb-btn-disabled').checked;
+    const variant = document.getElementById('tb-btn-variant').value;
+    const label = document.getElementById('tb-btn-label').value || '송금하기';
+    const size = document.getElementById('tb-btn-size').value;
+    const hasIcon = document.getElementById('tb-btn-icon').checked;
+    const disabled = document.getElementById('tb-btn-disabled').checked;
 
-    const btn = document.getElementById('kb-btn-render');
-    const icon = document.getElementById('kb-btn-render-icon');
-    const text = document.getElementById('kb-btn-render-text');
-    const code = document.getElementById('kb-btn-code');
+    const btn = document.getElementById('tb-btn-render');
+    const icon = document.getElementById('tb-btn-render-icon');
+    const text = document.getElementById('tb-btn-render-text');
+    const code = document.getElementById('tb-btn-code');
 
     text.innerText = label;
     icon.style.display = hasIcon ? 'inline-block' : 'none';
@@ -125,7 +125,7 @@ payment'"
     btn.style.borderRadius = size === '52' ? '16px' : '20px';
 
     if (disabled) {
-      btn.style.opacity = '0.4';
+      btn.style.opacity = '0.38';
       btn.style.cursor = 'not-allowed';
       btn.style.boxShadow = 'none';
     } else {
@@ -136,34 +136,39 @@ payment'"
     let tagName = 'md-filled-button';
     if (variant === 'filled') {
       tagName = 'md-filled-button';
-      btn.style.background = '#FFE100';
-      btn.style.color = '#191F28';
+      btn.style.background = '#0064FF';
+      btn.style.color = '#FFFFFF';
       btn.style.border = 'none';
-      btn.style.boxShadow = disabled ? 'none' : '0 4px 12px rgba(0,0,0,0.06)';
+      btn.style.boxShadow = disabled ? 'none' : '0 4px 14px rgba(0, 100, 255, 0.25)';
+      icon.style.filter = 'brightness(0) invert(1)';
     } else if (variant === 'outlined') {
       tagName = 'md-outlined-button';
       btn.style.background = 'transparent';
-      btn.style.color = '#191F28';
-      btn.style.border = '1.5px solid #191F28';
+      btn.style.color = '#0064FF';
+      btn.style.border = '1.5px solid #0064FF';
       btn.style.boxShadow = 'none';
+      icon.style.filter = 'none';
     } else if (variant === 'elevated') {
       tagName = 'md-elevated-button';
       btn.style.background = '#FFFFFF';
       btn.style.color = '#191F28';
       btn.style.border = '1px solid #E5E8EB';
-      btn.style.boxShadow = disabled ? 'none' : '0 6px 16px rgba(0,0,0,0.1)';
+      btn.style.boxShadow = disabled ? 'none' : '0 6px 16px rgba(0,0,0,0.08)';
+      icon.style.filter = 'none';
     } else if (variant === 'tonal') {
       tagName = 'md-filled-tonal-button';
-      btn.style.background = '#F2F4F6';
-      btn.style.color = '#191F28';
+      btn.style.background = '#E8F3FF';
+      btn.style.color = '#0064FF';
       btn.style.border = 'none';
       btn.style.boxShadow = 'none';
+      icon.style.filter = 'none';
     } else if (variant === 'text') {
       tagName = 'md-text-button';
       btn.style.background = 'transparent';
-      btn.style.color = '#191F28';
+      btn.style.color = '#0064FF';
       btn.style.border = 'none';
       btn.style.boxShadow = 'none';
+      icon.style.filter = 'none';
     }
 
     const iconSnippet = hasIcon ? '\n  <md-icon slot="icon"><img src="/images/tb-icons/svg/tb_ic-arrow-right.svg" /></md-icon>' : '';

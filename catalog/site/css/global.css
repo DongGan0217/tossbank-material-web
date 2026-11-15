@@ -89,7 +89,7 @@ html[data-theme="white"],
   --md-sys-color-secondary-container: #f2f4f6;
   --md-sys-color-on-secondary-container: #191f28;
 
-  --md-sys-color-tertiary: #ffe100;
+  --md-sys-color-tertiary: #0064FF;
   --md-sys-color-on-tertiary: #191f28;
   --md-sys-color-tertiary-container: #fff8cc;
   --md-sys-color-on-tertiary-container: #5c4900;
@@ -135,7 +135,7 @@ html[data-theme="slate"] {
   --md-sys-color-secondary-container: #1e293b;
   --md-sys-color-on-secondary-container: #f1f5f9;
 
-  --md-sys-color-tertiary: #ffe100;
+  --md-sys-color-tertiary: #0064FF;
   --md-sys-color-on-tertiary: #0f172a;
   --md-sys-color-tertiary-container: #332d00;
   --md-sys-color-on-tertiary-container: #fff480;
@@ -181,7 +181,7 @@ html[data-theme="dark"] {
   --md-sys-color-secondary-container: #2c2c2c;
   --md-sys-color-on-secondary-container: #eeeeee;
 
-  --md-sys-color-tertiary: #ffe100;
+  --md-sys-color-tertiary: #0064FF;
   --md-sys-color-on-tertiary: #121212;
   --md-sys-color-tertiary-container: #332d00;
   --md-sys-color-on-tertiary-container: #fff480;
@@ -465,8 +465,7 @@ md-tonal-button [slot="icon"],
 /* ============================================================
    Toss Bank Interactive Demo Inline Accordion & Playground Styling
    ============================================================ */
-.tb-playground-accordion-wrap,
-.kb-playground-accordion-wrap {
+.tb-playground-accordion-wrap {
   margin: 28px 0;
   border-radius: 16px;
   background: var(--md-sys-color-surface, #FFFFFF);
@@ -476,19 +475,16 @@ md-tonal-button [slot="icon"],
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.tb-playground-accordion-wrap:hover,
-.kb-playground-accordion-wrap:hover {
+.tb-playground-accordion-wrap:hover {
   border-color: #D1D6DB;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
-.tb-playground-details,
-.kb-playground-details {
+.tb-playground-details {
   border-radius: inherit;
 }
 
-.tb-playground-summary,
-.kb-playground-summary {
+.tb-playground-summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -501,40 +497,34 @@ md-tonal-button [slot="icon"],
   user-select: none;
 }
 
-.tb-playground-summary::-webkit-details-marker,
-.kb-playground-summary::-webkit-details-marker {
+.tb-playground-summary::-webkit-details-marker {
   display: none;
 }
 
-.tb-playground-details[open] .tb-playground-summary,
-.kb-playground-details[open] .kb-playground-summary {
+.tb-playground-details[open] .tb-playground-summary {
   border-bottom-color: var(--md-sys-color-outline-variant, #E5E8EB);
   background: var(--md-sys-color-surface-container-high, #F8F9FA);
 }
 
-.tb-summary-left,
-.kb-summary-left {
+.tb-summary-left {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-.tb-summary-toggle,
-.kb-summary-toggle {
+.tb-summary-toggle {
   --md-outlined-icon-button-container-shape: 10px;
   --md-outlined-icon-button-outline-color: var(--md-sys-color-outline-variant, #E5E8EB);
   color: var(--md-sys-color-on-surface, #191F28);
 }
 
-.tb-summary-text-wrap,
-.kb-summary-text-wrap {
+.tb-summary-text-wrap {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.tb-summary-title,
-.kb-summary-title {
+.tb-summary-title {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -544,15 +534,13 @@ md-tonal-button [slot="icon"],
   letter-spacing: -0.02em;
 }
 
-.tb-summary-desc,
-.kb-summary-desc {
+.tb-summary-desc {
   font-size: 13px;
   color: var(--md-sys-color-on-surface-variant, #4E5968);
   letter-spacing: -0.01em;
 }
 
-.tb-playground-badge,
-.kb-playground-badge {
+.tb-playground-badge {
   display: inline-flex;
   align-items: center;
   padding: 2px 8px;
@@ -564,30 +552,26 @@ md-tonal-button [slot="icon"],
   letter-spacing: -0.01em;
 }
 
-.tb-playground-inner,
-.kb-playground-inner {
+.tb-playground-inner {
   padding: 16px;
   background: var(--md-sys-color-surface, #FFFFFF);
 }
 
-.tb-playground-inner playground-preview,
-.kb-playground-inner playground-preview {
+.tb-playground-inner playground-preview {
   border-radius: 12px;
   border: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
   background: var(--md-sys-color-surface, #FFFFFF);
   overflow: hidden;
 }
 
-.tb-playground-inner playground-file-editor,
-.kb-playground-inner playground-file-editor {
+.tb-playground-inner playground-file-editor {
   border-radius: 12px;
   border: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
   margin-top: 12px;
   overflow: hidden;
 }
 
-.tb-playground-footer,
-.kb-playground-footer {
+.tb-playground-footer {
   padding: 12px 20px;
   background: var(--md-sys-color-surface-container-high, #F8F9FA);
   border-top: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
@@ -595,8 +579,7 @@ md-tonal-button [slot="icon"],
   justify-content: flex-end;
 }
 
-.tb-newtab-link,
-.kb-newtab-link {
+.tb-newtab-link {
   font-size: 13px;
   font-weight: 600;
   color: var(--md-sys-color-on-surface, #191F28);
@@ -611,8 +594,7 @@ md-tonal-button [slot="icon"],
   transition: all 0.15s ease;
 }
 
-.tb-newtab-link:hover,
-.kb-newtab-link:hover {
+.tb-newtab-link:hover {
   background: #0064FF;
   border-color: #0064FF;
   color: #FFFFFF;

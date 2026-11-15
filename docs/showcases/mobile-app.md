@@ -53,7 +53,7 @@ order: 3
         </div>
         
         <!-- Interactive Card Visual -->
-        <div id="checkcard-visual" style="height: 140px; border-radius: 16px; background: linear-gradient(135deg, #0064FF 50%, #FFE100 50%); padding: 16px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; color: #FFFFFF; box-shadow: 0 8px 18px rgba(0,0,0,0.12); transition: all 0.3s ease;">
+        <div id="checkcard-visual" style="height: 140px; border-radius: 16px; background: linear-gradient(135deg, #0064FF 50%, #FFB800 50%); padding: 16px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; color: #FFFFFF; box-shadow: 0 8px 18px rgba(0,0,0,0.12); transition: all 0.3s ease;">
           <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: 13px;">
             <span>toss bank</span>
             <span style="font-size: 11px; opacity: 0.85;">체크카드</span>
@@ -66,7 +66,7 @@ order: 3
 
         <!-- Color Palette Swapper -->
         <div style="display: flex; justify-content: center; gap: 8px; margin-top: 14px;">
-          <button onclick="setCardColor('linear-gradient(135deg, #0064FF 50%, #FFE100 50%)')" style="width: 22px; height: 22px; border-radius: 50%; background: #0064FF; border: 2px solid #FFFFFF; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.2);" title="레몬블루"></button>
+          <button onclick="setCardColor('linear-gradient(135deg, #0064FF 50%, #FFB800 50%)')" style="width: 22px; height: 22px; border-radius: 50%; background: #0064FF; border: 2px solid #FFFFFF; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.2);" title="토스 앰버블루"></button>
           <button onclick="setCardColor('linear-gradient(135deg, #FF3B70 50%, #191F28 50%)')" style="width: 22px; height: 22px; border-radius: 50%; background: #FF3B70; border: 2px solid #FFFFFF; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.2);" title="나이트핑크"></button>
           <button onclick="setCardColor('linear-gradient(135deg, #FF6B00 50%, #F9FAFB 50%)')" style="width: 22px; height: 22px; border-radius: 50%; background: #FF6B00; border: 2px solid #FFFFFF; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.2);" title="오렌지밀크"></button>
           <button onclick="setCardColor('linear-gradient(135deg, #7B2CBF 50%, #20BF6B 50%)')" style="width: 22px; height: 22px; border-radius: 50%; background: #7B2CBF; border: 2px solid #FFFFFF; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.2);" title="퍼플그린"></button>

@@ -35,10 +35,10 @@
   /* Primary (Toss Bank Deep Charcoal + Signature Yellow Container) */
   --md-sys-color-primary: #191f28;
   --md-sys-color-on-primary: #ffffff;
-  --md-sys-color-primary-container: #ffe100;
+  --md-sys-color-primary-container: #0064FF;
   --md-sys-color-on-primary-container: #191f28;
-  --md-sys-color-inverse-primary: #ffd400;
-  --md-sys-color-surface-tint: #ffe100;
+  --md-sys-color-inverse-primary: #3182F6;
+  --md-sys-color-surface-tint: #0064FF;
 
   /* Secondary (Muted Slate) */
   --md-sys-color-secondary: #333d4b;
@@ -84,7 +84,7 @@
 
   --md-sys-color-primary: #38bdf8;
   --md-sys-color-on-primary: #082f49;
-  --md-sys-color-primary-container: #ffe100;
+  --md-sys-color-primary-container: #0064FF;
   --md-sys-color-on-primary-container: #0f172a;
   --md-sys-color-inverse-primary: #0284c7;
   --md-sys-color-surface-tint: #38bdf8;
@@ -128,12 +128,12 @@
   --md-sys-color-shadow: #000000;
   --md-sys-color-scrim: #000000;
 
-  --md-sys-color-primary: #ffe100;
+  --md-sys-color-primary: #0064FF;
   --md-sys-color-on-primary: #121212;
   --md-sys-color-primary-container: #332d00;
   --md-sys-color-on-primary-container: #fff480;
   --md-sys-color-inverse-primary: #b39d00;
-  --md-sys-color-surface-tint: #ffe100;
+  --md-sys-color-surface-tint: #0064FF;
 
   --md-sys-color-secondary: #cccccc;
   --md-sys-color-on-secondary: #121212;
@@ -174,12 +174,12 @@
     --md-sys-color-shadow: #000000;
     --md-sys-color-scrim: #000000;
 
-    --md-sys-color-primary: #ffe100;
+    --md-sys-color-primary: #0064FF;
     --md-sys-color-on-primary: #121212;
     --md-sys-color-primary-container: #332d00;
     --md-sys-color-on-primary-container: #fff480;
     --md-sys-color-inverse-primary: #b39d00;
-    --md-sys-color-surface-tint: #ffe100;
+    --md-sys-color-surface-tint: #0064FF;
 
     --md-sys-color-secondary: #cccccc;
     --md-sys-color-on-secondary: #121212;

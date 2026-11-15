@@ -43,70 +43,70 @@ title="Filter chips">
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Chip 옵션 실시간 미리보기 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">칩 종류와 옵션을 실시간으로 조작해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-chip-type">칩 종류 (Type):</label>
-        <select id="kb-chip-type" class="kb-control-select" onchange="updateChipDemo()">
-          <option value="filter" selected>Filter Chip (필터 선택 칩)</option>
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-chip-type">칩 종류 (Type):</label>
+        <select id="tb-chip-type" class="tb-control-select" onchange="updateChipDemo()">
+          <option value="filter" selected>Filter Chip (토스 필터 칩)</option>
           <option value="assist">Assist Chip (보조 액션 칩)</option>
           <option value="input">Input Chip (입력 태그 칩)</option>
           <option value="suggestion">Suggestion Chip (추천 칩)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-chip-label">칩 문구 (Label):</label>
-        <input id="kb-chip-label" class="kb-control-input" type="text" value="토스뱅크 모임통장" oninput="updateChipDemo()" />
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-chip-label">칩 문구 (Label):</label>
+        <input id="tb-chip-label" class="tb-control-input" type="text" value="토스뱅크 모임통장" oninput="updateChipDemo()" />
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-chip-selected" type="checkbox" checked onchange="updateChipDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-chip-selected" type="checkbox" checked onchange="updateChipDemo()" />
           <span>선택됨 (Selected)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-chip-elevated" type="checkbox" onchange="updateChipDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-chip-elevated" type="checkbox" onchange="updateChipDemo()" />
           <span>부유 그림자 (Elevated)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-chip-disabled" type="checkbox" onchange="updateChipDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-chip-disabled" type="checkbox" onchange="updateChipDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-chip-canvas">
+    <div class="tb-playground-canvas" id="tb-chip-canvas">
       <!-- Live Render Target -->
-      <div id="kb-chip-render" style="background: #FFE100; color: #191F28; border: 1px solid #191F28; border-radius: 9999px; padding: 8px 18px; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onclick="document.getElementById('kb-chip-selected').click()">
-        <span id="kb-chip-icon">✓</span>
-        <span id="kb-chip-render-text">토스뱅크 모임통장</span>
+      <div id="tb-chip-render" style="background: #E8F3FF; color: #0064FF; border: 1.5px solid #3182F6; border-radius: 9999px; padding: 8px 18px; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onclick="document.getElementById('tb-chip-selected').click()">
+        <span id="tb-chip-icon">✓</span>
+        <span id="tb-chip-render-text">토스뱅크 모임통장</span>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-chip-code">&lt;md-filter-chip label="토스뱅크 모임통장" selected&gt;&lt;/md-filter-chip&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-chip-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-chip-code">&lt;md-filter-chip label="토스뱅크 모임통장" selected style="--md-filter-chip-selected-container-color: #E8F3FF; --md-filter-chip-selected-label-text-color: #0064FF;"&gt;&lt;/md-filter-chip&gt;</pre>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-chip-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 
 <script>
   function updateChipDemo() {
-    const type = document.getElementById('kb-chip-type').value;
-    const label = document.getElementById('kb-chip-label').value || '모임통장';
-    const selected = document.getElementById('kb-chip-selected').checked;
-    const elevated = document.getElementById('kb-chip-elevated').checked;
-    const disabled = document.getElementById('kb-chip-disabled').checked;
+    const type = document.getElementById('tb-chip-type').value;
+    const label = document.getElementById('tb-chip-label').value || '모임통장';
+    const selected = document.getElementById('tb-chip-selected').checked;
+    const elevated = document.getElementById('tb-chip-elevated').checked;
+    const disabled = document.getElementById('tb-chip-disabled').checked;
 
-    const chip = document.getElementById('kb-chip-render');
-    const text = document.getElementById('kb-chip-render-text');
-    const icon = document.getElementById('kb-chip-icon');
-    const code = document.getElementById('kb-chip-code');
+    const chip = document.getElementById('tb-chip-render');
+    const text = document.getElementById('tb-chip-render-text');
+    const icon = document.getElementById('tb-chip-icon');
+    const code = document.getElementById('tb-chip-code');
 
     text.innerText = label;
 
@@ -119,14 +119,14 @@ title="Filter chips">
     }
 
     if (selected && type === 'filter') {
-      chip.style.background = '#FFE100';
-      chip.style.color = '#191F28';
-      chip.style.border = '1px solid #191F28';
+      chip.style.background = '#E8F3FF';
+      chip.style.color = '#0064FF';
+      chip.style.border = '1.5px solid #3182F6';
       icon.style.display = 'inline-block';
     } else {
-      chip.style.background = '#FFFFFF';
+      chip.style.background = '#F2F4F6';
       chip.style.color = '#4E5968';
-      chip.style.border = '1px solid #D1D6DB';
+      chip.style.border = '1px solid transparent';
       icon.style.display = 'none';
     }
 
@@ -135,7 +135,7 @@ title="Filter chips">
     const selAttr = selected ? ' selected' : '';
     const eleAttr = elevated ? ' elevated' : '';
     const disAttr = disabled ? ' disabled' : '';
-    code.innerText = `<md-${type}-chip label="${label}"${selAttr}${eleAttr}${disAttr}>\n</md-${type}-chip>`;
+    code.innerText = `<md-${type}-chip label="${label}"${selAttr}${eleAttr}${disAttr} style="--md-${type}-chip-selected-container-color: #E8F3FF; --md-${type}-chip-selected-label-text-color: #0064FF;">\n</md-${type}-chip>`;
   }
 </script>
 

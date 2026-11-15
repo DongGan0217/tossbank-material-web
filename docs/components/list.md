@@ -37,80 +37,80 @@ vertical indexes of text and images
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ List (금융 거래 내역 리스트) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">토스뱅크 계좌 및 결제 거래 내역 리스트 옵션을 조작해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-list-lines">리스트 라인 수 (Lines):</label>
-        <select id="kb-list-lines" class="kb-control-select" onchange="updateListDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-list-lines">리스트 라인 수 (Lines):</label>
+        <select id="tb-list-lines" class="tb-control-select" onchange="updateListDemo()">
           <option value="two" selected>Two-line (상호명 + 결제 시간/수단)</option>
           <option value="one">Single-line (간편 한 줄형)</option>
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-list-avatar" type="checkbox" checked onchange="updateListDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-list-avatar" type="checkbox" checked onchange="updateListDemo()" />
           <span>선두 아이콘/아바타 표시 (Leading Icon)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-list-amount" type="checkbox" checked onchange="updateListDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-list-amount" type="checkbox" checked onchange="updateListDemo()" />
           <span>후미 결제 금액 표시 (Trailing Amount)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-list-canvas" style="min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;">
+    <div class="tb-playground-canvas" id="tb-list-canvas" style="min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;">
       <div style="width: 100%; max-width: 440px; background: #FFFFFF; border: 1px solid #E5E8EB; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
         <div style="display: flex; align-items: center; padding: 14px 18px; border-bottom: 1px solid #F2F4F6;">
-          <div id="kb-list-item-avatar-1" style="width: 40px; height: 40px; border-radius: 50%; background: #FFE100; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #191F28; margin-right: 14px;">B</div>
+          <div id="tb-list-item-avatar-1" style="width: 40px; height: 40px; border-radius: 50%; background: #E8F3FF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #0064FF; margin-right: 14px;">T</div>
           <div style="flex: 1;">
             <div style="font-size: 15px; font-weight: 700; color: #191F28;">스타벅스 강남점</div>
-            <div id="kb-list-sub-1" style="font-size: 12px; color: #8B95A1; margin-top: 2px;">체크카드 결제 • 11.15 12:30</div>
+            <div id="tb-list-sub-1" style="font-size: 12px; color: #8B95A1; margin-top: 2px;">토스뱅크 체크카드 결제 • 11.15 12:30</div>
           </div>
-          <div id="kb-list-item-amount-1" style="font-size: 15px; font-weight: 700; color: #F04452;">-5,400원</div>
+          <div id="tb-list-item-amount-1" class="tnum" style="font-size: 15px; font-weight: 700; color: #191F28; font-variant-numeric: tabular-nums;">-5,400원</div>
         </div>
         <div style="display: flex; align-items: center; padding: 14px 18px;">
-          <div id="kb-list-item-avatar-2" style="width: 40px; height: 40px; border-radius: 50%; background: #E8F3FF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #3182F6; margin-right: 14px;">↓</div>
+          <div id="tb-list-item-avatar-2" style="width: 40px; height: 40px; border-radius: 50%; background: #E8F3FF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #0064FF; margin-right: 14px;">↓</div>
           <div style="flex: 1;">
             <div style="font-size: 15px; font-weight: 700; color: #191F28;">월급 입금</div>
-            <div id="kb-list-sub-2" style="font-size: 12px; color: #8B95A1; margin-top: 2px;">타행 이체 입금 • 11.15 09:00</div>
+            <div id="tb-list-sub-2" style="font-size: 12px; color: #8B95A1; margin-top: 2px;">토스뱅크 급여통장 • 11.15 09:00</div>
           </div>
-          <div id="kb-list-item-amount-2" style="font-size: 15px; font-weight: 700; color: #3182F6;">+3,500,000원</div>
+          <div id="tb-list-item-amount-2" class="tnum" style="font-size: 15px; font-weight: 700; color: #0064FF; font-variant-numeric: tabular-nums;">+3,500,000원</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-list-code">&lt;md-list&gt;
-  &lt;md-list-item headline="스타벅스 강남점" supporting-text="체크카드 결제 • 11.15 12:30"&gt;
-    &lt;div slot="start"&gt;B&lt;/div&gt;
-    &lt;div slot="end" style="color: #F04452;"&gt;-5,400원&lt;/div&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-list-code">&lt;md-list&gt;
+  &lt;md-list-item headline="스타벅스 강남점" supporting-text="토스뱅크 체크카드 결제 • 11.15 12:30"&gt;
+    &lt;div slot="start"&gt;T&lt;/div&gt;
+    &lt;div slot="end" class="tnum" style="color: #191F28;"&gt;-5,400원&lt;/div&gt;
   &lt;/md-list-item&gt;
 &lt;/md-list&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-list-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-list-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateListDemo() {
-    const lines = document.getElementById('kb-list-lines').value;
-    const hasAvatar = document.getElementById('kb-list-avatar').checked;
-    const hasAmount = document.getElementById('kb-list-amount').checked;
+    const lines = document.getElementById('tb-list-lines').value;
+    const hasAvatar = document.getElementById('tb-list-avatar').checked;
+    const hasAmount = document.getElementById('tb-list-amount').checked;
 
-    document.getElementById('kb-list-item-avatar-1').style.display = hasAvatar ? 'flex' : 'none';
-    document.getElementById('kb-list-item-avatar-2').style.display = hasAvatar ? 'flex' : 'none';
-    document.getElementById('kb-list-sub-1').style.display = lines === 'two' ? 'block' : 'none';
-    document.getElementById('kb-list-sub-2').style.display = lines === 'two' ? 'block' : 'none';
-    document.getElementById('kb-list-item-amount-1').style.display = hasAmount ? 'block' : 'none';
-    document.getElementById('kb-list-item-amount-2').style.display = hasAmount ? 'block' : 'none';
+    document.getElementById('tb-list-item-avatar-1').style.display = hasAvatar ? 'flex' : 'none';
+    document.getElementById('tb-list-item-avatar-2').style.display = hasAvatar ? 'flex' : 'none';
+    document.getElementById('tb-list-sub-1').style.display = lines === 'two' ? 'block' : 'none';
+    document.getElementById('tb-list-sub-2').style.display = lines === 'two' ? 'block' : 'none';
+    document.getElementById('tb-list-item-amount-1').style.display = hasAmount ? 'block' : 'none';
+    document.getElementById('tb-list-item-amount-2').style.display = hasAmount ? 'block' : 'none';
 
-    const code = document.getElementById('kb-list-code');
-    code.innerText = `<md-list>\n  <md-list-item headline="스타벅스 강남점" ${lines === 'two' ? 'supporting-text="체크카드 결제 • 11.15 12:30"' : ''}>\n    ${hasAvatar ? '<div slot="start">B</div>' : ''}\n    ${hasAmount ? '<div slot="end" style="color: #F04452;">-5,400원</div>' : ''}\n  </md-list-item>\n</md-list>`;
+    const code = document.getElementById('tb-list-code');
+    code.innerText = `<md-list>\n  <md-list-item headline="스타벅스 강남점" ${lines === 'two' ? 'supporting-text="토스뱅크 체크카드 결제 • 11.15 12:30"' : ''}>\n    ${hasAvatar ? '<div slot="start">T</div>' : ''}\n    ${hasAmount ? '<div slot="end" class="tnum" style="color: #191F28;">-5,400원</div>' : ''}\n  </md-list-item>\n</md-list>`;
   }
 </script>
 

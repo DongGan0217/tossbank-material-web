@@ -49,7 +49,7 @@ order: 1
 
     <!-- Showcase 4: PMS -->
     <a href="/showcases/pms/" class="tb-overview-card kb-overview-card">
-      <div class="tb-overview-hero-wrap kb-overview-hero-wrap" style="background: linear-gradient(135deg, #0047BB 0%, #0064FF 100%); display:flex; align-items:center; justify-content:center; color:#FFE100;">
+      <div class="tb-overview-hero-wrap kb-overview-hero-wrap" style="background: linear-gradient(135deg, #0047BB 0%, #0064FF 100%); display:flex; align-items:center; justify-content:center; color:#FFFFFF;">
         <div style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em;">PMS Board 📊</div>
       </div>
       <div class="tb-overview-body kb-overview-body">

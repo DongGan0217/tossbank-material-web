@@ -35,28 +35,28 @@ people take supplementary actions with a single tap.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Icon Button (아이콘 버튼) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">형태와 아이콘을 실시간으로 변경해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-ib-variant">버튼 형태 (Variant):</label>
-        <select id="kb-ib-variant" class="kb-control-select" onchange="updateIbDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-ib-variant">버튼 형태 (Variant):</label>
+        <select id="tb-ib-variant" class="tb-control-select" onchange="updateIbDemo()">
           <option value="standard" selected>Standard (기본 투명형)</option>
           <option value="filled">Filled (토스 딥블루 채움형)</option>
-          <option value="tonal">Filled Tonal (톤앤톤 그레이)</option>
+          <option value="tonal">Filled Tonal (소프트 블루 톤앤톤)</option>
           <option value="outlined">Outlined (테두리 아웃라인형)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-ib-icon">아이콘 선택 (Icon):</label>
-        <select id="kb-ib-icon" class="kb-control-select" onchange="updateIbDemo()">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-ib-icon">아이콘 선택 (Icon):</label>
+        <select id="tb-ib-icon" class="tb-control-select" onchange="updateIbDemo()">
           <option value="tb_ic-arrow-left" selected>arrow-left (뒤로가기)</option>
           <option value="tb_ic-close">close (닫기)</option>
           <option value="tb_ic-call">call (고객센터 통화)</option>
@@ -65,65 +65,69 @@ people take supplementary actions with a single tap.
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-ib-toggle" type="checkbox" onchange="updateIbDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-ib-toggle" type="checkbox" onchange="updateIbDemo()" />
           <span>토글 버튼 활성화 (Toggle Selected)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-ib-disabled" type="checkbox" onchange="updateIbDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-ib-disabled" type="checkbox" onchange="updateIbDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-ib-canvas" style="min-height: 140px; display: flex; align-items: center; justify-content: center;">
-      <button id="kb-ib-render" type="button" style="width: 48px; height: 48px; border-radius: 50%; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease;">
-        <img id="kb-ib-render-img" src="/../images/tb-icons/svg/tb_ic-arrow-left.svg" width="24" height="24" alt="icon" />
+    <div class="tb-playground-canvas" id="tb-ib-canvas" style="min-height: 140px; display: flex; align-items: center; justify-content: center;">
+      <button id="tb-ib-render" type="button" style="width: 48px; height: 48px; border-radius: 50%; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease;">
+        <img id="tb-ib-render-img" src="/images/tb-icons/svg/tb_ic-arrow-left.svg" width="24" height="24" alt="icon" />
       </button>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-ib-code">&lt;md-icon-button&gt;
-  &lt;md-icon&gt;&lt;img src="/../images/tb-icons/svg/tb_ic-arrow-left.svg" /&gt;&lt;/md-icon&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-ib-code">&lt;md-icon-button&gt;
+  &lt;md-icon&gt;&lt;img src="/images/tb-icons/svg/tb_ic-arrow-left.svg" /&gt;&lt;/md-icon&gt;
 &lt;/md-icon-button&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-ib-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-ib-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateIbDemo() {
-    const variant = document.getElementById('kb-ib-variant').value;
-    const iconName = document.getElementById('kb-ib-icon').value;
-    const isToggle = document.getElementById('kb-ib-toggle').checked;
-    const disabled = document.getElementById('kb-ib-disabled').checked;
+    const variant = document.getElementById('tb-ib-variant').value;
+    const iconName = document.getElementById('tb-ib-icon').value;
+    const isToggle = document.getElementById('tb-ib-toggle').checked;
+    const disabled = document.getElementById('tb-ib-disabled').checked;
 
-    const btn = document.getElementById('kb-ib-render');
-    const img = document.getElementById('kb-ib-render-img');
-    const code = document.getElementById('kb-ib-code');
+    const btn = document.getElementById('tb-ib-render');
+    const img = document.getElementById('tb-ib-render-img');
+    const code = document.getElementById('tb-ib-code');
 
-    img.src = '/../images/tb-icons/svg/' + iconName + '.svg';
+    img.src = '/images/tb-icons/svg/' + iconName + '.svg';
     btn.disabled = disabled;
     btn.style.opacity = disabled ? '0.38' : '1';
     btn.style.cursor = disabled ? 'not-allowed' : 'pointer';
 
     let tag = 'md-icon-button';
     if (variant === 'standard') {
-      btn.style.background = isToggle ? '#F8F9FA' : 'transparent';
-      btn.style.border = isToggle ? '1.5px solid #191F28' : 'none';
+      btn.style.background = isToggle ? '#F2F4F6' : 'transparent';
+      btn.style.border = isToggle ? '1.5px solid #0064FF' : 'none';
+      img.style.filter = 'none';
       tag = 'md-icon-button';
     } else if (variant === 'filled') {
-      btn.style.background = isToggle ? '#191F28' : '#FFE100';
+      btn.style.background = isToggle ? '#191F28' : '#0064FF';
       btn.style.border = 'none';
+      img.style.filter = 'brightness(0) invert(1)';
       tag = 'md-filled-icon-button';
     } else if (variant === 'tonal') {
-      btn.style.background = isToggle ? '#E5E8EB' : '#F8F9FA';
+      btn.style.background = isToggle ? '#E5E8EB' : '#E8F3FF';
       btn.style.border = 'none';
+      img.style.filter = 'none';
       tag = 'md-filled-tonal-icon-button';
     } else if (variant === 'outlined') {
-      btn.style.background = isToggle ? '#F8F9FA' : 'transparent';
-      btn.style.border = '1px solid #D1D6DB';
+      btn.style.background = isToggle ? '#F2F4F6' : 'transparent';
+      btn.style.border = '1.5px solid #0064FF';
+      img.style.filter = 'none';
       tag = 'md-outlined-icon-button';
     }
 
-    code.innerText = `<${tag} ${isToggle ? 'toggle selected' : ''} ${disabled ? 'disabled' : ''}>\n  <md-icon><img src="/../images/tb-icons/svg/${iconName}.svg" /></md-icon>\n</${tag}>`;
+    code.innerText = `<${tag} ${isToggle ? 'toggle selected' : ''} ${disabled ? 'disabled' : ''}>\n  <md-icon><img src="/images/tb-icons/svg/${iconName}.svg" /></md-icon>\n</${tag}>`;
   }
 </script>
 

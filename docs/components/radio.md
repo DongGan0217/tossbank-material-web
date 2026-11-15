@@ -37,65 +37,65 @@ people select one option from a set of options.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Radio (라디오 버튼) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">송금 및 자동이체 주기 단일 선택 옵션을 조작해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-radio-theme">라디오 테마 색상 (Theme):</label>
-        <select id="kb-radio-theme" class="kb-control-select" onchange="updateRadioDemo()">
-          <option value="#FFE100" selected>토스 딥블루 (#FFE100 / #191F28)</option>
-          <option value="#3182F6">포인트 블루 (#3182F6)</option>
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-radio-theme">라디오 테마 색상 (Theme):</label>
+        <select id="tb-radio-theme" class="tb-control-select" onchange="updateRadioDemo()">
+          <option value="#0064FF" selected>토스 딥블루 (#0064FF / 시그니처)</option>
+          <option value="#3182F6">토스 블루 (#3182F6)</option>
           <option value="#191F28">다크 차콜 (#191F28)</option>
         </select>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-radio-disabled" type="checkbox" onchange="updateRadioDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-radio-disabled" type="checkbox" onchange="updateRadioDemo()" />
           <span>비활성화 (Disabled)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-radio-canvas" style="min-height: 160px; display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 20px;">
+    <div class="tb-playground-canvas" id="tb-radio-canvas" style="min-height: 160px; display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 20px;">
       <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 15px; font-weight: 600; color: #191F28;">
-        <input type="radio" name="kb-live-radio" id="kb-r1" checked onchange="updateRadioDemo()" style="width: 20px; height: 20px; accent-color: #FFE100; cursor: pointer;" />
+        <input type="radio" name="tb-live-radio" id="tb-r1" checked onchange="updateRadioDemo()" style="width: 20px; height: 20px; accent-color: #0064FF; cursor: pointer;" />
         <span>매월 지정일 자동이체 (추천)</span>
       </label>
       <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 15px; font-weight: 500; color: #4E5968;">
-        <input type="radio" name="kb-live-radio" id="kb-r2" onchange="updateRadioDemo()" style="width: 20px; height: 20px; accent-color: #FFE100; cursor: pointer;" />
+        <input type="radio" name="tb-live-radio" id="tb-r2" onchange="updateRadioDemo()" style="width: 20px; height: 20px; accent-color: #0064FF; cursor: pointer;" />
         <span>매주 특정 요일 이체</span>
       </label>
       <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 15px; font-weight: 500; color: #4E5968;">
-        <input type="radio" name="kb-live-radio" id="kb-r3" onchange="updateRadioDemo()" style="width: 20px; height: 20px; accent-color: #FFE100; cursor: pointer;" />
+        <input type="radio" name="tb-live-radio" id="tb-r3" onchange="updateRadioDemo()" style="width: 20px; height: 20px; accent-color: #0064FF; cursor: pointer;" />
         <span>매영업일 자동 이체</span>
       </label>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-radio-code">&lt;md-radio name="transfer-cycle" value="monthly" checked&gt;&lt;/md-radio&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-radio-code">&lt;md-radio name="transfer-cycle" value="monthly" checked style="--md-radio-selected-icon-color: #0064FF;"&gt;&lt;/md-radio&gt;
 &lt;label for="monthly"&gt;매월 지정일 자동이체 (추천)&lt;/label&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-radio-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-radio-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateRadioDemo() {
-    const theme = document.getElementById('kb-radio-theme').value;
-    const disabled = document.getElementById('kb-radio-disabled').checked;
-    const code = document.getElementById('kb-radio-code');
+    const theme = document.getElementById('tb-radio-theme').value;
+    const disabled = document.getElementById('tb-radio-disabled').checked;
+    const code = document.getElementById('tb-radio-code');
 
-    const radios = [document.getElementById('kb-r1'), document.getElementById('kb-r2'), document.getElementById('kb-r3')];
+    const radios = [document.getElementById('tb-r1'), document.getElementById('tb-r2'), document.getElementById('tb-r3')];
     radios.forEach(r => {
       r.style.accentColor = theme;
       r.disabled = disabled;
     });
 
-    let selectedVal = document.getElementById('kb-r1').checked ? 'monthly' : (document.getElementById('kb-r2').checked ? 'weekly' : 'daily');
+    let selectedVal = document.getElementById('tb-r1').checked ? 'monthly' : (document.getElementById('tb-r2').checked ? 'weekly' : 'daily');
     code.innerText = `<md-radio name="transfer-cycle" value="${selectedVal}" checked ${disabled ? 'disabled' : ''} style="--md-radio-selected-icon-color: ${theme};"></md-radio>\n<label>선택 옵션: ${selectedVal}</label>`;
   }
 </script>

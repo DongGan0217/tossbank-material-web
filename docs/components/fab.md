@@ -46,93 +46,96 @@ payment'"
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ FAB (플로팅 액션 버튼) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">옵션을 변경하면 플로팅 버튼이 실시간 렌더링됩니다.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-fab-type">FAB 유형 (Type):</label>
-        <select id="kb-fab-type" class="kb-control-select" onchange="updateFabDemo()">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-fab-type">FAB 유형 (Type):</label>
+        <select id="tb-fab-type" class="tb-control-select" onchange="updateFabDemo()">
           <option value="extended" selected>Extended (확장 텍스트 라벨형)</option>
-          <option value="standard">Standard (56px 원형/스퀘어)</option>
+          <option value="standard">Standard (56px 스쿼클)</option>
           <option value="small">Small (40px 소형)</option>
-          <option value="large">Large (96px 대형)</option>
+          <option value="large">Large (88px 대형)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-fab-color">테마 컬러 (Color):</label>
-        <select id="kb-fab-color" class="kb-control-select" onchange="updateFabDemo()">
-          <option value="yellow" selected>토스 딥블루 (#0064FF / #191F28)</option>
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-fab-color">테마 컬러 (Color):</label>
+        <select id="tb-fab-color" class="tb-control-select" onchange="updateFabDemo()">
+          <option value="deep-blue" selected>토스 딥블루 (#0064FF / #FFFFFF)</option>
           <option value="white">클린 화이트 (#FFFFFF / #191F28)</option>
           <option value="dark">다크 슬레이트 (#191F28 / #FFFFFF)</option>
         </select>
       </div>
-      <div class="kb-control-group">
-        <label class="kb-control-label" for="kb-fab-label">라벨 텍스트 (Label):</label>
-        <input id="kb-fab-label" class="kb-control-input" type="text" value="새 계좌 개설" oninput="updateFabDemo()" />
+      <div class="tb-control-group">
+        <label class="tb-control-label" for="tb-fab-label">라벨 텍스트 (Label):</label>
+        <input id="tb-fab-label" class="tb-control-input" type="text" value="새 계좌 개설" oninput="updateFabDemo()" />
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-fab-icon" type="checkbox" checked onchange="updateFabDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-fab-icon" type="checkbox" checked onchange="updateFabDemo()" />
           <span>아이콘 포함 (with Icon)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-fab-lowered" type="checkbox" onchange="updateFabDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-fab-lowered" type="checkbox" onchange="updateFabDemo()" />
           <span>낮은 그림자 (Lowered Elevation)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-fab-canvas" style="min-height: 160px; display: flex; align-items: center; justify-content: center;">
-      <button id="kb-fab-render" type="button" style="height: 56px; background: #0064FF; border: none; border-radius: 18px; padding: 0 20px; font-weight: 700; font-size: 15px; color: #FFFFFF; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 8px 24px rgba(0,100,255,0.35); transition: all 0.2s ease;">
-        <img id="kb-fab-render-icon" src="/images/tb-icons/svg/tb_ic-plus.svg" width="22" height="22" alt="add" />
-        <span id="kb-fab-render-text">새 계좌 개설</span>
+    <div class="tb-playground-canvas" id="tb-fab-canvas" style="min-height: 160px; display: flex; align-items: center; justify-content: center;">
+      <button id="tb-fab-render" type="button" style="height: 56px; background: #0064FF; border: none; border-radius: 18px; padding: 0 20px; font-weight: 700; font-size: 15px; color: #FFFFFF; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 8px 24px rgba(0,100,255,0.35); transition: all 0.2s ease;">
+        <img id="tb-fab-render-icon" src="/images/tb-icons/svg/tb_ic-plus.svg" width="22" height="22" alt="add" style="filter: brightness(0) invert(1);" />
+        <span id="tb-fab-render-text">새 계좌 개설</span>
       </button>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-fab-code">&lt;md-fab variant="primary" label="새 계좌 개설"&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-fab-code">&lt;md-fab variant="primary" label="새 계좌 개설" style="--md-fab-container-color: #0064FF;"&gt;
   &lt;md-icon slot="icon"&gt;&lt;img src="/images/tb-icons/svg/tb_ic-plus.svg" /&gt;&lt;/md-icon&gt;
 &lt;/md-fab&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-fab-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-fab-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function updateFabDemo() {
-    const type = document.getElementById('kb-fab-type').value;
-    const color = document.getElementById('kb-fab-color').value;
-    const label = document.getElementById('kb-fab-label').value || '새 계좌 개설';
-    const hasIcon = document.getElementById('kb-fab-icon').checked;
-    const lowered = document.getElementById('kb-fab-lowered').checked;
+    const type = document.getElementById('tb-fab-type').value;
+    const color = document.getElementById('tb-fab-color').value;
+    const label = document.getElementById('tb-fab-label').value || '새 계좌 개설';
+    const hasIcon = document.getElementById('tb-fab-icon').checked;
+    const lowered = document.getElementById('tb-fab-lowered').checked;
 
-    const btn = document.getElementById('kb-fab-render');
-    const icon = document.getElementById('kb-fab-render-icon');
-    const text = document.getElementById('kb-fab-render-text');
-    const code = document.getElementById('kb-fab-code');
+    const btn = document.getElementById('tb-fab-render');
+    const icon = document.getElementById('tb-fab-render-icon');
+    const text = document.getElementById('tb-fab-render-text');
+    const code = document.getElementById('tb-fab-code');
 
     text.innerText = label;
     icon.style.display = hasIcon ? 'inline-block' : 'none';
 
-    if (color === 'yellow') {
+    if (color === 'deep-blue') {
       btn.style.background = '#0064FF';
       btn.style.color = '#FFFFFF';
       btn.style.border = 'none';
       btn.style.boxShadow = lowered ? '0 2px 6px rgba(0,0,0,0.1)' : '0 8px 24px rgba(0,100,255,0.35)';
+      icon.style.filter = 'brightness(0) invert(1)';
     } else if (color === 'white') {
       btn.style.background = '#FFFFFF';
-      btn.style.color = '#FFFFFF';
+      btn.style.color = '#191F28';
       btn.style.border = '1px solid #E5E8EB';
       btn.style.boxShadow = lowered ? '0 2px 4px rgba(0,0,0,0.06)' : '0 8px 20px rgba(0,0,0,0.1)';
+      icon.style.filter = 'none';
     } else {
       btn.style.background = '#191F28';
       btn.style.color = '#FFFFFF';
       btn.style.border = 'none';
       btn.style.boxShadow = lowered ? '0 2px 6px rgba(0,0,0,0.2)' : '0 8px 24px rgba(0,0,0,0.3)';
+      icon.style.filter = 'brightness(0) invert(1)';
     }
 
     if (type === 'extended') {

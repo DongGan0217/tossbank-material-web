@@ -29,7 +29,7 @@
           localStorage.setItem('tb-theme', theme);
           document.documentElement.setAttribute('data-theme', theme);
           if (document.body) document.body.setAttribute('data-theme', theme);
-          document.querySelectorAll('.tb-theme-btn, .kb-theme-btn').forEach(btn => {
+          document.querySelectorAll('.tb-theme-btn').forEach(btn => {
             btn.classList.toggle('active', btn.getAttribute('data-theme-val') === theme);
           });
         };
@@ -85,23 +85,23 @@
         </select>
       </div>
 
-      <div id="tb-global-theme-switcher" class="tb-floating-switcher kb-floating-switcher" style="position: static;" aria-label="Toss Bank Theme Switcher">
-        <span class="tb-switcher-label kb-switcher-label">Theme:</span>
-        <button type="button" class="tb-theme-btn kb-theme-btn" data-theme-val="white" onclick="__setTbTheme('white')" title="Clean White & Blue (기본)">
-          <span class="tb-dot kb-dot dot-white"></span> White
+      <div id="tb-global-theme-switcher" class="tb-floating-switcher" style="position: static;" aria-label="Toss Bank Theme Switcher">
+        <span class="tb-switcher-label">Theme:</span>
+        <button type="button" class="tb-theme-btn" data-theme-val="white" onclick="__setTbTheme('white')" title="Clean White & Blue (기본)">
+          <span class="tb-dot dot-white"></span> White
         </button>
-        <button type="button" class="tb-theme-btn kb-theme-btn" data-theme-val="slate" onclick="__setTbTheme('slate')" title="Cool Slate">
-          <span class="tb-dot kb-dot dot-slate"></span> Slate
+        <button type="button" class="tb-theme-btn" data-theme-val="slate" onclick="__setTbTheme('slate')" title="Cool Slate">
+          <span class="tb-dot dot-slate"></span> Slate
         </button>
-        <button type="button" class="tb-theme-btn kb-theme-btn" data-theme-val="dark" onclick="__setTbTheme('dark')" title="Modern Dark">
-          <span class="tb-dot kb-dot dot-dark"></span> Dark
+        <button type="button" class="tb-theme-btn" data-theme-val="dark" onclick="__setTbTheme('dark')" title="Modern Dark">
+          <span class="tb-dot dot-dark"></span> Dark
         </button>
       </div>
     </div>
     <script>
       (function() {
         const current = localStorage.getItem('tb-theme') || 'white';
-        const activeBtn = document.querySelector(`.tb-theme-btn[data-theme-val="${current}"], .kb-theme-btn[data-theme-val="${current}"]`);
+        const activeBtn = document.querySelector(`.tb-theme-btn[data-theme-val="${current}"]`);
         if (activeBtn) activeBtn.classList.add('active');
       })();
     </script>

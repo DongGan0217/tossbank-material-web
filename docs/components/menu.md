@@ -40,79 +40,79 @@ choices on a temporary surface.
 </catalog-component-header>
 
 <!-- Toss Bank Interactive Options Playground & Live Sandbox -->
-<div class="kb-playground-container">
-  <div class="kb-playground-header">
-    <div class="kb-playground-title">
+<div class="tb-playground-container">
+  <div class="tb-playground-header">
+    <div class="tb-playground-title">
       <span>🛠️ Menu (드롭다운 메뉴) 실시간 옵션 샌드박스</span>
-      <span class="kb-playground-badge">Live Interactive</span>
+      <span class="tb-playground-badge">Live Interactive</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">계좌 관리 및 거래 부가 기능 드롭다운 메뉴를 실시간 테스트해보세요.</span>
   </div>
-  <div class="kb-playground-body">
-    <div class="kb-playground-controls">
+  <div class="tb-playground-body">
+    <div class="tb-playground-controls">
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
-        <label class="kb-control-checkbox">
-          <input id="kb-menu-open" type="checkbox" checked onchange="updateMenuDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-menu-open" type="checkbox" checked onchange="updateMenuDemo()" />
           <span>메뉴 펼치기 (Open Menu)</span>
         </label>
-        <label class="kb-control-checkbox">
-          <input id="kb-menu-icon" type="checkbox" checked onchange="updateMenuDemo()" />
+        <label class="tb-control-checkbox">
+          <input id="tb-menu-icon" type="checkbox" checked onchange="updateMenuDemo()" />
           <span>메뉴 아이콘 포함 (with Icons)</span>
         </label>
       </div>
     </div>
-    <div class="kb-playground-canvas" id="kb-menu-canvas" style="min-height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 24px;">
+    <div class="tb-playground-canvas" id="tb-menu-canvas" style="min-height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 24px;">
       <button onclick="toggleMenuBox()" type="button" style="height: 44px; padding: 0 18px; border-radius: 12px; border: 1px solid #E5E8EB; background: #FFFFFF; font-size: 14px; font-weight: 700; color: #191F28; display: flex; align-items: center; gap: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-        <span>계좌 설정 메뉴</span>
-        <span id="kb-menu-arrow" style="font-size: 11px;">▼</span>
+        <span>토스뱅크 계좌 설정 메뉴</span>
+        <span id="tb-menu-arrow" style="font-size: 11px;">▼</span>
       </button>
-      <div id="kb-menu-dropdown" style="margin-top: 8px; width: 240px; background: #FFFFFF; border: 1px solid #E5E8EB; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.12); transition: all 0.2s ease;">
+      <div id="tb-menu-dropdown" style="margin-top: 8px; width: 240px; background: #FFFFFF; border: 1px solid #E5E8EB; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.12); transition: all 0.2s ease;">
         <div style="padding: 12px 16px; font-size: 14px; font-weight: 700; color: #191F28; display: flex; align-items: center; gap: 10px; cursor: pointer; border-bottom: 1px solid #F2F4F6;">
-          <span class="kb-m-icon" style="font-size: 16px;">📥</span>
+          <span class="tb-m-icon" style="font-size: 16px;">📥</span>
           <span>거래내역 다운로드</span>
         </div>
         <div style="padding: 12px 16px; font-size: 14px; font-weight: 500; color: #4E5968; display: flex; align-items: center; gap: 10px; cursor: pointer; border-bottom: 1px solid #F2F4F6;">
-          <span class="kb-m-icon" style="font-size: 16px;">⚙️</span>
+          <span class="tb-m-icon" style="font-size: 16px;">⚙️</span>
           <span>이체 한도 변경</span>
         </div>
         <div style="padding: 12px 16px; font-size: 14px; font-weight: 500; color: #F04452; display: flex; align-items: center; gap: 10px; cursor: pointer;">
-          <span class="kb-m-icon" style="font-size: 16px;">⚠️</span>
+          <span class="tb-m-icon" style="font-size: 16px;">⚠️</span>
           <span>자동이체 해지</span>
         </div>
       </div>
     </div>
   </div>
-  <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-menu-code">&lt;md-menu id="account-menu" open&gt;
+  <div class="tb-playground-footer">
+    <pre class="tb-code-preview" id="tb-menu-code">&lt;md-menu id="account-menu" open style="--md-menu-container-shape: 16px;"&gt;
   &lt;md-menu-item headline="거래내역 다운로드"&gt;&lt;/md-menu-item&gt;
   &lt;md-menu-item headline="이체 한도 변경"&gt;&lt;/md-menu-item&gt;
   &lt;md-menu-item headline="자동이체 해지"&gt;&lt;/md-menu-item&gt;
 &lt;/md-menu&gt;</pre>
-    <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-menu-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
+    <button class="tb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('tb-menu-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
 <script>
   function toggleMenuBox() {
-    const chk = document.getElementById('kb-menu-open');
+    const chk = document.getElementById('tb-menu-open');
     chk.checked = !chk.checked;
     updateMenuDemo();
   }
 
   function updateMenuDemo() {
-    const isOpen = document.getElementById('kb-menu-open').checked;
-    const hasIcons = document.getElementById('kb-menu-icon').checked;
-    const dropdown = document.getElementById('kb-menu-dropdown');
-    const arrow = document.getElementById('kb-menu-arrow');
-    const code = document.getElementById('kb-menu-code');
+    const isOpen = document.getElementById('tb-menu-open').checked;
+    const hasIcons = document.getElementById('tb-menu-icon').checked;
+    const dropdown = document.getElementById('tb-menu-dropdown');
+    const arrow = document.getElementById('tb-menu-arrow');
+    const code = document.getElementById('tb-menu-code');
 
     dropdown.style.display = isOpen ? 'block' : 'none';
     arrow.innerText = isOpen ? '▲' : '▼';
 
-    document.querySelectorAll('.kb-m-icon').forEach(el => {
+    document.querySelectorAll('.tb-m-icon').forEach(el => {
       el.style.display = hasIcons ? 'inline' : 'none';
     });
 
-    code.innerText = `<md-menu id="account-menu" ${isOpen ? 'open' : ''}>\n  <md-menu-item headline="거래내역 다운로드">\n    ${hasIcons ? '<md-icon slot="start">download</md-icon>' : ''}\n  </md-menu-item>\n  <md-menu-item headline="이체 한도 변경"></md-menu-item>\n  <md-menu-item headline="자동이체 해지"></md-menu-item>\n</md-menu>`;
+    code.innerText = `<md-menu id="account-menu" ${isOpen ? 'open' : ''} style="--md-menu-container-shape: 16px;">\n  <md-menu-item headline="거래내역 다운로드">\n    ${hasIcons ? '<md-icon slot="start">download</md-icon>' : ''}\n  </md-menu-item>\n  <md-menu-item headline="이체 한도 변경"></md-menu-item>\n  <md-menu-item headline="자동이체 해지"></md-menu-item>\n</md-menu>`;
   }
 </script>
 

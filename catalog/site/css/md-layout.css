@@ -832,7 +832,7 @@ blockquote.warning a {
 /* ==========================================================================
    Component Interactive Options Playground & Sandbox Styles
    ========================================================================== */
-.kb-playground-container {
+.tb-playground-container {
   background: var(--md-sys-color-surface, #ffffff);
   border: 1.5px solid var(--md-sys-color-outline-variant, #e5e8eb);
   border-radius: 20px;
@@ -841,7 +841,7 @@ blockquote.warning a {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.kb-playground-header {
+.tb-playground-header {
   background: var(--md-sys-color-surface-container, #f8f9fa);
   border-bottom: 1px solid var(--md-sys-color-outline-variant, #e5e8eb);
   padding: 14px 20px;
@@ -850,7 +850,7 @@ blockquote.warning a {
   align-items: center;
 }
 
-.kb-playground-title {
+.tb-playground-title {
   font-size: 14px;
   font-weight: 700;
   color: var(--md-sys-color-on-surface, #191f28);
@@ -859,7 +859,7 @@ blockquote.warning a {
   gap: 8px;
 }
 
-.kb-playground-badge {
+.tb-playground-badge {
   background: #0064ff;
   color: #ffffff;
   font-size: 11px;
@@ -868,19 +868,19 @@ blockquote.warning a {
   border-radius: 9999px;
 }
 
-.kb-playground-body {
+.tb-playground-body {
   display: grid;
   grid-template-columns: 320px 1fr;
   min-height: 280px;
 }
 
 @media screen and (max-width: 860px) {
-  .kb-playground-body {
+  .tb-playground-body {
     grid-template-columns: 1fr;
   }
 }
 
-.kb-playground-controls {
+.tb-playground-controls {
   padding: 20px;
   border-right: 1px solid var(--md-sys-color-outline-variant, #e5e8eb);
   background: var(--md-sys-color-surface-container-low, #fafbfc);
@@ -889,20 +889,20 @@ blockquote.warning a {
   gap: 16px;
 }
 
-.kb-control-group {
+.tb-control-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.kb-control-label {
+.tb-control-label {
   font-size: 12px;
   font-weight: 700;
   color: var(--md-sys-color-on-surface, #191f28);
 }
 
-.kb-control-input,
-.kb-control-select {
+.tb-control-input,
+.tb-control-select {
   padding: 8px 12px;
   border: 1px solid var(--md-sys-color-outline, #d1d6db);
   border-radius: 8px;
@@ -913,7 +913,7 @@ blockquote.warning a {
   outline: none;
 }
 
-.kb-control-checkbox {
+.tb-control-checkbox {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -923,7 +923,7 @@ blockquote.warning a {
   cursor: pointer;
 }
 
-.kb-playground-canvas {
+.tb-playground-canvas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -932,7 +932,7 @@ blockquote.warning a {
   position: relative;
 }
 
-.kb-playground-footer {
+.tb-playground-footer {
   border-top: 1px solid var(--md-sys-color-outline-variant, #e5e8eb);
   background: #191f28;
   padding: 14px 20px;
@@ -941,16 +941,18 @@ blockquote.warning a {
   justify-content: space-between;
 }
 
+.tb-code-preview,
 .kb-code-preview {
   font-family: 'Google Sans Mono', monospace;
   font-size: 13px;
-  color: #ffd400;
+  color: #60a5fa;
   word-break: break-all;
   overflow-x: auto;
   white-space: pre-wrap;
   margin: 0;
 }
 
+.tb-copy-code-btn,
 .kb-copy-code-btn {
   background: rgba(255, 255, 255, 0.15);
   border: none;

@@ -74,16 +74,16 @@ export class DragPlayground extends LitElement {
     }
 
     #drag-bar:hover {
-      background-color: #FFE100;
-      border-color: #FFE100;
+      background-color: #0064FF;
+      border-color: #0064FF;
       color: #191F28;
       cursor: grab;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
     #drag-bar.isDragging {
-      background-color: #FFE100;
-      border-color: #FFE100;
+      background-color: #0064FF;
+      border-color: #0064FF;
       color: #191F28;
       cursor: grabbing;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);

@@ -326,7 +326,7 @@ export class StoryKnobPanel extends LitElement {
         min-height: 44px;
         display: flex;
         align-items: center;
-        --mdc-theme-primary: #FFE100;
+        --mdc-theme-primary: #0064FF;
         --mdc-theme-secondary: #191F28;
       }
 
