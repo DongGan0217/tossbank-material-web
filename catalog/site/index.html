@@ -1,0 +1,131 @@
+{% extends 'default.html' %}
+
+{% block head %}
+  <script type="module" src="/js/pages/home-page.js"></script>
+  <link rel="stylesheet" href="/css/home-page.css">
+  <style>
+    .kb-hero {
+      background: linear-gradient(135deg, #FFE100 0%, #FFF380 100%);
+      color: #111111;
+      padding: 64px 32px;
+      border-radius: 28px;
+      margin-bottom: 40px;
+      box-shadow: 0 12px 32px rgba(255, 225, 0, 0.25);
+    }
+    .kb-hero h1 {
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin: 0 0 16px 0;
+    }
+    .kb-hero p {
+      font-size: 19px;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+      max-width: 680px;
+      color: #222222;
+      letter-spacing: -0.02em;
+    }
+    .kb-badge {
+      display: inline-block;
+      background: #111111;
+      color: #FFE100;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .kb-install-box {
+      background: #111111;
+      color: #EEEEEE;
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-family: monospace;
+      font-size: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .kb-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin: 40px 0;
+    }
+    .kb-card {
+      background: #FFFFFF;
+      border: 1px solid #ECECEC;
+      border-radius: 20px;
+      padding: 28px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .kb-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      border-color: #FFE100;
+    }
+    .kb-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      color: #111111;
+    }
+    .kb-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666666;
+      margin: 0;
+    }
+    .kb-section-title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 48px 0 20px 0;
+      color: #111111;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+
+<div class="kb-hero">
+  <div class="kb-badge">Enterprise Edition v1.0.0</div>
+  <h1>KakaoBank Material Web</h1>
+  <p>
+    대한민국 1등 인터넷 전문은행 카카오뱅크의 디자인 아이덴티티와 Google Material Design 3의 Web Components 표준 기술이 결합된 독자적 엔터프라이즈 디자인 시스템입니다.
+  </p>
+  <div class="kb-install-box">
+    <span>$ npm install @kakaobank/material-web</span>
+  </div>
+</div>
+
+<h2 class="kb-section-title">Design Principles & Core Values</h2>
+<div class="kb-grid">
+  <div class="kb-card">
+    <h3>💛 Signature Kakao Yellow</h3>
+    <p>브랜드 시그니처 컬러(#FFE100)와 순수 블랙(#000000) 텍스트를 기본 시스템 토큰으로 내장하여 완벽한 금융 가독성과 브랜드 아이덴티티를 확립합니다.</p>
+  </div>
+  <div class="kb-card">
+    <h3>🔤 Pretendard Variable Typography</h3>
+    <p>국내 최적화 산세리프 Pretendard Variable 웹폰트와 -0.03em의 정밀 자간 설계를 W3C DTCG 3-Tier 토큰으로 전면 주입하였습니다.</p>
+  </div>
+  <div class="kb-card">
+    <h3>📱 52px Touch Targets & 16px Corners</h3>
+    <p>금융 앱 사용자 경험에 최적화된 52px 넉넉한 터치 영역과 16px 둥근 모서리 코너 래디우스를 모든 컴포넌트에 표준화하였습니다.</p>
+  </div>
+  <div class="kb-card">
+    <h3>🌐 100% W3C Web Components</h3>
+    <p>React, Vue, Angular 등 모든 프레임워크와 프레임워크-프리(Vanilla JS) 환경에서 완벽하게 상호운용되는 표준 웹 컴포넌트입니다.</p>
+  </div>
+</div>
+
+<h2 class="kb-section-title">Component Categories</h2>
+<p style="font-size: 16px; color: #555555; margin-bottom: 24px;">
+  왼쪽 탐색 메뉴의 <strong>Components</strong>에서 각 컴포넌트의 라이브 데모, 사용법, 그리고 카카오뱅크 디자인 토큰 설정을 확인하세요.
+</p>
+
+{% endblock %}

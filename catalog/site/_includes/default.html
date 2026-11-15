@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes"
+    />
+    {% if isComponent %}
+      {% set pageTitle = title or name %}
+    {% else %}
+      {% set pageTitle = title %}
+    {% endif %}
+    <!-- Use the 11ty data system to set the title -->
+    <title>Toss Bank Material Web{% if pageTitle %} - {{ pageTitle }}{% endif %}</title>
+    <!-- Set the color of the url bar on mobile to match theme -->
+    <meta name="theme-color" content="#0064FF" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <link href="/images/favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/no-js.css" />
+    <!-- Inlines the global css in site/css/global.css -->
+    {% inlinecss "global.css" %}
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('tb-theme') || 'white';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        window.__setTbTheme = function(theme) {
+          localStorage.setItem('tb-theme', theme);
+          document.documentElement.setAttribute('data-theme', theme);
+          if (document.body) document.body.setAttribute('data-theme', theme);
+          document.querySelectorAll('.tb-theme-btn, .kb-theme-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-theme-val') === theme);
+          });
+        };
+        window.__setKbTheme = window.__setTbTheme;
+        document.addEventListener('DOMContentLoaded', function() {
+          const t = localStorage.getItem('tb-theme') || 'white';
+          window.__setTbTheme(t);
+        });
+      })();
+    </script>
+    <!-- MUST be loaded before any lit bundle. allows hydration of SSRd components -->
+    <script type="module" src="/js/ssr-utils/lit-hydrate-support.js"></script>
+    <!-- Loads definition for <lit-island>. See docs for @11ty/is-land for usage -->
+    <script type="module" src="/js/ssr-utils/lit-island.js"></script>
+    <!-- Inlines the material theming logic since we want to prevent FOUC -->
+    {% inlinejs "inline/apply-saved-theme.js" %}
+    <script type="module" src="/js/pages/global.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="/css/no-js.css" />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+    />
+    <!-- dsd-pending hides body until the polyfill has run on browsers that do not support DSD -->
+    <style>
+      body[dsd-pending] {
+        display: none;
+      }
+    </style>
+    <!-- If JS is disabled just show the contents without the polyfill -->
+    <noscript
+      ><style>
+        body[dsd-pending] {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <!-- Allows sub-templates to insert into the head -->
+    {% block head %}{% endblock %}
+  </head>
+  <body dsd-pending>
+    <!-- Inlines the declarative shadow dom polyfill for FF since it's performance sensitive -->
+    {% inlinejs "ssr-utils/dsd-polyfill.js" %}
+    <!-- Global Multi-Design System Switcher & Theme Switcher -->
+    <div id="tb-global-header-tools" style="position: fixed; top: 14px; right: 20px; z-index: 1000; display: flex; align-items: center; gap: 8px;">
+      <div id="global-ds-switcher" class="global-ds-dropdown" style="display: flex; align-items: center; gap: 6px; background: var(--md-sys-color-surface-container-high, #f1f3f5); border: 1px solid var(--md-sys-color-outline-variant, #e5e8eb); padding: 5px 12px; border-radius: 9999px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); backdrop-filter: blur(8px);">
+        <span style="font-size: 13px;">🏦</span>
+        <select onchange="if(this.value) window.location.href=this.value" style="background: transparent; border: none; font-size: 12px; font-weight: 700; color: var(--md-sys-color-on-surface, #191f28); outline: none; cursor: pointer; font-family: inherit;">
+          <option value="http://localhost:8086" selected>토스뱅크 M3 (Port 8086)</option>
+          <option value="http://localhost:8085">카카오뱅크 M3 (Port 8085)</option>
+          <option value="http://localhost:8088/design-system-hub.html">🌐 통합 Hub 포털 (Port 8088)</option>
+        </select>
+      </div>
+
+      <div id="tb-global-theme-switcher" class="tb-floating-switcher kb-floating-switcher" style="position: static;" aria-label="Toss Bank Theme Switcher">
+        <span class="tb-switcher-label kb-switcher-label">Theme:</span>
+        <button type="button" class="tb-theme-btn kb-theme-btn" data-theme-val="white" onclick="__setTbTheme('white')" title="Clean White & Blue (기본)">
+          <span class="tb-dot kb-dot dot-white"></span> White
+        </button>
+        <button type="button" class="tb-theme-btn kb-theme-btn" data-theme-val="slate" onclick="__setTbTheme('slate')" title="Cool Slate">
+          <span class="tb-dot kb-dot dot-slate"></span> Slate
+        </button>
+        <button type="button" class="tb-theme-btn kb-theme-btn" data-theme-val="dark" onclick="__setTbTheme('dark')" title="Modern Dark">
+          <span class="tb-dot kb-dot dot-dark"></span> Dark
+        </button>
+      </div>
+    </div>
+    <script>
+      (function() {
+        const current = localStorage.getItem('tb-theme') || 'white';
+        const activeBtn = document.querySelector(`.tb-theme-btn[data-theme-val="${current}"], .kb-theme-btn[data-theme-val="${current}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
+      })();
+    </script>
+    <lit-island on:idle import="/js/hydration-entrypoints/navigation.js">
+      <nav-drawer page-title="{{name}}" {% if hasToc %}has-toc{% endif %}>
+        <top-app-bar slot="top-app-bar" baseURI="/">
+          {% block topappbar %}{{ topappbar | safe }}{% endblock %}
+        </top-app-bar>
+
+        {% if hasToc %}
+          <section slot="toc">{% block toc %}{% endblock %}</section>
+        {% endif %}
+
+        <main id="main-content" slot="app-content" tabindex="0">
+          <!-- this is the content of the page -->
+          <!-- unrelated change to components -->
+          {% block content %}{{ content | mdMarkdown | safe }}{% endblock %}
+        </main>
+        <md-list
+            aria-label="List of pages and components"
+            role="menubar"
+            class="nav">
+          <!-- About section -->
+          <md-item><div slot="headline">About</div></md-item>
+          {% for file in collections.about|filtersort('data.order') %}
+            <md-list-item
+              href="{{ file.url }}"
+              role="menuitem"
+              {% if file.url == page.url %}selected{% endif %}
+              type="link"
+              tabindex="{% if file.url == page.url %}0{% else %}-1{% endif %}"
+            >{{ file.data.name }}</md-list-item>
+          {% endfor %}
+          <md-divider role="separator"></md-divider>
+          <!-- Theming section -->
+          <md-item><div slot="headline">Theming</div></md-item>
+          {% for file in collections.theming|filtersort('data.order') %}
+            <md-list-item
+              href="{{ file.url }}"
+              type="menuitem"
+              {% if file.url == page.url %}selected{% endif %}
+              type="link"
+              tabindex="{% if file.url == page.url %}0{% else %}-1{% endif %}"
+            >{{ file.data.name }}</md-list-item>
+          {% endfor %}
+          <md-divider role="separator"></md-divider>
+          <!-- Components section -->
+          <md-item><div slot="headline">Components</div></md-item>
+          <md-list-item
+            href="/components/overview/"
+            role="menuitem"
+            {% if page.url == '/components/overview/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+            style="font-weight: 700; color: #0064FF;"
+          >★ Component Overview</md-list-item>
+          {% for file in collections.component|filtersort('data.name') %}
+            {% if file.data.name != 'Overview' and file.url != '/components/overview/' %}
+            <md-list-item
+              href="{{ file.url }}"
+              role="menuitem"
+              {% if file.url == page.url %}selected{% endif %}
+              type="link"
+              tabindex="{% if file.url == page.url %}0{% else %}-1{% endif %}"
+            >{{ file.data.name }}</md-list-item>
+            {% endif %}
+          {% endfor %}
+          <md-divider role="separator"></md-divider>
+          <!-- Assets section -->
+          <md-item><div slot="headline">Assets</div></md-item>
+          <md-list-item
+            href="/assets/images/"
+            role="menuitem"
+            {% if page.url == '/assets/images/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+            style="font-weight: 700; color: #0064FF;"
+          >★ Image Library</md-list-item>
+          <md-list-item
+            href="/components/icon/"
+            role="menuitem"
+            {% if page.url == '/components/icon/' %}selected{% endif %}
+            type="link"
+            tabindex="{% if page.url == '/components/icon/' %}0{% else %}-1{% endif %}"
+          >Icon Library (140+ Vectors)</md-list-item>
+          <md-divider role="separator"></md-divider>
+          <!-- Showcases section (New!) -->
+          <md-item><div slot="headline" style="color: #0064FF; font-weight: 800;">Showcases</div></md-item>
+          <md-list-item
+            href="/showcases/"
+            role="menuitem"
+            {% if page.url == '/showcases/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+            style="font-weight: 800; color: #0064FF;"
+          >★ Showcase Overview</md-list-item>
+          <md-list-item
+            href="/showcases/official-web/"
+            role="menuitem"
+            {% if page.url == '/showcases/official-web/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+          >1. Official Web</md-list-item>
+          <md-list-item
+            href="/showcases/mobile-app/"
+            role="menuitem"
+            {% if page.url == '/showcases/mobile-app/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+          >2. Mobile App</md-list-item>
+          <md-list-item
+            href="/showcases/backoffice/"
+            role="menuitem"
+            {% if page.url == '/showcases/backoffice/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+          >3. Backoffice / Admin</md-list-item>
+          <md-list-item
+            href="/showcases/pms/"
+            role="menuitem"
+            {% if page.url == '/showcases/pms/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+          >4. PMS</md-list-item>
+        </md-list>
+      </nav-drawer>
+    </lit-island>
+  </body>
+</html>

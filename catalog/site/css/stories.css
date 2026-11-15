@@ -1,0 +1,47 @@
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#dragbar {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#editor {
+  margin-block: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#editor-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100dvh;
+  margin: 0;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+  background-color: var(--md-sys-color-surface, #FFFFFF);
+  color: var(--md-sys-color-on-surface, #191F28);
+}
+
+#preview {
+  position: relative;
+  background-color: var(--md-sys-color-surface, #FFFFFF);
+}
+
+#editor-wrapper {
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--md-sys-color-surface-container-high, #F8F9FA);
+  border-top: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
+}
+
+#preview md-circular-progress {
+  inset: 50%;
+  transform: translate(-50%, -50%);
+}

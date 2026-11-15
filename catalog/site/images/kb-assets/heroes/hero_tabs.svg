@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F3FF"/>
+      <stop offset="100%" stop-color="#D9EBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" rx="16" fill="url(#bg)"/>
+  <rect x="50" y="55" width="300" height="50" rx="16" fill="#FFFFFF" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.06))"/>
+  <rect x="54" y="59" width="96" height="42" rx="12" fill="#0064FF"/>
+  <text x="102" y="85" fill="#FFFFFF" font-family="-apple-system,Pretendard,sans-serif" font-size="14" font-weight="700" text-anchor="middle">예적금</text>
+  <text x="200" y="85" fill="#4E5968" font-family="-apple-system,Pretendard,sans-serif" font-size="14" font-weight="600" text-anchor="middle">대출</text>
+  <text x="298" y="85" fill="#4E5968" font-family="-apple-system,Pretendard,sans-serif" font-size="14" font-weight="600" text-anchor="middle">외환</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F3FF"/>
+      <stop offset="100%" stop-color="#D9EBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" rx="16" fill="url(#bg)"/>
+  <circle cx="110" cy="80" r="22" fill="#FFFFFF" stroke="#0064FF" stroke-width="3"/>
+  <circle cx="110" cy="80" r="11" fill="#0064FF"/>
+  <text x="146" y="86" fill="#191F28" font-family="-apple-system,Pretendard,sans-serif" font-size="18" font-weight="700">매일 이자받기 (추천)</text>
+</svg>

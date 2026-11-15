@@ -1,0 +1,600 @@
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* latin */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/google-sans/regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin -mono */
+@font-face {
+  font-family: 'Google Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/google-sans/mono.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+2000-206F,
+    U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root,
+html,
+html[data-theme="white"],
+:host {
+  /* Toss Bank Clean White System (Default) */
+  --md-sys-color-background: #ffffff;
+  --md-sys-color-on-background: #191f28;
+  --md-sys-color-surface: #ffffff;
+  --md-sys-color-surface-dim: #f2f4f6;
+  --md-sys-color-surface-bright: #ffffff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f9fafb;
+  --md-sys-color-surface-container: #ffffff;
+  --md-sys-color-surface-container-high: #f2f4f6;
+  --md-sys-color-surface-container-highest: #e5e8eb;
+  --md-sys-color-on-surface: #191f28;
+  --md-sys-color-surface-variant: #f2f4f6;
+  --md-sys-color-on-surface-variant: #4e5968;
+  --md-sys-color-inverse-surface: #191f28;
+  --md-sys-color-inverse-on-surface: #f9fafb;
+
+  --md-sys-color-outline: #d1d6db;
+  --md-sys-color-outline-variant: #e5e8eb;
+  --md-sys-color-shadow: rgba(0, 100, 255, 0.08);
+  --md-sys-color-scrim: rgba(0, 0, 0, 0.4);
+
+  --md-sys-color-primary: #0064ff;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #e8f3ff;
+  --md-sys-color-on-primary-container: #0047bb;
+  --md-sys-color-inverse-primary: #80b3ff;
+  --md-sys-color-surface-tint: #0064ff;
+
+  --md-sys-color-secondary: #333d4b;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f2f4f6;
+  --md-sys-color-on-secondary-container: #191f28;
+
+  --md-sys-color-tertiary: #ffe100;
+  --md-sys-color-on-tertiary: #191f28;
+  --md-sys-color-tertiary-container: #fff8cc;
+  --md-sys-color-on-tertiary-container: #5c4900;
+
+  --md-sys-color-error: #f04452;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #feecee;
+  --md-sys-color-on-error-container: #d32f2f;
+}
+
+/* Toss Bank Cool Slate Theme */
+html[data-theme="slate"] {
+  --md-sys-color-background: #0f172a;
+  --md-sys-color-on-background: #f8fafc;
+  --md-sys-color-surface: #141e33;
+  --md-sys-color-surface-dim: #0b1120;
+  --md-sys-color-surface-bright: #1e293b;
+  --md-sys-color-surface-container-lowest: #070c18;
+  --md-sys-color-surface-container-low: #0f172a;
+  --md-sys-color-surface-container: #141e33;
+  --md-sys-color-surface-container-high: #1e293b;
+  --md-sys-color-surface-container-highest: #334155;
+  --md-sys-color-on-surface: #f8fafc;
+  --md-sys-color-surface-variant: #1e293b;
+  --md-sys-color-on-surface-variant: #94a3b8;
+  --md-sys-color-inverse-surface: #f8fafc;
+  --md-sys-color-inverse-on-surface: #0f172a;
+
+  --md-sys-color-outline: #334155;
+  --md-sys-color-outline-variant: #1e293b;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+
+  --md-sys-color-primary: #38bdf8;
+  --md-sys-color-on-primary: #082f49;
+  --md-sys-color-primary-container: #0064ff;
+  --md-sys-color-on-primary-container: #ffffff;
+  --md-sys-color-inverse-primary: #0284c7;
+  --md-sys-color-surface-tint: #38bdf8;
+
+  --md-sys-color-secondary: #94a3b8;
+  --md-sys-color-on-secondary: #0f172a;
+  --md-sys-color-secondary-container: #1e293b;
+  --md-sys-color-on-secondary-container: #f1f5f9;
+
+  --md-sys-color-tertiary: #ffe100;
+  --md-sys-color-on-tertiary: #0f172a;
+  --md-sys-color-tertiary-container: #332d00;
+  --md-sys-color-on-tertiary-container: #fff480;
+
+  --md-sys-color-error: #f87171;
+  --md-sys-color-on-error: #450a0a;
+  --md-sys-color-error-container: #7f1d1d;
+  --md-sys-color-on-error-container: #fecaca;
+}
+
+/* Toss Bank Modern Dark Theme */
+html[data-theme="dark"] {
+  --md-sys-color-background: #121212;
+  --md-sys-color-on-background: #f5f5f5;
+  --md-sys-color-surface: #1e1e1e;
+  --md-sys-color-surface-dim: #0a0a0a;
+  --md-sys-color-surface-bright: #242424;
+  --md-sys-color-surface-container-lowest: #050505;
+  --md-sys-color-surface-container-low: #181818;
+  --md-sys-color-surface-container: #1e1e1e;
+  --md-sys-color-surface-container-high: #282828;
+  --md-sys-color-surface-container-highest: #333333;
+  --md-sys-color-on-surface: #f5f5f5;
+  --md-sys-color-surface-variant: #282828;
+  --md-sys-color-on-surface-variant: #a0a0a0;
+  --md-sys-color-inverse-surface: #f5f5f5;
+  --md-sys-color-inverse-on-surface: #121212;
+
+  --md-sys-color-outline: #3e3e3e;
+  --md-sys-color-outline-variant: #282828;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+
+  --md-sys-color-primary: #3b82f6;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #0047bb;
+  --md-sys-color-on-primary-container: #e8f3ff;
+  --md-sys-color-inverse-primary: #0064ff;
+  --md-sys-color-surface-tint: #3b82f6;
+
+  --md-sys-color-secondary: #cccccc;
+  --md-sys-color-on-secondary: #121212;
+  --md-sys-color-secondary-container: #2c2c2c;
+  --md-sys-color-on-secondary-container: #eeeeee;
+
+  --md-sys-color-tertiary: #ffe100;
+  --md-sys-color-on-tertiary: #121212;
+  --md-sys-color-tertiary-container: #332d00;
+  --md-sys-color-on-tertiary-container: #fff480;
+
+  --md-sys-color-error: #ff6b6b;
+  --md-sys-color-on-error: #400;
+  --md-sys-color-error-container: #600;
+  --md-sys-color-on-error-container: #ffc9c9;
+}
+
+:root {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --md-ref-typeface-plain: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --md-ref-typeface-brand: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  letter-spacing: -0.03em;
+  background-color: var(--md-sys-color-background, #ffffff);
+  color: var(--md-sys-color-on-surface, #191f28);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  /* These values are copied from mio */
+  --catalog-display-xl-font-size: 88px;
+  --catalog-display-m-font-size: 45px;
+  --catalog-title-l-font-size: 22px;
+  --catalog-title-m-font-size: 16px;
+  --catalog-title-s-font-size: 14px;
+  --catalog-body-l-font-size: 16px;
+  --catalog-body-m-font-size: 14px;
+  --catalog-headline-s-font-size: 24px;
+  --catalog-label-s-font-size: 11px;
+  --catalog-shape-xl: 28px;
+  --catalog-shape-l: 16px;
+  --catalog-shape-m: 12px;
+  --catalog-shape-s: 8px;
+  --catalog-shape-xs: 4px;
+  --catalog-spacing-xl: 28px;
+  --catalog-spacing-l: 16px;
+  --catalog-spacing-m: 12px;
+  --catalog-spacing-s: 8px;
+  --catalog-top-app-bar-height: calc(48px + 2 * var(--catalog-spacing-m));
+  scroll-padding-block-start: calc(
+    var(--catalog-top-app-bar-height) + var(--catalog-top-app-bar-padding-block) *
+      2
+  );
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --catalog-display-xl-font-size: 55px;
+    --catalog-title-l-font-size: 16px;
+    --catalog-body-l-font-size: 14px;
+    --catalog-body-m-font-size: 12px;
+    /* Mostly to accommodate content padding on small screens */
+    --catalog-spacing-xl: 16px;
+    --catalog-spacing-l: 12px;
+  }
+}
+
+strong {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-size: var(--catalog-body-l-font-size);
+  background-color: var(--md-sys-color-background, #ffffff);
+  color: var(--md-sys-color-on-surface, #191f28);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+nav-drawer md-list.nav md-list-item[href][selected] {
+  background-color: var(--md-sys-color-surface-container-highest);
+}
+
+nav-drawer md-list.nav md-list-item::part(focus-ring) {
+  --md-focus-ring-shape: var(--catalog-shape-xl);
+}
+
+@media (forced-colors: active) {
+  nav-drawer md-list.nav md-list-item[href][selected] {
+    border: 4px double CanvasText;
+  }
+
+  nav-drawer md-list.nav md-list-item[href] {
+    border-radius: var(--catalog-shape-xl);
+    border: 1px solid CanvasText;
+  }
+}
+
+nav-drawer md-list.nav {
+  --md-list-container-color: transparent;
+  display: block;
+  margin-inline: var(--catalog-spacing-m);
+  min-width: unset;
+}
+
+nav-drawer md-list.nav md-list-item[href] {
+  margin-block: var(--catalog-spacing-m);
+  display: block;
+  --md-focus-ring-shape: var(--catalog-shape-xl);
+  border-radius: var(--catalog-shape-xl);
+}
+
+nav-drawer md-list.nav md-item [slot="headline"] {
+  /* shadow root slot has overflow:hidden, it's cutting some text off */
+  padding-block: 2px;
+}
+
+nav-drawer md-list.nav md-item:first-of-type {
+  padding-block: 0;
+}
+
+nav-drawer md-list.nav md-item {
+  font-size: var(--catalog-headline-s-font-size);
+  padding-block-end: 0;
+}
+
+nav-drawer md-list.nav md-item + md-list-item[href] {
+  margin-block-start: 0;
+}
+
+h1 {
+  font-size: var(--catalog-display-xl-font-size);
+}
+
+.toc ol {
+  list-style-type: none;
+  font-size: var(--catalog-body-m-font-size);
+}
+
+.toc > ol {
+  padding: 0;
+}
+
+.toc > ol ol {
+  list-style-type: circle;
+  padding-inline-start: var(--catalog-spacing-xl);
+}
+
+.toc ol li {
+  margin-block: var(--catalog-spacing-m);
+}
+
+/* Toss Bank Global Dynamic Theme Switcher */
+.tb-floating-switcher,
+.kb-floating-switcher {
+  position: fixed;
+  top: 14px;
+  right: 120px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--md-sys-color-surface-container-high, #f1f3f5);
+  border: 1px solid var(--md-sys-color-outline-variant, #e5e8eb);
+  padding: 4px 6px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: inherit;
+}
+
+.tb-switcher-label,
+.kb-switcher-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--md-sys-color-on-surface-variant, #4e5968);
+  margin-left: 6px;
+  margin-right: 4px;
+  letter-spacing: 0.04em;
+}
+
+.tb-theme-btn,
+.kb-theme-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface-variant, #4e5968);
+  padding: 5px 10px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.tb-theme-btn:hover,
+.kb-theme-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--md-sys-color-on-surface, #191f28);
+}
+
+.tb-theme-btn.active,
+.kb-theme-btn.active {
+  background: var(--md-sys-color-surface, #ffffff);
+  color: var(--md-sys-color-on-surface, #191f28);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.tb-dot,
+.kb-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dot-white {
+  background: #0064ff;
+}
+
+.dot-slate {
+  background: #38bdf8;
+}
+
+.dot-dark {
+  background: #121212;
+  border-color: #555555;
+}
+
+@media screen and (max-width: 900px) {
+  .tb-floating-switcher,
+  .kb-floating-switcher {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Toss Bank Global Icon Reset */
+md-icon,
+md-icon img,
+md-icon svg,
+[slot="icon"],
+[slot="icon"] img,
+[slot="icon"] svg,
+[slot="leading-icon"],
+[slot="leading-icon"] img,
+[slot="leading-icon"] svg,
+[slot="trailing-icon"],
+[slot="trailing-icon"] img,
+[slot="trailing-icon"] svg,
+.tb-btn-render-icon,
+.kb-btn-render-icon,
+.tb-sandbox-preview img,
+.tb-sandbox-preview svg,
+.kb-sandbox-preview img,
+.kb-sandbox-preview svg {
+  min-height: unset !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+}
+
+md-filled-button [slot="icon"],
+md-elevated-button [slot="icon"],
+md-outlined-button [slot="icon"],
+md-text-button [slot="icon"],
+md-tonal-button [slot="icon"],
+.tb-btn-render-icon,
+.kb-btn-render-icon {
+  width: 18px !important;
+  height: 18px !important;
+  font-size: 18px !important;
+}
+
+/* ============================================================
+   Toss Bank Interactive Demo Inline Accordion & Playground Styling
+   ============================================================ */
+.tb-playground-accordion-wrap,
+.kb-playground-accordion-wrap {
+  margin: 28px 0;
+  border-radius: 16px;
+  background: var(--md-sys-color-surface, #FFFFFF);
+  border: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tb-playground-accordion-wrap:hover,
+.kb-playground-accordion-wrap:hover {
+  border-color: #D1D6DB;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.tb-playground-details,
+.kb-playground-details {
+  border-radius: inherit;
+}
+
+.tb-playground-summary,
+.kb-playground-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--md-sys-color-surface, #FFFFFF);
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.15s ease;
+  user-select: none;
+}
+
+.tb-playground-summary::-webkit-details-marker,
+.kb-playground-summary::-webkit-details-marker {
+  display: none;
+}
+
+.tb-playground-details[open] .tb-playground-summary,
+.kb-playground-details[open] .kb-playground-summary {
+  border-bottom-color: var(--md-sys-color-outline-variant, #E5E8EB);
+  background: var(--md-sys-color-surface-container-high, #F8F9FA);
+}
+
+.tb-summary-left,
+.kb-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tb-summary-toggle,
+.kb-summary-toggle {
+  --md-outlined-icon-button-container-shape: 10px;
+  --md-outlined-icon-button-outline-color: var(--md-sys-color-outline-variant, #E5E8EB);
+  color: var(--md-sys-color-on-surface, #191F28);
+}
+
+.tb-summary-text-wrap,
+.kb-summary-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tb-summary-title,
+.kb-summary-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--md-sys-color-on-surface, #191F28);
+  letter-spacing: -0.02em;
+}
+
+.tb-summary-desc,
+.kb-summary-desc {
+  font-size: 13px;
+  color: var(--md-sys-color-on-surface-variant, #4E5968);
+  letter-spacing: -0.01em;
+}
+
+.tb-playground-badge,
+.kb-playground-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  background-color: #0064FF;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 11px;
+  border-radius: 6px;
+  letter-spacing: -0.01em;
+}
+
+.tb-playground-inner,
+.kb-playground-inner {
+  padding: 16px;
+  background: var(--md-sys-color-surface, #FFFFFF);
+}
+
+.tb-playground-inner playground-preview,
+.kb-playground-inner playground-preview {
+  border-radius: 12px;
+  border: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
+  background: var(--md-sys-color-surface, #FFFFFF);
+  overflow: hidden;
+}
+
+.tb-playground-inner playground-file-editor,
+.kb-playground-inner playground-file-editor {
+  border-radius: 12px;
+  border: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.tb-playground-footer,
+.kb-playground-footer {
+  padding: 12px 20px;
+  background: var(--md-sys-color-surface-container-high, #F8F9FA);
+  border-top: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tb-newtab-link,
+.kb-newtab-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface, #191F28);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid var(--md-sys-color-outline-variant, #E5E8EB);
+  transition: all 0.15s ease;
+}
+
+.tb-newtab-link:hover,
+.kb-newtab-link:hover {
+  background: #0064FF;
+  border-color: #0064FF;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 100, 255, 0.2);
+}
+
+
+

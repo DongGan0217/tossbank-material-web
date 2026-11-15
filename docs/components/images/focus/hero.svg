@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F3FF"/>
+      <stop offset="100%" stop-color="#D9EBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" rx="16" fill="url(#bg)"/>
+  <rect x="90" y="50" width="220" height="60" rx="18" fill="none" stroke="#0064FF" stroke-width="3" stroke-dasharray="6 4" filter="drop-shadow(0 0 10px rgba(0,100,255,0.4))"/>
+  <rect x="96" y="56" width="208" height="48" rx="14" fill="#FFFFFF"/>
+  <text x="200" y="86" fill="#0064FF" font-family="-apple-system,Pretendard,sans-serif" font-size="15" font-weight="700" text-anchor="middle">토스 안심 포커스 링</text>
+</svg>

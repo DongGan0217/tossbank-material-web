@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F3FF"/>
+      <stop offset="100%" stop-color="#D9EBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" rx="16" fill="url(#bg)"/>
+  <rect x="60" y="76" width="280" height="8" rx="4" fill="#E5E8EB"/>
+  <rect x="60" y="76" width="180" height="8" rx="4" fill="#0064FF"/>
+  <circle cx="240" cy="80" r="16" fill="#FFFFFF" stroke="#0064FF" stroke-width="4" filter="drop-shadow(0 4px 12px rgba(0,100,255,0.3))"/>
+  <text x="240" y="52" fill="#0064FF" font-family="-apple-system,Pretendard,sans-serif" font-size="14" font-weight="800" text-anchor="middle">5,000만원</text>
+</svg>
