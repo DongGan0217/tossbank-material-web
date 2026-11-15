@@ -1,13 +1,13 @@
 ---
 name: Image Library
-title: Image Library (카카오뱅크 그래픽 에셋)
+title: Image Library (토스뱅크 그래픽 에셋)
 order: 1
 tags: [asset]
 ---
 
-# 카카오뱅크 이미지 & 그래픽 에셋 라이브러리 (Image Library)
+# 토스뱅크 이미지 & 그래픽 에셋 라이브러리 (Image Library)
 
-카카오뱅크 공식 상용 앱(APK) 및 웹사이트에서 추출·정제된 **1,000+종의 고해상도 그래픽 에셋(WebP)**과 신규 제작된 **20종 컴포넌트 벡터 SVG 히어로 배너**를 실시간으로 탐색, 검색, 복사할 수 있는 통합 에셋 라이브러리입니다.
+토스뱅크 및 금융 서비스 공식 상용(APK) 및 웹사이트에서 추출·정제된 **1,000+종의 고해상도 그래픽 에셋(WebP)**과 신규 제작된 **20종 컴포넌트 벡터 SVG 히어로 배너**를 실시간으로 탐색, 검색, 복사할 수 있는 통합 에셋 라이브러리입니다.
 
 <div class="kb-visual-container">
   <!-- Dashboard Stats -->
@@ -69,7 +69,7 @@ tags: [asset]
   <div class="kb-lightbox-content" onclick="event.stopPropagation()">
     <button type="button" class="kb-lightbox-close" onclick="closeLightbox()">&times;</button>
     <div class="kb-lightbox-preview">
-      <img id="kb-lightbox-img" src="" alt="Preview" />
+      <img id="kb-lightbox-img" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'&gt;&lt;/svg&gt;" alt="Preview" />
     </div>
     <div class="kb-lightbox-details">
       <div class="kb-lightbox-title" id="kb-lightbox-title">Asset Title</div>

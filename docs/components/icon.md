@@ -1,111 +1,103 @@
-# Icon (카카오뱅크 아이콘 시스템)
+<!-- catalog-only-start --><!-- ---
+name: Icon
+dirname: icon
+title: Icon Library
+order: 10
+-----><!-- catalog-only-end -->
 
-카카오뱅크 공식 웹(`kakaobank.com`)과 모바일 앱(APK)에서 추출·정제된 **140종의 공식 카카오뱅크 벡터 아이콘** 및 Google Material Symbols 하이브리드 라이브러리입니다. AI 에이전트와 개발자가 목적에 맞게 즉시 검색·선택할 수 있도록 **7대 기능·의미론적(Semantic) 도메인 메타데이터**를 제공합니다.
+# 토스뱅크 공식 아이콘 라이브러리 (Icon Library)
 
-<div class="kb-visual-container">
-  <div class="kb-section-intro">
-    <strong>🔍 카카오뱅크 AI 시맨틱 아이콘 라이브러리 (140 Vectors):</strong><br/>
-    아이콘명, 한글 용도 또는 추천 의도(Intent)로 검색하세요. 카드를 클릭하면 <strong>WebComponent / React JSX 태그</strong>가 클립보드에 즉시 복사됩니다.
+토스뱅크의 직관적이고 친근한 사용자 경험을 완성하는 140+종 공식 금융 벡터 아이콘입니다. AI 시맨틱 분류 체계(7대 도메인)를 탑재하여 기능적 의도(Intent)와 권장 컴포넌트 메타데이터를 제공하며, 클릭 한 번으로 사용 코드를 복사할 수 있습니다.
+
+<div class="tb-visual-container kb-visual-container">
+  <div class="tb-section-intro kb-section-intro">
+    <strong>💡 AI 시맨틱 아이콘 탐색:</strong> 7개 도메인 탭 또는 검색창을 통해 원하는 금융 아이콘을 빠르게 찾고, 카드를 클릭하여 <code>&lt;md-icon&gt;</code> 코드를 즉시 복사하세요.
   </div>
-  <div class="kb-asset-toolbar" style="margin-block-end: 16px;">
-    <div class="kb-asset-tabs" id="kb-icon-tabs" style="display: flex; flex-wrap: wrap; gap: 8px;">
-      <button type="button" class="kb-tab-btn active" data-cat="all" onclick="filterIconCat('all', this)">전체 (140)</button>
-      <button type="button" class="kb-tab-btn" data-cat="navigation" onclick="filterIconCat('navigation', this)">🧭 네비게이션 (29)</button>
-      <button type="button" class="kb-tab-btn" data-cat="action" onclick="filterIconCat('action', this)">⚡ 액션&컨트롤 (54)</button>
-      <button type="button" class="kb-tab-btn" data-cat="banking" onclick="filterIconCat('banking', this)">💳 금융&계좌 (9)</button>
-      <button type="button" class="kb-tab-btn" data-cat="security" onclick="filterIconCat('security', this)">🔒 보안&인증 (20)</button>
-      <button type="button" class="kb-tab-btn" data-cat="support" onclick="filterIconCat('support', this)">📞 고객지원&알림 (10)</button>
-      <button type="button" class="kb-tab-btn" data-cat="social" onclick="filterIconCat('social', this)">🌐 공유&외부 (11)</button>
-      <button type="button" class="kb-tab-btn" data-cat="emoji" onclick="filterIconCat('emoji', this)">🎨 리액션&배지 (7)</button>
-    </div>
-    <input 
-      id="kb-icon-filter" 
-      class="kb-icon-search-input" 
-      type="text" 
-      placeholder="아이콘명, 한글 설명 또는 의도 검색 (예: call, 송금, 계좌, 화살표, arrow, otp, close...)" 
-      oninput="handleIconSearch(this.value)"
-      style="margin-top: 12px; width: 100%; box-sizing: border-box;"
-    />
+
+  <!-- Search & Tab Filter Bar -->
+  <div class="tb-icon-search-bar kb-icon-search-bar" style="margin-bottom: 20px;">
+    <input type="text" id="icon-search-input" class="tb-icon-search-input kb-icon-search-input" placeholder="아이콘 이름 또는 키워드 검색 (예: arrow, bank, card, check)..." oninput="filterIcons()" style="width: 100%; box-sizing: border-box; padding: 12px 18px; border-radius: 12px; border: 1px solid #D1D6DB; font-size: 14px; outline: none; font-family: inherit;" />
   </div>
-  <div class="kb-icon-grid" id="kb-icon-grid-container">
-    <div style="grid-column: 1 / -1; padding: 40px; text-align: center; color: #8b95a1;">아이콘 데이터를 불러오는 중입니다...</div>
+
+  <!-- 7 Semantic Category Tabs -->
+  <div class="tb-category-tabs kb-category-tabs" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;">
+    <button type="button" class="tb-tab-btn kb-tab-btn active" data-cat="all" onclick="selectCategory('all', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #0064FF; color: #FFFFFF; cursor: pointer;">전체 (140+)</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="banking" onclick="selectCategory('banking', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">뱅킹 & 자산</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="navigation" onclick="selectCategory('navigation', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">네비게이션 & 제어</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="action" onclick="selectCategory('action', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">사용자 액션</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="security" onclick="selectCategory('security', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">인증 & 보안</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="support" onclick="selectCategory('support', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">고객지원 & 알림</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="social" onclick="selectCategory('social', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">소셜 & 브랜드</button>
+    <button type="button" class="tb-tab-btn kb-tab-btn" data-cat="emoji" onclick="selectCategory('emoji', this)" style="padding: 8px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; border: 1px solid #D1D6DB; background: #FFFFFF; color: #4E5968; cursor: pointer;">금융 이모지 & 상태</button>
+  </div>
+
+  <!-- Icon Grid Container -->
+  <div id="icon-gallery-grid" class="tb-icon-grid kb-icon-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 14px;">
+    <!-- Rendered via JavaScript -->
   </div>
 </div>
 
 <script>
 (function() {
   let allIcons = [];
-  let filteredIcons = [];
-  let currentIconCat = "all";
-  let searchIconQuery = "";
+  let currentCategory = 'all';
 
-  async function loadIcons() {
-    try {
-      const res = await fetch("/images/kb-icons/icons.json");
-      if (res.ok) {
-        allIcons = await res.json();
-      } else {
-        throw new Error("Failed to load icons.json");
-      }
-    } catch (e) {
-      console.warn("Could not load icons.json, using fallback", e);
-      allIcons = [
-        { name: "kb_ic-arrow-left", category: "navigation", categoryName: "네비게이션", type: "svg", url: "/images/kb-icons/svg/kb_ic-arrow-left.svg", intent: "navigation_back", description: "뒤로가기" },
-        { name: "kb_ic-arrow-right", category: "navigation", categoryName: "네비게이션", type: "svg", url: "/images/kb-icons/svg/kb_ic-arrow-right.svg", intent: "navigation_forward", description: "앞으로가기" },
-        { name: "kb_ic-close", category: "navigation", categoryName: "네비게이션", type: "svg", url: "/images/kb-icons/svg/kb_ic-close.svg", intent: "modal_close", description: "닫기" },
-        { name: "kb_ic-call", category: "support", categoryName: "고객지원", type: "svg", url: "/images/kb-icons/svg/kb_ic-call.svg", intent: "customer_support", description: "전화상담" }
-      ];
-    }
-    applyIconFilters();
-  }
-
-  function applyIconFilters() {
-    filteredIcons = allIcons.filter(icon => {
-      const matchesCat = (currentIconCat === "all") || (icon.category === currentIconCat);
-      const q = searchIconQuery;
-      const matchesQuery = !q || 
-        icon.name.toLowerCase().includes(q) ||
-        (icon.description && icon.description.toLowerCase().includes(q)) ||
-        (icon.intent && icon.intent.toLowerCase().includes(q)) ||
-        (icon.categoryName && icon.categoryName.toLowerCase().includes(q)) ||
-        (icon.tags && icon.tags.some(t => t.toLowerCase().includes(q)));
-      return matchesCat && matchesQuery;
+  fetch('/images/tb-icons/icons.json')
+    .then(res => res.json())
+    .then(data => {
+      allIcons = data;
+      renderIcons(allIcons);
+    })
+    .catch(err => {
+      console.warn('Fallback to kb-icons:', err);
+      fetch('/images/kb-icons/icons.json')
+        .then(res => res.json())
+        .then(data => {
+          allIcons = data;
+          renderIcons(allIcons);
+        });
     });
-    renderIconGrid();
-  }
 
-  function renderIconGrid() {
-    const container = document.getElementById("kb-icon-grid-container");
-    if (!container) return;
-    if (filteredIcons.length === 0) {
-      container.innerHTML = '<div style="grid-column: 1 / -1; padding: 40px; text-align: center; color: #8b95a1;">일치하는 아이콘이 없습니다.</div>';
+  function renderIcons(icons) {
+    const grid = document.getElementById('icon-gallery-grid');
+    if (!grid) return;
+    if (icons.length === 0) {
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #8B95A1;">검색 결과가 없습니다.</div>';
       return;
     }
-    container.innerHTML = filteredIcons.map(icon => {
-      const cleanName = icon.name.replace(/^kb_ic-|^kb_ic_|^kb_icon_|^kb_/, "");
-      const isPng = (icon.type === "png" || icon.url.endsWith(".webp") || icon.url.endsWith(".png"));
+    grid.innerHTML = icons.map(icon => {
+      const cleanName = icon.name.replace(/^(tb_|kb_)(ic_)?/, '');
       return `
-        <div class="kb-icon-item" data-icon-name="${icon.name}" onclick="copyIconCode('${icon.url}', '${cleanName}')" title="${icon.description || cleanName} (클릭 시 코드 복사)">
-          <div class="kb-icon-preview">
-            <img src="${icon.url}" width="24" height="24" alt="${icon.name}" loading="lazy" />
+        <div class="tb-icon-item kb-icon-item" onclick="copyIconCode('${icon.url}', '${cleanName}')" title="${icon.description || cleanName} (클릭 시 코드 복사)" style="background: #FFFFFF; border: 1px solid #E5E8EB; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s ease;">
+          <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;">
+            <img src="${icon.url}" width="24" height="24" alt="${icon.name}" loading="lazy" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
           </div>
-          <span class="kb-icon-name">${cleanName}</span>
-          <span class="kb-icon-type-tag">${icon.categoryName || icon.type.toUpperCase()}</span>
+          <span style="font-size: 12px; font-weight: 700; color: #191F28; text-align: center; word-break: break-all; max-width: 100%;">${cleanName}</span>
+          <span style="font-size: 10px; color: #0064FF; background: #E8F3FF; padding: 2px 6px; border-radius: 4px; margin-top: 4px; font-weight: 700;">${icon.categoryName || icon.type.toUpperCase()}</span>
         </div>
       `;
-    }).join("");
+    }).join('');
   }
 
-  window.filterIconCat = function(cat, btn) {
-    currentIconCat = cat;
-    document.querySelectorAll("#kb-icon-tabs .kb-tab-btn").forEach(b => b.classList.remove("active"));
-    if (btn) btn.classList.add("active");
-    applyIconFilters();
+  window.selectCategory = function(cat, btn) {
+    currentCategory = cat;
+    document.querySelectorAll('.tb-tab-btn, .kb-tab-btn').forEach(b => {
+      b.style.background = '#FFFFFF';
+      b.style.color = '#4E5968';
+    });
+    btn.style.background = '#0064FF';
+    btn.style.color = '#FFFFFF';
+    filterIcons();
   };
 
-  window.handleIconSearch = function(val) {
-    searchIconQuery = val.toLowerCase().trim();
-    applyIconFilters();
+  window.filterIcons = function() {
+    const q = (document.getElementById('icon-search-input').value || '').toLowerCase().trim();
+    const filtered = allIcons.filter(icon => {
+      const matchesCat = (currentCategory === 'all') || (icon.category === currentCategory);
+      const matchesQuery = !q || icon.name.toLowerCase().includes(q) || (icon.description && icon.description.toLowerCase().includes(q));
+      return matchesCat && matchesQuery;
+    });
+    renderIcons(filtered);
   };
 
   window.copyIconCode = function(url, name) {
@@ -113,40 +105,26 @@
     navigator.clipboard.writeText(tag);
     alert(`복사되었습니다:\n${tag}`);
   };
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadIcons);
-  } else {
-    loadIcons();
-  }
 })();
 </script>
 
 ---
 
-## 2. 사용법 (Usage)
+## 3. 컴포넌트별 아이콘 활용 예시
 
-카카오뱅크 웹 컴포넌트 환경에서 아이콘은 Material Symbols 텍스트 리가처 또는 카카오뱅크 공식 인라인 SVG / 이미지로 자유롭게 삽입할 수 있습니다.
-
-### 1) 카카오뱅크 공식 SVG 아이콘 사용
+### 1) 토스뱅크 공식 SVG 아이콘 사용
 ```html
 <md-icon>
-  <img src="/images/kb-icons/svg/kb_ic-arrow-right.svg" alt="arrow-right" />
+  <img src="/images/tb-icons/svg/tb_ic-arrow-right.svg" alt="arrow-right" />
 </md-icon>
 ```
 
-### 2) Material Symbols 폰트 리가처 사용
+### 2) 버튼 내 선행(Leading) 아이콘 적용
 ```html
-<md-icon>settings</md-icon>
-<md-icon>notifications</md-icon>
-<md-icon>lock</md-icon>
-```
-
-### 3) npm 패키지 `@kakaobank/material-web/icons` 임포트
-```typescript
-import { KakaoBankIcons } from "@kakaobank/material-web/icons";
-
-// AI 자동 매핑 예시:
-const callIcon = KakaoBankIcons.find(i => i.intent === "customer_support_call");
-console.log(callIcon.url); // "/images/kb-icons/svg/kb_ic-call.svg"
+<md-filled-button>
+  <md-icon slot="icon">
+    <img src="/images/tb-icons/svg/tb_ic-check.svg" alt="check" />
+  </md-icon>
+  계좌 인증 완료
+</md-filled-button>
 ```

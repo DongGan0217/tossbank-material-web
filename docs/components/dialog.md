@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/dialog/)**
+[Toss Bank Material Web catalog](https://material-web.dev/components/dialog/)**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -37,12 +37,12 @@ title="A dialog">
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox for Dialog -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox for Dialog -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
       <span>🛠️ Dialog 옵션 실시간 미리보기 샌드박스</span>
-      <span class="kb-playground-badge">KakaoBank M3</span>
+      <span class="kb-playground-badge">Toss Bank M3</span>
     </div>
     <span style="font-size: 12px; color: #4E5968;">옵션을 변경하면 아래 다이얼로그 미리보기에 실시간 반영되며, 실제 팝업을 열어볼 수 있습니다.</span>
   </div>
@@ -54,7 +54,7 @@ title="A dialog">
       </div>
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-dlg-content">본문 (Supporting Text):</label>
-        <textarea id="kb-dlg-content" class="kb-control-input" rows="2" style="resize: vertical;">받는 분: 카카오뱅크 3333-01-1234567&#10;이체 금액: 50,000원을 송금합니다.</textarea>
+        <textarea id="kb-dlg-content" class="kb-control-input" rows="2" style="resize: vertical;">받는 분: 토스뱅크 3333-01-1234567&#10;이체 금액: 50,000원을 송금합니다.</textarea>
       </div>
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-dlg-icon">상단 아이콘 (Icon):</label>
@@ -79,7 +79,7 @@ title="A dialog">
       </div>
     </div>
     <div class="kb-playground-preview" style="background: rgba(0,0,0,0.03); border: 1px dashed #D1D6DB; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 280px;">
-      <!-- KakaoBank Live Visual Mock Dialog -->
+      <!-- Toss Bank Live Visual Mock Dialog -->
       <div id="kb-dlg-mock" style="width: 100%; max-width: 380px; background: #FFFFFF; border-radius: 24px; box-shadow: 0 16px 32px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06); border: 1px solid #E5E8EB; overflow: hidden; display: flex; flex-direction: column;">
         <div id="kb-dlg-mock-icon-wrap" style="display: flex; justify-content: center; padding-top: 24px;">
           <div id="kb-dlg-mock-icon" style="width: 44px; height: 44px; border-radius: 50%; background: #FFF6A6; color: #191F28; display: flex; align-items: center; justify-content: center; font-size: 24px;">
@@ -90,7 +90,7 @@ title="A dialog">
           <h3 id="kb-dlg-mock-headline" style="margin: 0; font-size: 19px; font-weight: 700; color: #191F28; letter-spacing: -0.02em;">계좌 이체를 진행할까요?</h3>
         </div>
         <div style="padding: 12px 24px 20px 24px; text-align: center;">
-          <p id="kb-dlg-mock-content" style="margin: 0; font-size: 14px; line-height: 1.5; color: #4E5968; white-space: pre-line;">받는 분: 카카오뱅크 3333-01-1234567&#10;이체 금액: 50,000원을 송금합니다.</p>
+          <p id="kb-dlg-mock-content" style="margin: 0; font-size: 14px; line-height: 1.5; color: #4E5968; white-space: pre-line;">받는 분: 토스뱅크 3333-01-1234567&#10;이체 금액: 50,000원을 송금합니다.</p>
         </div>
         <div id="kb-dlg-mock-actions" style="display: flex; gap: 8px; justify-content: flex-end; padding: 12px 20px 18px 20px; border-top: 1px solid #F2F4F6;">
           <button type="button" id="kb-dlg-mock-cancel" style="padding: 9px 18px; border-radius: 10px; border: 1px solid #E5E8EB; background: #FFFFFF; color: #4E5968; font-weight: 600; font-size: 14px; cursor: pointer;">취소</button>
@@ -105,7 +105,7 @@ title="A dialog">
 <md-dialog id="kb-live-dialog">
   <div slot="headline" id="kb-live-dialog-headline">계좌 이체를 진행할까요?</div>
   <form id="form" slot="content" method="dialog">
-    <span id="kb-live-dialog-content">받는 분: 카카오뱅크 3333-01-1234567<br>이체 금액: 50,000원을 송금합니다.</span>
+    <span id="kb-live-dialog-content">받는 분: 토스뱅크 3333-01-1234567<br>이체 금액: 50,000원을 송금합니다.</span>
   </form>
   <div slot="actions">
     <md-text-button form="form" value="cancel" id="kb-live-dialog-cancel">취소</md-text-button>

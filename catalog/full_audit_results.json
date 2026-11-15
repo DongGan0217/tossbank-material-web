@@ -1,0 +1,653 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/about/intro/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/about/quick-start/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/about/roadmap/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/about/size/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/about/support/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/theming/material-theming/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/theming/color/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/theming/shape/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/theming/typography/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/button/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/checkbox/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/chips/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/dialog/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/divider/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/elevation/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/fab/",
+    "status": 200,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/images/kb-icons/svg/kb_ic-add.svg",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 1,
+    "broken_images": [
+      "http://localhost:8086/images/kb-icons/svg/kb_ic-add.svg"
+    ],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/focus-ring/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/icon/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 11,
+    "broken_images": [
+      "http://localhost:8086/images/tb-icons/svg/web_inline_050.svg",
+      "http://localhost:8086/images/tb-icons/svg/web_inline_052.svg",
+      "http://localhost:8086/images/tb-icons/svg/web_inline_053.svg",
+      "http://localhost:8086/images/tb-icons/png/tb_rsup_nftf_m_icon_large_stop.png",
+      "http://localhost:8086/images/tb-icons/png/tb_rsup_nftf_m_icon_large_stop_press.png",
+      "http://localhost:8086/images/tb-icons/png/tb_rsup_nftf_m_icon_recording.png",
+      "http://localhost:8086/images/tb-icons/png/tb_rsup_nftf_m_icon_turn.png",
+      "http://localhost:8086/images/tb-icons/png/tb_rsup_nftf_m_icon_turn_dis.png",
+      "http://localhost:8086/images/tb-icons/png/tb_rsup_nftf_m_icon_turn_press.png",
+      "http://localhost:8086/images/tb-icons/png/tb_stalk_icon_default.webp",
+      "http://localhost:8086/images/tb-icons/png/tb_stalk_icon_default_dark.webp"
+    ],
+    "residual_kakao_count": 4,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "kakao",
+      "kakao",
+      "kakao"
+    ]
+  },
+  {
+    "route": "/components/icon-button/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/list/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/menu/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/progress/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/radio/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/ripple/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/select/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/slider/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/switch/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/tabs/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/components/text-field/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 2,
+    "residual_kakao_samples": [
+      "카카오뱅크",
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/assets/icon-library.html",
+    "status": 404,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/assets/icon-library.html",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 0,
+    "residual_kakao_samples": []
+  },
+  {
+    "route": "/assets/image-library.html",
+    "status": 404,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/assets/image-library.html",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 0,
+    "residual_kakao_samples": []
+  },
+  {
+    "route": "/showcase/remittance.html",
+    "status": 404,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/showcase/remittance.html",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 0,
+    "residual_kakao_samples": []
+  },
+  {
+    "route": "/showcase/loan.html",
+    "status": 404,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/showcase/loan.html",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 0,
+    "residual_kakao_samples": []
+  },
+  {
+    "route": "/showcase/dashboard.html",
+    "status": 404,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/showcase/dashboard.html",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 0,
+    "residual_kakao_samples": []
+  },
+  {
+    "route": "/showcase/playground.html",
+    "status": 404,
+    "failed_requests_count": 1,
+    "failed_requests": [
+      {
+        "url": "http://localhost:8086/showcase/playground.html",
+        "status": 404,
+        "status_text": "File not found"
+      }
+    ],
+    "console_errors_count": 1,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 0,
+    "residual_kakao_samples": []
+  },
+  {
+    "route": "/showcases/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/showcases/official-web/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/showcases/mobile-app/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/showcases/backoffice/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  },
+  {
+    "route": "/showcases/pms/",
+    "status": 200,
+    "failed_requests_count": 0,
+    "failed_requests": [],
+    "console_errors_count": 0,
+    "console_errors": [],
+    "broken_images_count": 0,
+    "broken_images": [],
+    "residual_kakao_count": 1,
+    "residual_kakao_samples": [
+      "카카오뱅크"
+    ]
+  }
+]

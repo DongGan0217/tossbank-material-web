@@ -23,7 +23,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/ripple/)<!-- {.external} -->**
+[Toss Bank Material Web catalog](https://material-web.dev/components/ripple/)<!-- {.external} -->**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->

@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/button/).**
+[Toss Bank Material Web catalog](https://material-web.dev/components/button/).**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -45,7 +45,7 @@ payment'"
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -59,7 +59,7 @@ payment'"
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-btn-variant">버튼 형태 (Variant):</label>
         <select id="kb-btn-variant" class="kb-control-select" onchange="updateBtnDemo()">
-          <option value="filled" selected>Filled (카카오 옐로우 시그니처)</option>
+          <option value="filled" selected>Filled (토스 딥블루 시그니처)</option>
           <option value="outlined">Outlined (테두리 아웃라인)</option>
           <option value="elevated">Elevated (부유 그림자)</option>
           <option value="tonal">Filled Tonal (톤앤톤)</option>
@@ -68,12 +68,12 @@ payment'"
       </div>
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-btn-label">버튼 문구 (Label):</label>
-        <input id="kb-btn-label" class="kb-control-input" type="text" value="카카오뱅크 이체하기" oninput="updateBtnDemo()" />
+        <input id="kb-btn-label" class="kb-control-input" type="text" value="토스뱅크 이체하기" oninput="updateBtnDemo()" />
       </div>
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-btn-size">터치 타깃 규격 (Size):</label>
         <select id="kb-btn-size" class="kb-control-select" onchange="updateBtnDemo()">
-          <option value="52" selected>52px (카카오뱅크 모바일/웹 표준)</option>
+          <option value="52" selected>52px (토스뱅크 모바일/웹 표준)</option>
           <option value="40">40px (구글 기본 M3)</option>
         </select>
       </div>
@@ -92,14 +92,14 @@ payment'"
       <!-- Live Render Target -->
       <button id="kb-btn-render" type="button" style="height: 52px; background: #FFE100; border: none; border-radius: 16px; padding: 0 24px; font-weight: 700; font-size: 16px; color: #191F28; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.2s ease;">
         <img id="kb-btn-render-icon" src="/images/kb-icons/svg/kb_ic-arrow-right.svg" width="18" height="18" alt="icon" />
-        <span id="kb-btn-render-text">카카오뱅크 이체하기</span>
+        <span id="kb-btn-render-text">토스뱅크 이체하기</span>
       </button>
     </div>
   </div>
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-btn-code">&lt;md-filled-button style="--md-filled-button-container-height: 52px; --md-filled-button-container-shape: 16px;"&gt;
   &lt;md-icon slot="icon"&gt;&lt;img src="/images/kb-icons/svg/kb_ic-arrow-right.svg" /&gt;&lt;/md-icon&gt;
-  카카오뱅크 이체하기
+  토스뱅크 이체하기
 &lt;/md-filled-button&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-btn-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>

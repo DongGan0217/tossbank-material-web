@@ -20,7 +20,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/icon-button/).**
+[Toss Bank Material Web catalog](https://material-web.dev/components/icon-button/).**
 <!-- external-only-end -->
 
 [Icon buttons](https://m3.material.io/components/icon-buttons)<!-- {.external} --> help
@@ -34,7 +34,7 @@ people take supplementary actions with a single tap.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -49,7 +49,7 @@ people take supplementary actions with a single tap.
         <label class="kb-control-label" for="kb-ib-variant">버튼 형태 (Variant):</label>
         <select id="kb-ib-variant" class="kb-control-select" onchange="updateIbDemo()">
           <option value="standard" selected>Standard (기본 투명형)</option>
-          <option value="filled">Filled (카카오 옐로우 채움형)</option>
+          <option value="filled">Filled (토스 딥블루 채움형)</option>
           <option value="tonal">Filled Tonal (톤앤톤 그레이)</option>
           <option value="outlined">Outlined (테두리 아웃라인형)</option>
         </select>

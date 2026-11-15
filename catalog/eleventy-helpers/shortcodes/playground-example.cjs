@@ -53,12 +53,12 @@ function playgroundExample(eleventyConfig) {
                 <md-icon aria-hidden="true">expand_more</md-icon>
                 <md-icon aria-hidden="true" slot="selected">expand_less</md-icon>
               </md-outlined-icon-button>
-              <div class="kb-summary-text-wrap">
-                <div class="kb-summary-title">
-                  <span>카카오뱅크 실시간 인터랙티브 데모</span>
-                  <span class="kb-playground-badge">KB Playground</span>
+              <div class="tb-summary-text-wrap kb-summary-text-wrap">
+                <div class="tb-summary-title kb-summary-title">
+                  <span>토스뱅크 실시간 인터랙티브 데모</span>
+                  <span class="tb-playground-badge kb-playground-badge" style="background: #0064FF; color: #FFFFFF;">TB Playground</span>
                 </div>
-                <span class="kb-summary-desc">다양한 옵션 조합과 코드를 실시간으로 테스트하고 편집해볼 수 있습니다.</span>
+                <span class="tb-summary-desc kb-summary-desc">다양한 옵션 조합과 코드를 실시간으로 테스트하고 편집해볼 수 있습니다.</span>
               </div>
             </div>
           </summary>

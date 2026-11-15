@@ -58,8 +58,8 @@ export class TopAppBar extends SignalElement(LitElement) {
           </section>
 
           <a href="/" id="home-link">
-            <span class="brand-badge">KB</span>
-            <span class="brand-title">KakaoBank Material Web</span>
+            <span class="brand-badge">TB</span>
+            <span class="brand-title">Toss Bank Material Web</span>
             <md-focus-ring for="home-link"></md-focus-ring>
           </a>
 
@@ -75,7 +75,7 @@ export class TopAppBar extends SignalElement(LitElement) {
               <md-icon-button
                 title="GitHub repository"
                 aria-label="GitHub repository"
-                href="https://github.com/DongGan0217/kakaobank-material-web"
+                href="https://github.com/DongGan0217/tossbank-material-web"
                 target="_blank">
                 <md-icon>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96">
@@ -156,8 +156,8 @@ export class TopAppBar extends SignalElement(LitElement) {
 
   static styles = css`
     :host {
-      --md-sys-color-primary: #FFE100;
-      --md-sys-color-on-primary: #191F28;
+      --md-sys-color-primary: #0064FF;
+      --md-sys-color-on-primary: #FFFFFF;
       --md-sys-color-surface: #FFFFFF;
       --md-sys-color-surface-container: #FFFFFF;
       --md-sys-color-on-surface: #191F28;
@@ -224,14 +224,14 @@ export class TopAppBar extends SignalElement(LitElement) {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background-color: #FFE100;
-      color: #191F28;
+      background-color: #0064FF;
+      color: #FFFFFF;
       font-weight: 800;
       font-size: 13px;
       width: 28px;
       height: 28px;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 4px rgba(0, 100, 255, 0.2);
       flex-shrink: 0;
     }
 
@@ -245,7 +245,7 @@ export class TopAppBar extends SignalElement(LitElement) {
     }
 
     .start .home-button * {
-      color: var(--md-sys-color-primary, #FFE100);
+      color: var(--md-sys-color-primary, #0064FF);
     }
 
     .end {

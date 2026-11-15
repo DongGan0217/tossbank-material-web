@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/text-field/)**
+[Toss Bank Material Web catalog](https://material-web.dev/components/text-field/)**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -37,7 +37,7 @@ title="Text fields">
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -606,7 +606,7 @@ Token                                          | Default value
 | --- | --- | --- | --- | --- |
 | `error` | `error` | `boolean` | `false` | Gets or sets whether or not the text field is in a visually invalid state.<br>This error state overrides the error state controlled by `reportValidity()`. |
 | `errorText` | `error-text` | `string` | `''` | The error message that replaces supporting text when `error` is true. If `errorText` is an empty string, then the supporting text will continue to show.<br>This error message overrides the error message displayed by `reportValidity()`. |
-| `label` | `label` | `string` | `''` | The floating Material label of the textfield component. It informs the user about what information is requested for a text field. It is aligned with the input text, is always visible, and it floats when focused or when text is entered into the textfield. This label also sets accessibilty labels, but the accessible label is overriden by `aria-label`.<br>Learn more about floating labels from the KakaoBank Material Design guidelines: https://m3.material.io/components/text-fields/guidelines |
+| `label` | `label` | `string` | `''` | The floating Material label of the textfield component. It informs the user about what information is requested for a text field. It is aligned with the input text, is always visible, and it floats when focused or when text is entered into the textfield. This label also sets accessibilty labels, but the accessible label is overriden by `aria-label`.<br>Learn more about floating labels from the Toss Bank Material Design guidelines: https://m3.material.io/components/text-fields/guidelines |
 | `noAsterisk` | `no-asterisk` | `boolean` | `false` | Disables the asterisk on the floating label, when the text field is required. |
 | `required` | `required` | `boolean` | `false` | Indicates that the user must specify a value for the input before the owning form can be submitted and will render an error state when `reportValidity()` is invoked when value is empty. Additionally the floating label will render an asterisk `"*"` when true.<br>https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required |
 | `value` | `value` | `string` | `''` | The current value of the text field. It is always a string. |
@@ -689,7 +689,7 @@ Token                                          | Default value
 | --- | --- | --- | --- | --- |
 | `error` | `error` | `boolean` | `false` | Gets or sets whether or not the text field is in a visually invalid state.<br>This error state overrides the error state controlled by `reportValidity()`. |
 | `errorText` | `error-text` | `string` | `''` | The error message that replaces supporting text when `error` is true. If `errorText` is an empty string, then the supporting text will continue to show.<br>This error message overrides the error message displayed by `reportValidity()`. |
-| `label` | `label` | `string` | `''` | The floating Material label of the textfield component. It informs the user about what information is requested for a text field. It is aligned with the input text, is always visible, and it floats when focused or when text is entered into the textfield. This label also sets accessibilty labels, but the accessible label is overriden by `aria-label`.<br>Learn more about floating labels from the KakaoBank Material Design guidelines: https://m3.material.io/components/text-fields/guidelines |
+| `label` | `label` | `string` | `''` | The floating Material label of the textfield component. It informs the user about what information is requested for a text field. It is aligned with the input text, is always visible, and it floats when focused or when text is entered into the textfield. This label also sets accessibilty labels, but the accessible label is overriden by `aria-label`.<br>Learn more about floating labels from the Toss Bank Material Design guidelines: https://m3.material.io/components/text-fields/guidelines |
 | `noAsterisk` | `no-asterisk` | `boolean` | `false` | Disables the asterisk on the floating label, when the text field is required. |
 | `required` | `required` | `boolean` | `false` | Indicates that the user must specify a value for the input before the owning form can be submitted and will render an error state when `reportValidity()` is invoked when value is empty. Additionally the floating label will render an asterisk `"*"` when true.<br>https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required |
 | `value` | `value` | `string` | `''` | The current value of the text field. It is always a string. |

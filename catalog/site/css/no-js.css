@@ -3,7 +3,7 @@
  * Copyright 2023 Google LLC
  * SPDX-License-Identifier: Apache-2.0
  * 
- * KakaoBank Material Web Clean White Theme
+ * Toss Bank Material Web Clean White Theme
  */
 
 :root,
@@ -32,7 +32,7 @@
   --md-sys-color-shadow: rgba(0, 0, 0, 0.08);
   --md-sys-color-scrim: rgba(0, 0, 0, 0.4);
 
-  /* Primary (KakaoBank Deep Charcoal + Signature Yellow Container) */
+  /* Primary (Toss Bank Deep Charcoal + Signature Yellow Container) */
   --md-sys-color-primary: #191f28;
   --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: #ffe100;
@@ -59,7 +59,7 @@
   --md-sys-color-on-error-container: #d32f2f;
 }
 
-/* KakaoBank Cool Slate Theme */
+/* Toss Bank Cool Slate Theme */
 [data-theme="slate"] {
   --md-sys-color-background: #0f172a;
   --md-sys-color-on-background: #f8fafc;
@@ -105,7 +105,7 @@
   --md-sys-color-on-error-container: #fecaca;
 }
 
-/* KakaoBank Luxury Dark Theme */
+/* Toss Bank Luxury Dark Theme */
 [data-theme="dark"] {
   --md-sys-color-background: #121212;
   --md-sys-color-on-background: #f5f5f5;

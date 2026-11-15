@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/tabs/)**
+[Toss Bank Material Web catalog](https://material-web.dev/components/tabs/)**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -39,7 +39,7 @@ related content that are at the same level of hierarchy.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">

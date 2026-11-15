@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/select/)**
+[Toss Bank Material Web catalog](https://material-web.dev/components/select/)**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -37,7 +37,7 @@ selected menu item above the menu.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -59,7 +59,7 @@ selected menu item above the menu.
         <label class="kb-control-label" for="kb-sel-item">기본 선택 상품 (Product):</label>
         <select id="kb-sel-item" class="kb-control-select" onchange="updateSelectDemo()">
           <option value="입출금통장 (3333-01-1234567)" selected>입출금통장 (3333-01-1234567)</option>
-          <option value="카카오뱅크 26주적금">카카오뱅크 26주적금</option>
+          <option value="토스뱅크 26주적금">토스뱅크 26주적금</option>
           <option value="비상금대출">비상금대출</option>
           <option value="모임통장 (3333-02-9876543)">모임통장 (3333-02-9876543)</option>
         </select>
@@ -111,7 +111,7 @@ selected menu item above the menu.
       box.style.border = '1.5px solid #191F28';
     }
 
-    code.innerText = `<${tag} label="출금 계좌 선택" ${disabled ? 'disabled' : ''}>\n  <md-select-option value="prod" selected>${item}</md-select-option>\n  <md-select-option value="26week">카카오뱅크 26주적금</md-select-option>\n</${tag}>`;
+    code.innerText = `<${tag} label="출금 계좌 선택" ${disabled ? 'disabled' : ''}>\n  <md-select-option value="prod" selected>${item}</md-select-option>\n  <md-select-option value="26week">토스뱅크 26주적금</md-select-option>\n</${tag}>`;
   }
 </script>
 

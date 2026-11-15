@@ -4,50 +4,61 @@ title: Quick Start
 order: 2
 -----><!-- catalog-only-end -->
 
-# 빠른 시작 가이드 (Quick Start)
+# 토스뱅크 빠른 시작 가이드 (Quick Start)
 
-`@kakaobank/material-web`을 프로젝트에 설치하고 사용하는 방법을 안내합니다.
+`@tossbank/material-web`을 웹 및 앱 프로젝트에 설치하고 사용하는 방법을 안내합니다.
 
 ---
 
 ## 1. 패키지 설치
 
-npm 또는 yarn, pnpm을 통해 패키지를 설치합니다:
+npm, yarn, pnpm을 통해 토스뱅크 공식 Material Web 패키지를 설치합니다:
 
 ```bash
 # npm
-npm install @kakaobank/material-web
+npm install @tossbank/material-web
 
 # pnpm
-pnpm add @kakaobank/material-web
+pnpm add @tossbank/material-web
+
+# yarn
+yarn add @tossbank/material-web
 ```
 
 ---
 
 ## 2. 기본 사용법 (HTML & JavaScript)
 
-필요한 컴포넌트를 JavaScript에서 import하면 커스텀 엘리먼트(`md-*`)로 등록되어 브라우저에서 바로 렌더링됩니다.
+필요한 컴포넌트를 JavaScript 모듈에서 import하면 W3C 표준 커스텀 엘리먼트(`md-*`)로 자동 등록되어 브라우저에서 즉시 렌더링됩니다.
 
 ```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>카카오뱅크 서비스</title>
-  <!-- Pretendard Variable 웹폰트 링크 -->
+  <title>토스뱅크 웹 서비스</title>
+  <!-- Pretendard Variable 웹폰트 -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
   
-  <!-- 카카오뱅크 컴포넌트 임포트 -->
+  <!-- 토스뱅크 Web Components 임포트 -->
   <script type="module">
-    import '@kakaobank/material-web/button/filled-button.js';
-    import '@kakaobank/material-web/textfield/outlined-text-field.js';
+    import '@tossbank/material-web/button/filled-button.js';
+    import '@tossbank/material-web/button/outlined-button.js';
+    import '@tossbank/material-web/textfield/outlined-text-field.js';
+    import '@tossbank/material-web/dialog/dialog.js';
   </script>
 </head>
 <body>
-  <div style="padding: 24px; max-width: 480px;">
-    <h2>간편 이체</h2>
-    <md-outlined-text-field label="보낼 금액" supporting-text="원 단위로 입력하세요" style="width: 100%; margin-bottom: 16px;"></md-outlined-text-field>
-    <md-filled-button style="width: 100%;">이체하기 (52px Touch)</md-filled-button>
+  <div style="padding: 24px; max-width: 480px; font-family: 'Pretendard Variable', sans-serif;">
+    <h2 style="color: #191F28;">토스뱅크 통장</h2>
+    <p style="color: #4E5968;">지금 쌓인 이자를 바로 확인하고 통장으로 입금받으세요.</p>
+    
+    <md-outlined-text-field label="보낼 금액" supporting-text="수수료 전액 무료" style="width: 100%; margin-bottom: 16px;"></md-outlined-text-field>
+    
+    <div style="display: flex; gap: 8px;">
+      <md-filled-button style="flex: 1;">지금 이자받기 (연 2.0%)</md-filled-button>
+      <md-outlined-button style="flex: 1;">송금하기</md-outlined-button>
+    </div>
   </div>
 </body>
 </html>
@@ -57,24 +68,43 @@ pnpm add @kakaobank/material-web
 
 ## 3. React / Next.js 프로젝트 연동
 
-React 19 이상에서는 Web Components를 기본 JSX 엘리먼트로 직접 지원합니다.
+React 19 이상에서는 Web Components를 네이티브 JSX 태그로 직접 지원합니다:
 
 ```tsx
-'use client';
+import React, { useEffect } from 'react';
 
-import { useEffect } from 'react';
-
-export default function TransferPage() {
+export default function TossBankWidget() {
   useEffect(() => {
-    import('@kakaobank/material-web/button/filled-button.js');
+    import('@tossbank/material-web/button/filled-button.js');
+    import('@tossbank/material-web/chips/chip-set.js');
   }, []);
 
   return (
-    <div className="p-6">
-      <md-filled-button onClick={() => alert('이체 완료!')}>
-        확인
+    <div className="tossbank-card">
+      <h3>토스뱅크 4대 프로덕트</h3>
+      {/* @ts-ignore */}
+      <md-filled-button onClick={() => alert('이자 지급 완료!')}>
+        지금 이자받기
+      {/* @ts-ignore */}
       </md-filled-button>
     </div>
   );
 }
+```
+
+---
+
+## 4. 토스뱅크 동적 테마 전환
+
+카탈로그에서 제공하는 3대 테마(Clean White, Cool Slate, Dark)를 애플리케이션 루트에 적용하려면 `data-theme` 속성을 지정합니다:
+
+```html
+<!-- 클린 화이트 테마 (기본) -->
+<html data-theme="white">
+
+<!-- 쿨 슬레이트 테마 -->
+<html data-theme="slate">
+
+<!-- 모던 다크 테마 -->
+<html data-theme="dark">
 ```

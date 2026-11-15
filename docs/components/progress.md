@@ -23,7 +23,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/progress/).**
+[Toss Bank Material Web catalog](https://material-web.dev/components/progress/).**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -43,7 +43,7 @@ There are two types of progress indicators: linear and circular.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">

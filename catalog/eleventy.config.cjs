@@ -40,6 +40,8 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy('site/components/images')
     .addPassthroughCopy('site/theming/images')
     .addPassthroughCopy('site/about/images')
+    .addPassthroughCopy('site/showcase')
+    .addPassthroughCopy({ 'site/assets/*.html': 'assets/' })
     .addPassthroughCopy({ 'site/assets/image-catalog.json': 'assets/image-catalog.json' });
 
   // add the lit-ssr plugin

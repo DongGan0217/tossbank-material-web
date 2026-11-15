@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/switch/).**
+[Toss Bank Material Web catalog](https://material-web.dev/components/switch/).**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -40,7 +40,7 @@ of an item on or off.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -79,7 +79,7 @@ of an item on or off.
     </div>
   </div>
   <div class="kb-playground-footer">
-    <pre class="kb-code-preview" id="kb-switch-code">&lt;md-switch selected icons aria-label="카카오뱅크 서비스 설정"&gt;&lt;/md-switch&gt;</pre>
+    <pre class="kb-code-preview" id="kb-switch-code">&lt;md-switch selected icons aria-label="토스뱅크 서비스 설정"&gt;&lt;/md-switch&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-switch-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
 </div>
@@ -123,7 +123,7 @@ of an item on or off.
     const selSnippet = selected ? ' selected' : '';
     const iconSnippet = hasIcons ? ' icons' : '';
     const disSnippet = disabled ? ' disabled' : '';
-    code.innerText = `<md-switch${selSnippet}${iconSnippet}${disSnippet} aria-label="카카오뱅크 설정">\n</md-switch>`;
+    code.innerText = `<md-switch${selSnippet}${iconSnippet}${disSnippet} aria-label="토스뱅크 설정">\n</md-switch>`;
   }
 </script>
 

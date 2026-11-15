@@ -19,14 +19,14 @@ UI’s elevation story.
 
 ![Diagram showing the five elevation levels and their respective dp values](images/elevation/hero.svg "Material uses six levels of elevation, each with a corresponding dp value. These values are named for their relative distance above the UI’s surface: 0, +1, +2, +3, +4, and +5. An element’s resting state can be on levels 0 to +3, while levels +4 and +5 are reserved for user-interacted states such as hover and dragged.")
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
       <span>🛠️ Elevation (입체감 & 그림자) 실시간 옵션 샌드박스</span>
       <span class="kb-playground-badge">Live Interactive</span>
     </div>
-    <span style="font-size: 12px; color: #4E5968;">카카오뱅크 카드의 0~5단계 그림자 레벨을 실시간으로 조작해보세요.</span>
+    <span style="font-size: 12px; color: #4E5968;">토스뱅크 카드의 0~5단계 그림자 레벨을 실시간으로 조작해보세요.</span>
   </div>
   <div class="kb-playground-body">
     <div class="kb-playground-controls">
@@ -37,7 +37,7 @@ UI’s elevation story.
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-elev-radius">코너 곡률 (Border Radius):</label>
         <select id="kb-elev-radius" class="kb-control-select" onchange="updateElevDemo()">
-          <option value="16" selected>16px (카카오뱅크 표준 카드)</option>
+          <option value="16" selected>16px (토스뱅크 표준 카드)</option>
           <option value="24">24px (다이얼로그 및 시트)</option>
           <option value="8">8px (콤팩트 박스)</option>
         </select>
@@ -45,7 +45,7 @@ UI’s elevation story.
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
         <label class="kb-control-checkbox">
           <input id="kb-elev-border" type="checkbox" checked onchange="updateElevDemo()" />
-          <span>카카오 옐로우 액센트 보더 (Signature Yellow Border)</span>
+          <span>토스 딥블루 액센트 보더 (Signature Yellow Border)</span>
         </label>
       </div>
     </div>
@@ -59,7 +59,7 @@ UI’s elevation story.
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-elev-code">&lt;div style="position: relative;"&gt;
   &lt;md-elevation style="--md-elevation-level: 2;"&gt;&lt;/md-elevation&gt;
-  카카오뱅크 카드
+  토스뱅크 카드
 &lt;/div&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-elev-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
@@ -91,7 +91,7 @@ UI’s elevation story.
     const subs = [
       'Flat (바닥 서피스에 밀착된 상태)',
       'Level 1 (미세한 분리형 카드)',
-      'Level 2 (카카오뱅크 시그니처 카드)',
+      'Level 2 (토스뱅크 시그니처 카드)',
       'Level 3 (호버 및 활성 카드 부유 상태)',
       'Level 4 (모달 다이얼로그 및 바텀시트)',
       'Level 5 (최상위 알림 및 팝업)'
@@ -100,7 +100,7 @@ UI’s elevation story.
     card.style.boxShadow = shadows[level];
     sub.innerText = subs[level];
 
-    code.innerText = `<div style="position: relative; border-radius: ${radius}px; ${hasBorder ? 'border: 1.5px solid #FFE100;' : ''}">\n  <md-elevation style="--md-elevation-level: ${level};"></md-elevation>\n  카카오뱅크 카드 (Level ${level})\n</div>`;
+    code.innerText = `<div style="position: relative; border-radius: ${radius}px; ${hasBorder ? 'border: 1.5px solid #FFE100;' : ''}">\n  <md-elevation style="--md-elevation-level: ${level};"></md-elevation>\n  토스뱅크 카드 (Level ${level})\n</div>`;
   }
 </script>
 

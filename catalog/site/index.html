@@ -4,128 +4,234 @@
   <script type="module" src="/js/pages/home-page.js"></script>
   <link rel="stylesheet" href="/css/home-page.css">
   <style>
-    .kb-hero {
-      background: linear-gradient(135deg, #FFE100 0%, #FFF380 100%);
-      color: #111111;
-      padding: 64px 32px;
+    .tb-hero {
+      background: linear-gradient(135deg, #0064FF 0%, #1B64DA 50%, #0B3A82 100%);
+      color: #FFFFFF;
+      padding: 64px 36px;
       border-radius: 28px;
       margin-bottom: 40px;
-      box-shadow: 0 12px 32px rgba(255, 225, 0, 0.25);
+      box-shadow: 0 16px 40px rgba(0, 100, 255, 0.28);
+      position: relative;
+      overflow: hidden;
     }
-    .kb-hero h1 {
-      font-size: 44px;
+    .tb-hero::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .tb-hero h1 {
+      font-size: 46px;
       font-weight: 800;
       letter-spacing: -0.04em;
       margin: 0 0 16px 0;
+      color: #FFFFFF;
     }
-    .kb-hero p {
+    .tb-hero p {
       font-size: 19px;
       line-height: 1.6;
-      margin: 0 0 24px 0;
-      max-width: 680px;
-      color: #222222;
+      margin: 0 0 28px 0;
+      max-width: 720px;
+      color: #E8F3FF;
       letter-spacing: -0.02em;
     }
-    .kb-badge {
+    .tb-badge {
       display: inline-block;
-      background: #111111;
-      color: #FFE100;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      color: #FFFFFF;
       font-weight: 700;
       font-size: 13px;
-      padding: 6px 14px;
+      padding: 6px 16px;
       border-radius: 9999px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    .kb-install-box {
-      background: #111111;
-      color: #EEEEEE;
-      padding: 16px 24px;
-      border-radius: 16px;
+    .tb-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .tb-install-box {
+      background: #0D1B2A;
+      color: #E8F3FF;
+      padding: 14px 24px;
+      border-radius: 14px;
       font-family: monospace;
       font-size: 15px;
       display: inline-flex;
       align-items: center;
       gap: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .kb-grid {
+    .tb-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      color: #0064FF;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 26px;
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tb-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    }
+    .tb-section-title {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 48px 0 20px 0;
+      color: #191F28;
+    }
+    .tb-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
-      margin: 40px 0;
+      margin: 28px 0 44px 0;
     }
-    .kb-card {
+    .tb-card {
       background: #FFFFFF;
-      border: 1px solid #ECECEC;
+      border: 1px solid #E5E8EB;
       border-radius: 20px;
       padding: 28px;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
     }
-    .kb-card:hover {
+    .tb-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-      border-color: #FFE100;
+      box-shadow: 0 12px 28px rgba(0, 100, 255, 0.1);
+      border-color: #0064FF;
     }
-    .kb-card h3 {
+    .tb-card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .tb-card h3 {
       font-size: 20px;
       font-weight: 700;
-      margin: 0 0 12px 0;
-      color: #111111;
+      margin: 0 0 10px 0;
+      color: #191F28;
+      letter-spacing: -0.02em;
     }
-    .kb-card p {
+    .tb-card p {
       font-size: 15px;
       line-height: 1.6;
-      color: #666666;
+      color: #6B7684;
       margin: 0;
+      flex-grow: 1;
     }
-    .kb-section-title {
-      font-size: 28px;
+    .tb-showcase-badge {
+      display: inline-block;
+      margin-top: 16px;
+      color: #0064FF;
       font-weight: 700;
-      letter-spacing: -0.03em;
-      margin: 48px 0 20px 0;
-      color: #111111;
+      font-size: 13px;
     }
   </style>
 {% endblock %}
 
 {% block content %}
 
-<div class="kb-hero">
-  <div class="kb-badge">Enterprise Edition v1.0.0</div>
-  <h1>KakaoBank Material Web</h1>
+<div class="tb-hero">
+  <div class="tb-badge">Enterprise Edition v3.5.0</div>
+  <h1>Toss Bank Material Web</h1>
   <p>
-    대한민국 1등 인터넷 전문은행 카카오뱅크의 디자인 아이덴티티와 Google Material Design 3의 Web Components 표준 기술이 결합된 독자적 엔터프라이즈 디자인 시스템입니다.
+    대한민국 혁신 금융을 선도하는 토스뱅크(Toss Bank)의 직관적 사용자 경험과 Google Material 3 Web Components 표준 기술이 결합된 공식 엔터프라이즈 하드포크 디자인 시스템입니다.
   </p>
-  <div class="kb-install-box">
-    <span>$ npm install @kakaobank/material-web</span>
+  <div class="tb-hero-actions">
+    <div class="tb-install-box">
+      <span>$ npm install @tossbank/material-web</span>
+    </div>
+    <a href="/showcases/official-web/" class="tb-btn-primary">
+      <span>🚀 4대 실전 Showcase 체험하기</span>
+    </a>
   </div>
 </div>
 
-<h2 class="kb-section-title">Design Principles & Core Values</h2>
-<div class="kb-grid">
-  <div class="kb-card">
-    <h3>💛 Signature Kakao Yellow</h3>
-    <p>브랜드 시그니처 컬러(#FFE100)와 순수 블랙(#000000) 텍스트를 기본 시스템 토큰으로 내장하여 완벽한 금융 가독성과 브랜드 아이덴티티를 확립합니다.</p>
+<h2 class="tb-section-title">Design Principles & Core Values</h2>
+<div class="tb-grid">
+  <div class="tb-card">
+    <div class="tb-card-icon">🔵</div>
+    <h3>Signature Toss Blue</h3>
+    <p>토스뱅크 고유의 딥 로얄 블루(#0064FF)와 서브 톤(#3182F6, #E8F3FF)을 W3C DTCG 3-Tier 시스템 토큰으로 내장하여 신뢰성과 직관성을 극대화합니다.</p>
   </div>
-  <div class="kb-card">
-    <h3>🔤 Pretendard Variable Typography</h3>
-    <p>국내 최적화 산세리프 Pretendard Variable 웹폰트와 -0.03em의 정밀 자간 설계를 W3C DTCG 3-Tier 토큰으로 전면 주입하였습니다.</p>
+  <div class="tb-card">
+    <div class="tb-card-icon">🔲</div>
+    <h3>16px Continuous Squircle</h3>
+    <p>극도로 부드러운 토스뱅크 시그니처 16px 스쿼클 곡률 시스템과 52px 터치 타겟을 18개 전 컴포넌트에 표준화하여 모바일 및 웹 사용성을 보장합니다.</p>
   </div>
-  <div class="kb-card">
-    <h3>📱 52px Touch Targets & 16px Corners</h3>
-    <p>금융 앱 사용자 경험에 최적화된 52px 넉넉한 터치 영역과 16px 둥근 모서리 코너 래디우스를 모든 컴포넌트에 표준화하였습니다.</p>
+  <div class="tb-card">
+    <div class="tb-card-icon">🔤</div>
+    <h3>Pretendard Typography</h3>
+    <p>한국어 가독성에 최적화된 Pretendard 웹폰트와 정밀 자간(-0.03em), 1.6 배수 줄간격을 적용하여 금융 텍스트 가독성을 최상위로 끌어올렸습니다.</p>
   </div>
-  <div class="kb-card">
-    <h3>🌐 100% W3C Web Components</h3>
-    <p>React, Vue, Angular 등 모든 프레임워크와 프레임워크-프리(Vanilla JS) 환경에서 완벽하게 상호운용되는 표준 웹 컴포넌트입니다.</p>
+  <div class="tb-card">
+    <div class="tb-card-icon">⚡</div>
+    <h3>100% W3C Web Components</h3>
+    <p>Lit 기반의 Shadow DOM과 SSR Hydration을 완벽 지원하며, React, Vue, Angular, Vanilla JS 환경 어디서든 프레임워크 제약 없이 작동합니다.</p>
   </div>
 </div>
 
-<h2 class="kb-section-title">Component Categories</h2>
-<p style="font-size: 16px; color: #555555; margin-bottom: 24px;">
-  왼쪽 탐색 메뉴의 <strong>Components</strong>에서 각 컴포넌트의 라이브 데모, 사용법, 그리고 카카오뱅크 디자인 토큰 설정을 확인하세요.
-</p>
+<h2 class="tb-section-title">Production Banking Showcases</h2>
+<div class="tb-grid">
+  <a href="/showcases/official-web/" class="tb-card">
+    <div class="tb-card-icon">🌐</div>
+    <h3>대고객 공식 웹 (Official Web)</h3>
+    <p>토스뱅크 대표 웹 서비스의 반응형 그리드, 프로모션 카드, 실시간 금리 안내 배너 쇼케이스</p>
+    <div class="tb-showcase-badge">쇼케이스 바로가기 →</div>
+  </a>
+  <a href="/showcases/mobile-app/" class="tb-card">
+    <div class="tb-card-icon">📱</div>
+    <h3>모바일 뱅킹 앱 (Mobile App)</h3>
+    <p>간편 송금, 원클릭 계좌 조회, 52px 터치 타겟 기반 네이티브 감성 모바일 뷰어 데모</p>
+    <div class="tb-showcase-badge">쇼케이스 바로가기 →</div>
+  </a>
+  <a href="/showcases/backoffice/" class="tb-card">
+    <div class="tb-card-icon">📊</div>
+    <h3>금융 백오피스 (Backoffice)</h3>
+    <p>데이터 그리드, 필터 셀렉터, 대량 트랜잭션 모니터링 관리자 콘솔 대시보드</p>
+    <div class="tb-showcase-badge">쇼케이스 바로가기 →</div>
+  </a>
+  <a href="/showcases/pms/" class="tb-card">
+    <div class="tb-card-icon">📋</div>
+    <h3>상품 관리 시스템 (PMS)</h3>
+    <p>금융 상품 등록 다이얼로그, 실시간 한도 슬라이더, 승인 워크플로우 제어 시스템</p>
+    <div class="tb-showcase-badge">쇼케이스 바로가기 →</div>
+  </a>
+</div>
+
+<h2 class="tb-section-title">Design Assets & Libraries</h2>
+<div class="tb-grid">
+  <a href="/components/icon/" class="tb-card">
+    <div class="tb-card-icon">🎨</div>
+    <h3>140+종 공식 아이콘 라이브러리</h3>
+    <p>7개 도메인 AI 시맨틱 분류 체계와 클릭 복사 기능을 지원하는 벡터 SVG/PNG 아이콘 모음</p>
+    <div class="tb-showcase-badge">아이콘 라이브러리 열기 →</div>
+  </a>
+  <a href="/assets/images/" class="tb-card">
+    <div class="tb-card-icon">🖼️</div>
+    <h3>880+종 이미지 에셋 뷰어</h3>
+    <p>토스뱅크 3D 그래픽, 일러스트레이션, 마케팅 배너 및 시맨틱 태깅 검색 뷰어</p>
+    <div class="tb-showcase-badge">이미지 에셋 뷰어 열기 →</div>
+  </a>
+</div>
 
 {% endblock %}

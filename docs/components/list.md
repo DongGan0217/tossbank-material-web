@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/list/)**
+[Toss Bank Material Web catalog](https://material-web.dev/components/list/)**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -36,14 +36,14 @@ vertical indexes of text and images
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
       <span>🛠️ List (금융 거래 내역 리스트) 실시간 옵션 샌드박스</span>
       <span class="kb-playground-badge">Live Interactive</span>
     </div>
-    <span style="font-size: 12px; color: #4E5968;">카카오뱅크 계좌 및 결제 거래 내역 리스트 옵션을 조작해보세요.</span>
+    <span style="font-size: 12px; color: #4E5968;">토스뱅크 계좌 및 결제 거래 내역 리스트 옵션을 조작해보세요.</span>
   </div>
   <div class="kb-playground-body">
     <div class="kb-playground-controls">
@@ -235,17 +235,17 @@ Cate.](images/list/usage-image.webp)
 <md-list style="max-width: 300px;">
   <md-list-item>
     Cat
-    <img slot="start" style="width: 56px" src="https://placekitten.com/112/112">
+    <img slot="start" style="width: 56px" src="data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="%23E8F3FF"/><circle cx="20" cy="16" r="8" fill="%230064FF"/><path d="M8 36 C8 28 32 28 32 36" fill="%230064FF"/></svg>">
   </md-list-item>
   <md-divider></md-divider>
   <md-list-item>
     Kitty Cat
-    <img slot="start" style="width: 56px" src="https://placekitten.com/114/114">
+    <img slot="start" style="width: 56px" src="data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="%23E8F3FF"/><circle cx="20" cy="16" r="8" fill="%230064FF"/><path d="M8 36 C8 28 32 28 32 36" fill="%230064FF"/></svg>">
   </md-list-item>
   <md-divider></md-divider>
   <md-list-item>
     Cate
-    <img slot="start" style="width: 56px" src="https://placekitten.com/116/116">
+    <img slot="start" style="width: 56px" src="data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="%23E8F3FF"/><circle cx="20" cy="16" r="8" fill="%230064FF"/><path d="M8 36 C8 28 32 28 32 36" fill="%230064FF"/></svg>">
   </md-list-item>
 </md-list>
 ```
@@ -440,14 +440,14 @@ Token                                 | Default value
   }
 </style>
 <md-list>
-  <md-list-item headline="Wide Cat">
-    <img slot="start" src="https://placekitten.com/200/100">
+  <md-list-item headline="Toss Bank Account">
+    <img slot="start" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'&gt;&lt;rect width='100%' height='100%' rx='12' fill='%230064FF'/&gt;&lt;text x='50%' y='55%' fill='white' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle' dominant-baseline='middle'&gt;TOSS&lt;/text&gt;&lt;/svg&gt;">
   </md-list-item>
-  <md-list-item headline="Round kitty cat">
-    <img slot="start" src="https://placekitten.com/202/101">
+  <md-list-item headline="Toss Bank Savings">
+    <img slot="start" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'&gt;&lt;rect width='100%' height='100%' rx='12' fill='%233182F6'/&gt;&lt;text x='50%' y='55%' fill='white' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle' dominant-baseline='middle'&gt;SAVE&lt;/text&gt;&lt;/svg&gt;">
   </md-list-item>
-  <md-list-item headline="Softe cate">
-    <img slot="start" src="https://placekitten.com/212/106">
+  <md-list-item headline="Toss Bank Card">
+    <img slot="start" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'&gt;&lt;rect width='100%' height='100%' rx='12' fill='%231B64DA'/&gt;&lt;text x='50%' y='55%' fill='white' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle' dominant-baseline='middle'&gt;CARD&lt;/text&gt;&lt;/svg&gt;">
   </md-list-item>
 </md-list>
 ```

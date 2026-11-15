@@ -18,7 +18,7 @@ define tappable regions in an accordion.
 
 ![Screenshot of five stacked dividers](images/divider/hero.svg "Dividers separating items in a list.")
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -49,7 +49,7 @@ define tappable regions in an accordion.
         <label class="kb-control-label" for="kb-div-color">구분선 색상 (Color):</label>
         <select id="kb-div-color" class="kb-control-select" onchange="updateDividerDemo()">
           <option value="#E5E8EB" selected>연한 그레이 (#E5E8EB)</option>
-          <option value="#FFE100">카카오 옐로우 (#FFE100)</option>
+          <option value="#FFE100">토스 딥블루 (#FFE100)</option>
           <option value="#191F28">다크 차콜 (#191F28)</option>
         </select>
       </div>

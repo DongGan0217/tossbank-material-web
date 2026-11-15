@@ -36,7 +36,7 @@ people select one option from a set of options.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -50,7 +50,7 @@ people select one option from a set of options.
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-radio-theme">라디오 테마 색상 (Theme):</label>
         <select id="kb-radio-theme" class="kb-control-select" onchange="updateRadioDemo()">
-          <option value="#FFE100" selected>카카오 옐로우 (#FFE100 / #191F28)</option>
+          <option value="#FFE100" selected>토스 딥블루 (#FFE100 / #191F28)</option>
           <option value="#3182F6">포인트 블루 (#3182F6)</option>
           <option value="#191F28">다크 차콜 (#191F28)</option>
         </select>

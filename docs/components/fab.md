@@ -22,7 +22,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/fab/).**
+[Toss Bank Material Web catalog](https://material-web.dev/components/fab/).**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -45,7 +45,7 @@ payment'"
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -68,7 +68,7 @@ payment'"
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-fab-color">테마 컬러 (Color):</label>
         <select id="kb-fab-color" class="kb-control-select" onchange="updateFabDemo()">
-          <option value="yellow" selected>카카오 옐로우 (#FFE100 / #191F28)</option>
+          <option value="yellow" selected>토스 딥블루 (#0064FF / #191F28)</option>
           <option value="white">클린 화이트 (#FFFFFF / #191F28)</option>
           <option value="dark">다크 슬레이트 (#191F28 / #FFFFFF)</option>
         </select>
@@ -89,15 +89,15 @@ payment'"
       </div>
     </div>
     <div class="kb-playground-canvas" id="kb-fab-canvas" style="min-height: 160px; display: flex; align-items: center; justify-content: center;">
-      <button id="kb-fab-render" type="button" style="height: 56px; background: #FFE100; border: none; border-radius: 18px; padding: 0 20px; font-weight: 700; font-size: 15px; color: #191F28; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 8px 24px rgba(255,225,0,0.35); transition: all 0.2s ease;">
-        <img id="kb-fab-render-icon" src="/../images/kb-icons/svg/kb_ic-add.svg" width="22" height="22" alt="add" />
+      <button id="kb-fab-render" type="button" style="height: 56px; background: #0064FF; border: none; border-radius: 18px; padding: 0 20px; font-weight: 700; font-size: 15px; color: #FFFFFF; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 8px 24px rgba(0,100,255,0.35); transition: all 0.2s ease;">
+        <img id="kb-fab-render-icon" src="/images/tb-icons/svg/tb_ic-plus.svg" width="22" height="22" alt="add" />
         <span id="kb-fab-render-text">새 계좌 개설</span>
       </button>
     </div>
   </div>
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-fab-code">&lt;md-fab variant="primary" label="새 계좌 개설"&gt;
-  &lt;md-icon slot="icon"&gt;&lt;img src="/../images/kb-icons/svg/kb_ic-add.svg" /&gt;&lt;/md-icon&gt;
+  &lt;md-icon slot="icon"&gt;&lt;img src="/images/tb-icons/svg/tb_ic-plus.svg" /&gt;&lt;/md-icon&gt;
 &lt;/md-fab&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-fab-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
@@ -119,13 +119,13 @@ payment'"
     icon.style.display = hasIcon ? 'inline-block' : 'none';
 
     if (color === 'yellow') {
-      btn.style.background = '#FFE100';
-      btn.style.color = '#191F28';
+      btn.style.background = '#0064FF';
+      btn.style.color = '#FFFFFF';
       btn.style.border = 'none';
-      btn.style.boxShadow = lowered ? '0 2px 6px rgba(0,0,0,0.1)' : '0 8px 24px rgba(255,225,0,0.35)';
+      btn.style.boxShadow = lowered ? '0 2px 6px rgba(0,0,0,0.1)' : '0 8px 24px rgba(0,100,255,0.35)';
     } else if (color === 'white') {
       btn.style.background = '#FFFFFF';
-      btn.style.color = '#191F28';
+      btn.style.color = '#FFFFFF';
       btn.style.border = '1px solid #E5E8EB';
       btn.style.boxShadow = lowered ? '0 2px 4px rgba(0,0,0,0.06)' : '0 8px 20px rgba(0,0,0,0.1)';
     } else {
@@ -141,28 +141,28 @@ payment'"
       btn.style.height = '56px';
       btn.style.borderRadius = '18px';
       btn.style.padding = '0 20px';
-      code.innerText = `<md-fab variant="primary" label="${label}" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/../images/kb-icons/svg/kb_ic-add.svg" /></md-icon>\n</md-fab>`;
+      code.innerText = `<md-fab variant="primary" label="${label}" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/images/tb-icons/svg/tb_ic-plus.svg" /></md-icon>\n</md-fab>`;
     } else if (type === 'standard') {
       text.style.display = 'none';
       btn.style.width = '56px';
       btn.style.height = '56px';
       btn.style.borderRadius = '18px';
       btn.style.padding = '0';
-      code.innerText = `<md-fab variant="primary" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/../images/kb-icons/svg/kb_ic-add.svg" /></md-icon>\n</md-fab>`;
+      code.innerText = `<md-fab variant="primary" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/images/tb-icons/svg/tb_ic-plus.svg" /></md-icon>\n</md-fab>`;
     } else if (type === 'small') {
       text.style.display = 'none';
       btn.style.width = '40px';
       btn.style.height = '40px';
       btn.style.borderRadius = '12px';
       btn.style.padding = '0';
-      code.innerText = `<md-fab size="small" variant="primary" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/../images/kb-icons/svg/kb_ic-add.svg" /></md-icon>\n</md-fab>`;
+      code.innerText = `<md-fab size="small" variant="primary" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/images/tb-icons/svg/tb_ic-plus.svg" /></md-icon>\n</md-fab>`;
     } else if (type === 'large') {
       text.style.display = 'none';
       btn.style.width = '88px';
       btn.style.height = '88px';
       btn.style.borderRadius = '28px';
       btn.style.padding = '0';
-      code.innerText = `<md-fab size="large" variant="primary" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/../images/kb-icons/svg/kb_ic-add.svg" /></md-icon>\n</md-fab>`;
+      code.innerText = `<md-fab size="large" variant="primary" ${lowered ? 'lowered' : ''}>\n  <md-icon slot="icon"><img src="/images/tb-icons/svg/tb_ic-plus.svg" /></md-icon>\n</md-fab>`;
     }
   }
 </script>

@@ -25,7 +25,7 @@ tag: 'docType:reference'
 
 <!-- external-only-start -->
 **This documentation is fully rendered on the
-[KakaoBank Material Web catalog](https://material-web.dev/components/checkbox/).**
+[Toss Bank Material Web catalog](https://material-web.dev/components/checkbox/).**
 <!-- external-only-end -->
 
 <!-- no-catalog-end -->
@@ -46,7 +46,7 @@ user needs to select one or more options from a list.
 
 </catalog-component-header>
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -67,7 +67,7 @@ user needs to select one or more options from a list.
       </div>
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-check-label">라벨 문구 (Label):</label>
-        <input id="kb-check-label" class="kb-control-input" type="text" value="카카오뱅크 필수 금융거래 약관 동의" oninput="updateCheckDemo()" />
+        <input id="kb-check-label" class="kb-control-input" type="text" value="토스뱅크 필수 금융거래 약관 동의" oninput="updateCheckDemo()" />
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
         <label class="kb-control-checkbox">
@@ -86,14 +86,14 @@ user needs to select one or more options from a list.
         <div id="kb-check-box" style="width: 22px; height: 22px; border-radius: 6px; background: #FFE100; border: 1.5px solid #191F28; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; color: #191F28; transition: all 0.15s;">
           ✓
         </div>
-        <span id="kb-check-render-text" style="font-size: 15px; font-weight: 600; color: #191F28;">카카오뱅크 필수 금융거래 약관 동의</span>
+        <span id="kb-check-render-text" style="font-size: 15px; font-weight: 600; color: #191F28;">토스뱅크 필수 금융거래 약관 동의</span>
       </label>
     </div>
   </div>
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-check-code">&lt;label&gt;
   &lt;md-checkbox checked&gt;&lt;/md-checkbox&gt;
-  카카오뱅크 필수 금융거래 약관 동의
+  토스뱅크 필수 금융거래 약관 동의
 &lt;/label&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-check-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>

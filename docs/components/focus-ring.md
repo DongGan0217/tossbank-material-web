@@ -18,7 +18,7 @@ to determine when they are visible.
 
 ![Three elements with a focus ring that moves between them.](images/focus/hero.svg "A focus ring moving across elements.")
 
-<!-- KakaoBank Interactive Options Playground & Live Sandbox -->
+<!-- Toss Bank Interactive Options Playground & Live Sandbox -->
 <div class="kb-playground-container">
   <div class="kb-playground-header">
     <div class="kb-playground-title">
@@ -32,7 +32,7 @@ to determine when they are visible.
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-ring-color">포커스 링 색상 (Color):</label>
         <select id="kb-ring-color" class="kb-control-select" onchange="updateRingDemo()">
-          <option value="#FFE100" selected>카카오 옐로우 (#FFE100 / 고대비)</option>
+          <option value="#FFE100" selected>토스 딥블루 (#FFE100 / 고대비)</option>
           <option value="#191F28">다크 차콜 (#191F28)</option>
           <option value="#3182F6">포인트 블루 (#3182F6)</option>
         </select>
@@ -40,7 +40,7 @@ to determine when they are visible.
       <div class="kb-control-group">
         <label class="kb-control-label" for="kb-ring-width">링 두께 (Width):</label>
         <select id="kb-ring-width" class="kb-control-select" onchange="updateRingDemo()">
-          <option value="3" selected>3px (카카오뱅크 권장)</option>
+          <option value="3" selected>3px (토스뱅크 권장)</option>
           <option value="2">2px (슬림)</option>
           <option value="4">4px (초고대비)</option>
         </select>
@@ -63,7 +63,7 @@ to determine when they are visible.
   <div class="kb-playground-footer">
     <pre class="kb-code-preview" id="kb-ring-code">&lt;button style="position: relative;"&gt;
   &lt;md-focus-ring style="--md-focus-ring-color: #FFE100; --md-focus-ring-width: 3px; --md-focus-ring-offset: 2px;"&gt;&lt;/md-focus-ring&gt;
-  카카오뱅크 버튼
+  토스뱅크 버튼
 &lt;/button&gt;</pre>
     <button class="kb-copy-code-btn" type="button" onclick="navigator.clipboard.writeText(document.getElementById('kb-ring-code').innerText); this.innerText='복사 완료!'; setTimeout(()=>this.innerText='코드 복사', 1500)">코드 복사</button>
   </div>
@@ -80,7 +80,7 @@ to determine when they are visible.
     btn.style.outline = `${width}px solid ${color}`;
     btn.style.outlineOffset = `${offset}px`;
 
-    code.innerText = `<button style="position: relative;">\n  <md-focus-ring style="--md-focus-ring-color: ${color}; --md-focus-ring-width: ${width}px; --md-focus-ring-offset: ${offset}px;"></md-focus-ring>\n  카카오뱅크 버튼\n</button>`;
+    code.innerText = `<button style="position: relative;">\n  <md-focus-ring style="--md-focus-ring-color: ${color}; --md-focus-ring-width: ${width}px; --md-focus-ring-offset: ${offset}px;"></md-focus-ring>\n  토스뱅크 버튼\n</button>`;
   }
 </script>
 
