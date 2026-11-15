@@ -153,6 +153,7 @@ async function transformReadmes(filepaths, outdir = '', replacements = []) {
 
 const aboutFiles = await getReadmeFiles('.');
 const componentsReadmes = await getReadmeFiles('components', true);
+const patternsFiles = await getReadmeFiles('patterns', true);
 const themingFiles = await getReadmeFiles('theming', true);
 const assetsFiles = await getReadmeFiles('assets', true);
 const showcasesFiles = await getReadmeFiles('showcases', true);
@@ -165,11 +166,20 @@ console.log('Images copied!');
 console.log('Transforming readmes...');
 await transformReadmes(aboutFiles, 'about');
 await transformReadmes(componentsReadmes);
+await transformReadmes(patternsFiles);
 await transformReadmes(themingFiles, '', [
   ['README', 'material-theming'],
 ]);
 await transformReadmes(assetsFiles);
 await transformReadmes(showcasesFiles);
+
+// Copy patterns metadata
+try {
+  await cp(join('..', 'docs', 'patterns', 'patterns.json'), join('site', 'patterns', 'patterns.json'), {force: true});
+  console.log('Copied patterns.json to site/patterns/');
+} catch (e) {
+  console.warn('Could not copy patterns.json:', e.message);
+}
 
 // Copy showcases metadata
 try {

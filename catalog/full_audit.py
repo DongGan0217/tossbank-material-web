@@ -41,6 +41,16 @@ ROUTES = [
     "/components/switch/",
     "/components/tabs/",
     "/components/text-field/",
+    # Patterns (9)
+    "/patterns/overview/",
+    "/patterns/account-row/",
+    "/patterns/bottom-sheet/",
+    "/patterns/keypad-transfer/",
+    "/patterns/agreement-terms/",
+    "/patterns/transaction-list/",
+    "/patterns/notice-banner/",
+    "/patterns/filter-chip-bar/",
+    "/patterns/result-feedback/",
     # Assets (1)
     "/assets/images/",
     # Showcases (5)

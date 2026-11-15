@@ -170,6 +170,28 @@
             {% endif %}
           {% endfor %}
           <md-divider role="separator"></md-divider>
+          <!-- Patterns section (New! Placed directly after Components) -->
+          <md-item><div slot="headline" style="color: #0064FF; font-weight: 800;">Patterns</div></md-item>
+          <md-list-item
+            href="/patterns/overview/"
+            role="menuitem"
+            {% if page.url == '/patterns/overview/' %}selected{% endif %}
+            type="link"
+            tabindex="0"
+            style="font-weight: 800; color: #0064FF;"
+          >★ Pattern Overview</md-list-item>
+          {% for file in collections.pattern|filtersort('data.order') %}
+            {% if file.data.name != 'Overview' and file.url != '/patterns/overview/' %}
+            <md-list-item
+              href="{{ file.url }}"
+              role="menuitem"
+              {% if file.url == page.url %}selected{% endif %}
+              type="link"
+              tabindex="{% if file.url == page.url %}0{% else %}-1{% endif %}"
+            >{{ file.data.name }}</md-list-item>
+            {% endif %}
+          {% endfor %}
+          <md-divider role="separator"></md-divider>
           <!-- Assets section -->
           <md-item><div slot="headline">Assets</div></md-item>
           <md-list-item
